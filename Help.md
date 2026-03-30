@@ -10,9 +10,9 @@
 
 ​	**ACL4SSR在线Clash等规则订阅转换**：https://acl4ssr.netlify.com
 
-​	**项目镜像**：https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@latest/
+​	**项目镜像**：https://cdn.jsdelivr.net/gh/E-R-Butch/ACL4SSR-Neo@latest/
 
-​	**项目地址**：https://github.com/ACL4SSR/ACL4SSR
+​	**项目地址**：https://github.com/E-R-Butch/ACL4SSR-Neo
 
 
 
@@ -88,7 +88,7 @@ AdGuard ：域名屏蔽类型+网址屏蔽+页面样式
 
 **ACL4SSR**
 
-​	https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash
+​	https://github.com/E-R-Butch/ACL4SSR-Neo/tree/master/Clash
 
 ​	subconverter\rules\ACL4SSR\Clash
 
@@ -517,11 +517,11 @@ AdGuard ：域名屏蔽类型+网址屏蔽+页面样式
 
 ​	GitHub举例：
 
-​		打开https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/ProxyLite.list
+​		打开https://github.com/E-R-Butch/ACL4SSR-Neo/blob/master/Clash/ProxyLite.list
 
 ​		看到规则列表右上角有几个小按钮，点击Raw，会转跳到一个新网址(raw.githubusercontent.com)。那个网址就是你真正的网址
 
-https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
+https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/ProxyLite.list
 
 
 
@@ -589,17 +589,17 @@ overwrite_original_rules=true
 ;增强中国IP段：不支持
 ;增强国外GFW：不支持
 
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
-surge_ruleset=🛑 全球拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-surge_ruleset=🍃 应用净化,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
-surge_ruleset=Ⓜ️ 微软服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
-surge_ruleset=🍎 苹果服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/LocalAreaNetwork.list
+surge_ruleset=🛑 全球拦截,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/BanAD.list
+surge_ruleset=🍃 应用净化,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/BanProgramAD.list
+surge_ruleset=Ⓜ️ 微软服务,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Microsoft.list
+surge_ruleset=🍎 苹果服务,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Apple.list
 surge_ruleset=🌍 国外媒体,rules/ConnersHua/Surge/Ruleset/GlobalMedia.list
 surge_ruleset=📲 电报信息,rules/ConnersHua/Surge/Ruleset/Telegram.list
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
-surge_ruleset=🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/GoogleCN.list
+surge_ruleset=🚀 节点选择,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/ProxyLite.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/ChinaDomain.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/ChinaCompanyIp.list
 surge_ruleset=🎯 全球直连,[]GEOIP,CN
 surge_ruleset=🐟 漏网之鱼,[]FINAL
 
