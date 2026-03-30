@@ -4,6 +4,16 @@ DOMAIN-SUFFIX,freenom.com
 DOMAIN,www.thingiverse.com
 DOMAIN,time.apple.com
 DOMAIN-SUFFIX,open-vsx.org
+
+# 小电视空降助手
+DOMAIN,www.bsbsb.top
+
+# Apple Relay (Cloudflare)
+DOMAIN,apple-relay.cloudflare.com
+
+# 天气服务
+DOMAIN-SUFFIX,weatheroffer.com
+
 # uplay登陆
 #DOMAIN,public-ubiservices.ubi.com
 
