@@ -1,7 +1,9 @@
 # 自定义直连规则
 
 DOMAIN-SUFFIX,freenom.com
-
+DOMAIN,www.thingiverse.com
+DOMAIN,time.apple.com
+DOMAIN-SUFFIX,open-vsx.org
 # uplay登陆
 #DOMAIN,public-ubiservices.ubi.com
 
