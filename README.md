@@ -15,20 +15,16 @@
 
 ---
 
-## 📁 文件结构
+## 📁 新版项目结构 (Ingredient-First Architecture)
 
-```
+```text
 Clash/
-├── config/
-│   └── ACL4SSR_Online_Full.ini   # 主配置文件（供 Subconverter 使用）
-├── MergedADBan.list              # 三方合并去重广告拦截总表
-├── CustomDirect.list             # 自定义直连规则（最高优先级）
-├── ProxyGFWlist.list             # 代理规则（GFW 白名单）
-├── ChinaDomain.list              # 国内域名直连
-├── GamePlatform.list             # 游戏平台分流
-├── GameDownload.list             # 游戏下载分流
-├── Ruleset/                      # 各平台细分规则（Netflix / YouTube 等）
-└── ...
+├── Core/                # 🟢 核心翻墙及直连代理规则 (CustomDirect, ProxyGFWlist 等)
+├── Ingredients/         # 📦 原始“食材”素材库 (AdBlock 去广告源、China 国内特色源等)
+├── Ruleset/             # 🔵 具体应用级别细化分流规则 (Apple, Netflix 等 100+ 项)
+├── Outputs/             # 🍲 加工后的成品列表 (如三源深度去重合并的 MergedADBan)
+├── Providers/           # 🟡 yaml 格式的 Rule Providers 规则库
+└── config/              # 📖 点菜单/主配置 (包含 ACL4SSR_Online_Full.ini)
 ```
 
 ---
