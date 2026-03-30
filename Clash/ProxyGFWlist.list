@@ -1,6 +1,7 @@
 # 代理列表
 
 # MyList && Other
+DOMAIN-SUFFIX,openzlib.link
 DOMAIN-SUFFIX,servarr.com
 DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,1password.com
