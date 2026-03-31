@@ -83,7 +83,8 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4
 
 | 规则源 | 说明 |
 | :--- | :--- |
-| [ACL4SSR/ACL4SSR](https://github.com/ACL4SSR/ACL4SSR) | 本项目基础规则集 |
+| [LoveMyself546/ACL4SSR](https://github.com/LoveMyself546/ACL4SSR) | 本项目直接溯源 (Fork 来源) |
+| ~~ACL4SSR/ACL4SSR~~ | 本项目初代规则集 (源项目已失效) |
 | ~~ConnersHua/Profiles~~ | 广告/劫持拦截规则 (源项目已失效) |
 | ~~lhie1/Rules~~ | 广告拦截规则 (源项目已失效) |
 | [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) | lhie1 归档的社区维护版 |
