@@ -7,24 +7,26 @@
 ## ✨ 特性
 
 - 🎯 **精细分流**：按服务类型独立分组，国内直连 / 国外代理 / 媒体解锁开箱即用
+- 🤖 **AI 深度优化**：针对 OpenAI、Claude、Gemini 独立分流，支持全节点独立手动/自动切换
+- 🛡️ **Claude 防漏风控**：Claude 组强制禁直连，彻底杜绝因代理失效导致的真实 IP 泄露封号风险
+- 🎬 **全球媒体解锁**：对齐 `RegionRestrictionCheck` 检测颗粒度，支持主流流媒体（Netflix/Disney+/HBO/PrimeVideo）及各国地区媒体独立分流
 - 🛑 **超强去广告**：整合 ACL4SSR + ConnersHua + lhie1 三大规则源，严格去重合并，拦截效果非常好
 - 🎮 **游戏优化**：游戏运行与游戏下载独立分组，可自由切换，避免浪费代理流量
 - 🗺️ **智能区域路由**：自动按节点名称匹配🇭🇰港 / 🇨🇳台 / 🇸🇬新 / 🇯🇵日 / 🇺🇲美 / 🇰🇷韩，自动测速选最优
 - ✏️ **自定义直连表**：`CustomDirect.list` 优先级最高，可随时追加你自己的直连域名
-- 🔒 **运营商劫持屏蔽**：涵盖 ConnersHua `Hijacking.list`，有效防御 DNS 劫持与中间人注入
 
 ---
 
-## 📁 新版项目结构 (Ingredient-First Architecture)
+## 📁 项目结构 (Ingredient-First Architecture)
 
 ```text
 Clash/
-├── Core/                # 🟢 核心翻墙及直连代理规则 (CustomDirect, ProxyGFWlist 等)
-├── Ingredients/         # 📦 原始“食材”素材库 (AdBlock 去广告源、China 国内特色源等)
-├── Ruleset/             # 🔵 具体应用级别细化分流规则 (Apple, Netflix 等 100+ 项)
-├── Outputs/             # 🍲 加工后的成品列表 (如三源深度去重合并的 MergedADBan)
-├── Providers/           # 🟡 yaml 格式的 Rule Providers 规则库
-└── config/              # 📖 点菜单/主配置 (包含 ACL4SSR_Online_Full.ini)
+├── Core/                # 核心翻墙及直连代理规则 (CustomDirect, ProxyGFWlist 等)
+├── Ingredients/         # 原始“食材”素材库 (AdBlock 去广告源、China 国内特色源等)
+├── Ruleset/             # 具体应用级别细化分流规则 (AI, Streaming, Media 等 120+ 项)
+├── Outputs/             # 加工后的成品列表 (如三源深度去重合并的 MergedADBan)
+├── Providers/           # yaml 格式的 Rule Providers 规则库
+└── config/              # 点菜单/主配置 (包含 ACL4SSR_Online_Full.ini)
 ```
 
 ---
@@ -35,7 +37,7 @@ Clash/
 
 将以下地址作为「远程配置」粘贴到转换面板的配置文件栏：
 
-```
+```text
 https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4SSR_Online_Full.ini
 ```
 
@@ -46,30 +48,32 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4
 ## 🗂️ 策略组一览
 
 | 策略组 | 类型 | 默认 | 说明 |
-|--------|------|------|------|
-| 🚀 节点选择 | select | DIRECT | 主出口，统筹全局 |
+| :--- | :--- | :--- | :--- |
+| 🚀 节点选择 | select | ♻️ 自动选择 | 主出口，统筹全局 |
 | 🚀 手动切换 | select | — | 手动节点全量列表 |
 | ♻️ 自动选择 | url-test | — | 全节点自动测速 |
-| 🇭🇰 香港节点 | url-test | — | 按名自动归类 |
-| 🇨🇳 台湾节点 | url-test | — | 按名自动归类 |
-| 🇸🇬 狮城节点 | url-test | — | 按名自动归类 |
-| 🇯🇵 日本节点 | url-test | — | 按名自动归类 |
-| 🇺🇲 美国节点 | url-test | — | 按名自动归类 |
-| 🇰🇷 韩国节点 | url-test | — | 按名自动归类 |
-| 🎥 奈飞节点 | select | — | 支持 Netflix 解锁的节点单独归类 |
-| 📹 油管视频 | select | 节点选择 | YouTube |
-| 🎥 奈飞视频 | select | 奈飞节点 | Netflix |
-| 📺 巴哈姆特 | select | 台湾节点 | 台湾网络才能访问 |
-| 🌍 国外媒体 | select | 节点选择 | Spotify、Disney+ 等 |
-| 🌏 国内媒体 | select | DIRECT | 爱奇艺、优酷等 |
-| 📲 电报消息 | select | 节点选择 | Telegram |
+| 🤖 OpenAI | select | 自动/手动 | ChatGPT 相关服务，支持全节点自动优选 |
+| 🎭 Claude | select | 自动/手动 | Anthropic/Claude 服务，**强制禁直连**防封号 |
+| 🧠 Gemini | select | 自动/手动 | Google Gemini AI 相关服务 |
+| 🎥 奈飞视频 | select | 自动过滤 | 自动筛选解锁节点，独立分组 |
+| 🎬 迪士尼+ | select | 节点选择 | Disney+ 专用分组 |
+| 🎥 HBO Max | select | 节点选择 | HBO Max / Max |
+| 🎬 亚马逊视频 | select | 节点选择 | Amazon Prime Video |
+| 📹 油管视频 | select | 节点选择 | YouTube / YT Music |
+| 🇭🇰 香港媒体 | select | 香港节点 | ViuTV, MyTV Super 等 |
+| 🇨🇳 台湾媒体 | select | 台湾节点 | 巴哈姆特, KKTV, LiTV 等 |
+| 🇯🇵 日本媒体 | select | 日本节点 | Abema, DMM, TVer 等 |
+| 🇰🇷 韩国媒体 | select | 韩国节点 | Wavve, Tving 等 |
+| 🇺🇸 北美媒体 | select | 美国节点 | Hulu, Paramount, Peacock 等 |
+| 📲 电报消息 | select | 节点选择 | Telegram 专用分组 |
 | 🍎 苹果服务 | select | DIRECT | Apple 相关服务 |
 | Ⓜ️ 微软云盘 | select | DIRECT | OneDrive |
-| 🎮 游戏平台 | select | **DIRECT** | 避免走代理导致延迟 |
-| 🎮 游戏下载 | select | **DIRECT** | 避免浪费代理流量 |
+| 🎮 游戏平台 | select | DIRECT | 避免走代理导致延迟 |
+| 🎮 游戏下载 | select | DIRECT | 避免浪费代理流量 |
 | 🛑 广告拦截 | select | REJECT | 三方合并超强去广告 |
 | 🎯 全球直连 | select | DIRECT | 国内 / 自定义直连 |
 | 🐟 漏网之鱼 | select | DIRECT | 未匹配规则兜底 |
+| 🇭🇰/🇨🇳/🇸🇬/🇯🇵/🇺🇲/🇰🇷 节点 | url-test | — | 按地区名自动归类的测速组 |
 
 ---
 
@@ -81,6 +85,7 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4
 | [ConnersHua/Profiles](https://github.com/ConnersHua/Profiles) | 广告/劫持拦截规则 |
 | [lhie1/Rules](https://github.com/lhie1/Rules) | 广告拦截规则（归档） |
 | [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) | lhie1 归档的社区维护版 |
+| [lmc999/RegionRestrictionCheck](https://github.com/lmc999/RegionRestrictionCheck) | 流媒体解锁检测脚本（本项目对齐其颗粒度） |
 
 ---
 
