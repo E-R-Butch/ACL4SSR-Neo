@@ -1,0 +1,12 @@
+payload:
+  # Taiwan Media
+  - DOMAIN-SUFFIX,gamer.com.tw
+  - DOMAIN-SUFFIX,kktv.me
+  - DOMAIN-SUFFIX,litv.tv
+  - DOMAIN-SUFFIX,linetv.tw
+  - DOMAIN-SUFFIX,hamivideo.hinet.net
+  - DOMAIN-SUFFIX,myvideo.net.tw
+  - DOMAIN-SUFFIX,4gtv.tv
+  - DOMAIN-SUFFIX,catchplay.com
+  - DOMAIN-SUFFIX,api2.4gtv.tv
+  - DOMAIN-SUFFIX,sunapi.catchplay.com

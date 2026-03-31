@@ -1,0 +1,41 @@
+# North America Media
+# Hulu US
+DOMAIN-SUFFIX,hulu.com
+DOMAIN-SUFFIX,huluim.com
+DOMAIN-SUFFIX,hulu.hb.omtrdc.net
+DOMAIN-SUFFIX,auth.hulu.com
+# Paramount+
+DOMAIN-SUFFIX,paramountplus.com
+DOMAIN-SUFFIX,cbs.com
+DOMAIN-SUFFIX,cbsivideo.com
+# Peacock TV
+DOMAIN-SUFFIX,peacocktv.com
+# Sling TV
+DOMAIN-SUFFIX,sling.com
+DOMAIN-SUFFIX,slingtv.com
+# Pluto TV
+DOMAIN-SUFFIX,pluto.tv
+# Fubo TV
+DOMAIN-SUFFIX,fubo.tv
+DOMAIN-SUFFIX,api.fubo.tv
+# Fox
+DOMAIN-SUFFIX,fox.com
+DOMAIN-SUFFIX,uplynk.com
+# MGM+ (Epix)
+DOMAIN-SUFFIX,mgmplus.com
+DOMAIN-SUFFIX,api.epix.com
+# CBC Gem (CA)
+DOMAIN-SUFFIX,cbc.ca
+DOMAIN-SUFFIX,cbc.radio-canada.ca
+# Acorn TV
+DOMAIN-SUFFIX,acorn.tv
+# Crave (CA)
+DOMAIN-SUFFIX,crave.ca
+DOMAIN-SUFFIX,9c9media.com
+# NBA TV
+DOMAIN-SUFFIX,nba.com
+# Directv Stream
+DOMAIN-SUFFIX,directv.com
+DOMAIN-SUFFIX,stream.directv.com
+# Starz
+DOMAIN-SUFFIX,starz.com

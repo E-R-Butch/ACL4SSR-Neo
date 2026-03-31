@@ -1,0 +1,28 @@
+payload:
+  # North America Media
+  - DOMAIN-SUFFIX,hulu.com
+  - DOMAIN-SUFFIX,huluim.com
+  - DOMAIN-SUFFIX,hulu.hb.omtrdc.net
+  - DOMAIN-SUFFIX,auth.hulu.com
+  - DOMAIN-SUFFIX,paramountplus.com
+  - DOMAIN-SUFFIX,cbs.com
+  - DOMAIN-SUFFIX,cbsivideo.com
+  - DOMAIN-SUFFIX,peacocktv.com
+  - DOMAIN-SUFFIX,sling.com
+  - DOMAIN-SUFFIX,slingtv.com
+  - DOMAIN-SUFFIX,pluto.tv
+  - DOMAIN-SUFFIX,fubo.tv
+  - DOMAIN-SUFFIX,api.fubo.tv
+  - DOMAIN-SUFFIX,fox.com
+  - DOMAIN-SUFFIX,uplynk.com
+  - DOMAIN-SUFFIX,mgmplus.com
+  - DOMAIN-SUFFIX,api.epix.com
+  - DOMAIN-SUFFIX,cbc.ca
+  - DOMAIN-SUFFIX,cbc.radio-canada.ca
+  - DOMAIN-SUFFIX,acorn.tv
+  - DOMAIN-SUFFIX,crave.ca
+  - DOMAIN-SUFFIX,9c9media.com
+  - DOMAIN-SUFFIX,nba.com
+  - DOMAIN-SUFFIX,directv.com
+  - DOMAIN-SUFFIX,stream.directv.com
+  - DOMAIN-SUFFIX,starz.com

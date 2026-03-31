@@ -1,0 +1,16 @@
+payload:
+  # Hong Kong Media
+  - DOMAIN-SUFFIX,mytvsuper.com
+  - DOMAIN-SUFFIX,nowe.com
+  - DOMAIN-SUFFIX,viu.tv
+  - DOMAIN-SUFFIX,viu.now.com
+  - DOMAIN-SUFFIX,hktvmall.com
+  - DOMAIN-SUFFIX,hktve.com
+  - DOMAIN-SUFFIX,tvb.com
+  - DOMAIN-SUFFIX,tvbanywhere.com
+  - DOMAIN-SUFFIX,tvbanywhere.com.sg
+  - DOMAIN-SUFFIX,tvboxnow.com
+  - DOMAIN-SUFFIX,tvb.com.au
+  - DOMAIN-SUFFIX,encore.tvb.com
+  - DOMAIN-SUFFIX,webtvapi.nowe.com
+  - DOMAIN-SUFFIX,api.viu.now.com
