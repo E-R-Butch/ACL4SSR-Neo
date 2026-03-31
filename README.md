@@ -11,7 +11,7 @@
 - 🛡️ **Claude 防漏风控**：Claude 组强制禁直连，彻底杜绝因代理失效导致的真实 IP 泄露封号风险
 - 🎬 **全球媒体解锁**：对齐 `RegionRestrictionCheck` 检测颗粒度，支持主流流媒体（Netflix/Disney+/HBO/PrimeVideo）及各国地区媒体独立分流
 - 🛑 **超强去广告**：整合 ACL4SSR + ConnersHua + lhie1 三大规则源，严格去重合并，拦截效果非常好
-- 🎮 **游戏优化**：游戏运行与游戏下载独立分组，可自由切换，避免浪费代理流量
+- 🎮 **Steam 专项优化**：针对前台社区与后台下载三级分流，强制代理与优先直连动态结合
 - 🗺️ **智能区域路由**：自动按节点名称匹配🇭🇰港 / 🇨🇳台 / 🇸🇬新 / 🇯🇵日 / 🇺🇲美 / 🇰🇷韩，自动测速选最优
 - ✏️ **自定义直连表**：`CustomDirect.list` 优先级最高，可随时追加你自己的直连域名
 
@@ -65,11 +65,11 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4
 | 🇯🇵 日本媒体 | select | 日本节点 | Abema, DMM, TVer 等 |
 | 🇰🇷 韩国媒体 | select | 韩国节点 | Wavve, Tving 等 |
 | 🇺🇸 北美媒体 | select | 美国节点 | Hulu, Paramount, Peacock 等 |
-| 📲 电报消息 | select | 节点选择 | Telegram 专用分组 |
+| 🌊 电报消息 | select | 节点选择 | Telegram 专用分组 |
+| 🎮 Steam社区 | select | 🚀 节点选择 | Steam 社区、聊天、商店等易受攻击页面 |
+| 🎮 游戏平台 | select | DIRECT | Epic、Uplay、Steam 下载及静态资源 |
+| Ⓜ️ 微软云盘 | select | DIRECT | OneDrive 专用分组 |
 | 🍎 苹果服务 | select | DIRECT | Apple 相关服务 |
-| Ⓜ️ 微软云盘 | select | DIRECT | OneDrive |
-| 🎮 游戏平台 | select | DIRECT | 避免走代理导致延迟 |
-| 🎮 游戏下载 | select | DIRECT | 避免浪费代理流量 |
 | 🛑 广告拦截 | select | REJECT | 三方合并超强去广告 |
 | 🎯 全球直连 | select | DIRECT | 国内 / 自定义直连 |
 | 🐟 漏网之鱼 | select | DIRECT | 未匹配规则兜底 |
