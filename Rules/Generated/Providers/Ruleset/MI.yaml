@@ -1,0 +1,13 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/MI.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # 内容：MI
+  # 数量：7条
+  - DOMAIN-SUFFIX,duokan.com
+  - DOMAIN-SUFFIX,mi-img.com
+  - DOMAIN-SUFFIX,mi.com
+  - DOMAIN-SUFFIX,miui.com
+  - DOMAIN-SUFFIX,xiaomi.com
+  - DOMAIN-SUFFIX,xiaomi.net
+  - DOMAIN-SUFFIX,xiaomicp.com

@@ -18,12 +18,12 @@ SOURCES = {
 
 # 目标文件
 TARGETS = {
-    "GFWLIST": "Clash/Core/ProxyGFWlist.list",
-    "CHINA_IP": "Clash/Ingredients/China/ChinaIp.list",
-    "CHINA_IPV6": "Clash/Ingredients/China/ChinaIpV6.list",
-    "EASYLIST": "Clash/Ingredients/AdBlock/BanEasyList.list",
-    "EASYLIST_CHINA": "Clash/Ingredients/AdBlock/BanEasyListChina.list",
-    "EASYPRIVACY": "Clash/Ingredients/AdBlock/BanEasyPrivacy.list",
+    "GFWLIST": "Rules/Core/ProxyGFWlist.list",
+    "CHINA_IP": "Rules/Ingredients/China/ChinaIp.list",
+    "CHINA_IPV6": "Rules/Ingredients/China/ChinaIpV6.list",
+    "EASYLIST": "Rules/Ingredients/AdBlock/BanEasyList.list",
+    "EASYLIST_CHINA": "Rules/Ingredients/AdBlock/BanEasyListChina.list",
+    "EASYPRIVACY": "Rules/Ingredients/AdBlock/BanEasyPrivacy.list",
 }
 
 ABP_METADATA = {

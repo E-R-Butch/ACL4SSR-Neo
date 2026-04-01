@@ -1,0 +1,11 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/Instagram.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # 内容：Instagram
+  # 数量：5条
+  - DOMAIN-KEYWORD,instagram
+  - DOMAIN-SUFFIX,akamaihd.net
+  - DOMAIN-SUFFIX,cdninstagram.com
+  - DOMAIN-SUFFIX,instagr.am
+  - DOMAIN-SUFFIX,instagram.com

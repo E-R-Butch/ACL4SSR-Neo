@@ -1,0 +1,7 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/Claude.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # Claude Services
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,claude.ai

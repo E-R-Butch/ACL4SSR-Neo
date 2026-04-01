@@ -1,0 +1,13 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/DisneyPlus.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # Disney+
+  - DOMAIN-SUFFIX,disneyplus.com
+  - DOMAIN-SUFFIX,disney.api.edge.bamgrid.com
+  - DOMAIN-SUFFIX,disney.my.edge.bamgrid.com
+  - DOMAIN-SUFFIX,bamgrid.com
+  - DOMAIN-SUFFIX,disney.com
+  - DOMAIN-SUFFIX,dssott.com
+  - DOMAIN-SUFFIX,disneylatino.com
+  - DOMAIN-SUFFIX,starplus.com

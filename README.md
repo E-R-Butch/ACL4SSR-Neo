@@ -1,6 +1,6 @@
 # ACL4SSR-Neo 🚀
 
-> 基于 [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR) 规则深度定制的 Clash 分流规则集，整合了多家优质去广告规则源，更精简、更干净。
+> 基于 [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR) 规则深度定制的订阅转换规则仓库，面向 Clash / Mihomo 等常见代理生态，整合了多家优质去广告规则源。
 >
 > 📍 **项目规划**：查看我们的 [未来路线图 (Roadmap)](./ROADMAP.md)
 
@@ -22,12 +22,13 @@
 ## 📁 项目结构 (Ingredient-First Architecture)
 
 ```text
-Clash/
+Rules/
 ├── Core/                # 核心翻墙及直连代理规则 (CustomDirect, ProxyGFWlist 等)
 ├── Ingredients/         # 原始“食材”素材库 (AdBlock 去广告源、China 国内特色源等)
 ├── Ruleset/             # 具体应用级别细化分流规则 (AI, Streaming, Media 等 120+ 项)
 ├── Outputs/             # 加工后的成品列表 (如三源深度去重合并的 MergedADBan)
-├── Providers/           # 为未来 RULE-SET 迁移保留的 provider 资产，当前主链路未接入自动生成
+├── Generated/
+│   └── Providers/       # 从当前活跃 .list 源自动生成的 provider 资产
 └── config/              # 点菜单/主配置 (包含 ACL4SSR_Online_Full.ini)
 ```
 
@@ -35,6 +36,7 @@ Clash/
 scripts/
 ├── fetch_assets.py      # 同步 GFWList / China IP / AdBlock 上游数据
 ├── build_rules.py       # 合并广告规则并输出 MergedADBan.list
+├── build_providers.py   # 从活跃 .list 源生成 Generated/Providers/*.yaml
 └── validate_rules.py    # 校验主配置引用和 .list 基础格式
 ```
 
@@ -47,7 +49,7 @@ scripts/
 将以下地址作为「远程配置」粘贴到转换面板的配置文件栏：
 
 ```text
-https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4SSR_Online_Full.ini
+https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/config/ACL4SSR_Online_Full.ini
 ```
 
 然后填入你的节点订阅地址，即可生成完整 Clash 配置。

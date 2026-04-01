@@ -1,0 +1,10 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/SoundCloud.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # 内容：SoundCloud
+  # 数量：4条
+  - USER-AGENT,SoundCloud*
+  - DOMAIN-SUFFIX,p-cdn.us
+  - DOMAIN-SUFFIX,sndcdn.com
+  - DOMAIN-SUFFIX,soundcloud.com

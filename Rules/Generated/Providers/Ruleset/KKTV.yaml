@@ -1,0 +1,11 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/KKTV.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # 内容：KKTV
+  # 数量：5条
+  - USER-AGENT,KKTV*
+  - USER-AGENT,com.kktv.ios.kktv*
+  - DOMAIN,kktv-theater.kk.stream
+  - DOMAIN-SUFFIX,kktv.com.tw
+  - DOMAIN-SUFFIX,kktv.me

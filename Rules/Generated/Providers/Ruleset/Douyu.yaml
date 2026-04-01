@@ -1,0 +1,9 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/Douyu.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # 内容：Douyu 斗鱼
+  # 数量：3条
+  - DOMAIN-SUFFIX,douyu.com
+  - DOMAIN-SUFFIX,douyu.tv
+  - DOMAIN-SUFFIX,douyutv.com

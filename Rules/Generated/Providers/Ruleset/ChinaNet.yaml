@@ -1,0 +1,7 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/ChinaNet.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # 内容：ChinaNet
+  # 数量：1条
+  - DOMAIN-SUFFIX,21cn.com

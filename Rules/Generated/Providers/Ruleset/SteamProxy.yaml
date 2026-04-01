@@ -1,0 +1,11 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/SteamProxy.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # Steam Forced Proxy (Tier 1: Community, Chat, Social)
+  - DOMAIN-SUFFIX,steamcommunity.com
+  - DOMAIN-SUFFIX,steam-chat.com
+  - DOMAIN-SUFFIX,s.team
+  - DOMAIN-SUFFIX,steam.tv
+  - DOMAIN,store.steampowered.com
+  - DOMAIN,help.steampowered.com

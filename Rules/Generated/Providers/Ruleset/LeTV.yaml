@@ -1,0 +1,7 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/LeTV.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # 内容：Letv 乐视
+  # 数量：1条
+  - DOMAIN-SUFFIX,api.mob.app.letv.com

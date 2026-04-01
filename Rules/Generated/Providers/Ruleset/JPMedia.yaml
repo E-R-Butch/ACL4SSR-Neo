@@ -1,0 +1,58 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/JPMedia.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # Japan Media
+  # AbemaTV
+  - DOMAIN-SUFFIX,abema.tv
+  - DOMAIN-SUFFIX,abema.io
+  - DOMAIN-SUFFIX,ameba.jp
+  - DOMAIN-SUFFIX,hayabusa.io
+  # Niconico
+  - DOMAIN-SUFFIX,nicovideo.jp
+  - DOMAIN-SUFFIX,nimg.jp
+  - DOMAIN-SUFFIX,live.nicovideo.jp
+  # DMM
+  - DOMAIN-SUFFIX,dmm.com
+  - DOMAIN-SUFFIX,dmm.co.jp
+  - DOMAIN-SUFFIX,api.beacon.dmm.com
+  # U-NEXT
+  - DOMAIN-SUFFIX,unext.jp
+  - DOMAIN-SUFFIX,unext-api.jp
+  - DOMAIN-SUFFIX,cc.unext.jp
+  # TVer
+  - DOMAIN-SUFFIX,tver.jp
+  - DOMAIN-SUFFIX,platform-api.tver.jp
+  - DOMAIN-SUFFIX,statics.tver.jp
+  # WOWOW
+  - DOMAIN-SUFFIX,wowow.co.jp
+  - DOMAIN-SUFFIX,wod.wowow.co.jp
+  - DOMAIN-SUFFIX,mapi.wowow.co.jp
+  # Radiko
+  - DOMAIN-SUFFIX,radiko.jp
+  - DOMAIN-SUFFIX,radiko.jp/area
+  # Hulu Japan
+  - DOMAIN-SUFFIX,hulu.jp
+  - DOMAIN-SUFFIX,happyon.jp
+  - DOMAIN-SUFFIX,id.hulu.jp
+  # FOD (Fuji TV)
+  - DOMAIN-SUFFIX,fujitv.co.jp
+  - DOMAIN-SUFFIX,geocontrol1.stream.ne.jp
+  # Lemino (Docomo)
+  - DOMAIN-SUFFIX,docomo.ne.jp
+  # AnimeFesta
+  - DOMAIN-SUFFIX,animefesta.jp
+  - DOMAIN-SUFFIX,iowl.jp
+  # Mora
+  - DOMAIN-SUFFIX,mora.jp
+  # VideoMarket
+  - DOMAIN-SUFFIX,videomarket.jp
+  # Karaoke@DAM
+  - DOMAIN-SUFFIX,clubdam.com
+  # Telasa
+  - DOMAIN-SUFFIX,telasa.jp
+  - DOMAIN-SUFFIX,api-videopass-anon.kddi-video.com
+  # PCRJP/UMAJP (Cygames)
+  - DOMAIN-SUFFIX,cygames.jp
+  - DOMAIN-SUFFIX,priconne-redive.jp
+  - DOMAIN-SUFFIX,umamusume.jp

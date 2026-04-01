@@ -6,12 +6,12 @@
 https://github.com/E-R-Butch/ACL4SSR-Neo
 
 主配置：
-https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4SSR_Online_Full.ini
+https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/config/ACL4SSR_Online_Full.ini
 
 
 ## 1. 项目定位
 
-`ACL4SSR-Neo` 现在是一个面向 `Clash / Mihomo` 生态的规则仓库。
+`ACL4SSR-Neo` 现在是一个面向订阅转换与代理内核生态的规则仓库，当前主要适配 `Clash / Mihomo`。
 
 仓库当前重点是：
 
@@ -25,32 +25,32 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4
 
 ## 2. 当前目录结构
 
-`Clash/Core`
+`Rules/Core`
 
 - 核心直连和代理碎片
 - 例如 `ProxyGFWlist.list`、`CustomDirect.list`、`LocalAreaNetwork.list`
 
-`Clash/Ingredients`
+`Rules/Ingredients`
 
 - 上游原料和基础数据
 - 当前主要包括中国直连相关地址段、域名和广告原料
 
-`Clash/Ruleset`
+`Rules/Ruleset`
 
 - 面向具体服务的分流规则
 - 例如 `OpenAI.list`、`Claude.list`、`Gemini.list`、`Telegram.list`、`Netflix.list`
 
-`Clash/Outputs`
+`Rules/Outputs`
 
 - 构建产物
 - 当前核心产物是 `MergedADBan.list`
 
-`Clash/Providers`
+`Rules/Generated/Providers`
 
-- 为未来 `RULE-SET` 迁移保留的 provider 资产
-- 当前主工作流没有自动生成或自动校验这一层
+- 从当前活跃 `.list` 源自动生成的 provider 资产
+- 这层会跟随主工作流更新，过时且没有源头的 provider 会被移出
 
-`Clash/config`
+`Rules/config`
 
 - 订阅转换用的主配置
 - 当前主入口是 `ACL4SSR_Online_Full.ini`
@@ -58,7 +58,7 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4
 `scripts`
 
 - 自动同步、构建、校验脚本
-- 当前主要包括 `fetch_assets.py`、`build_rules.py`、`validate_rules.py`
+- 当前主要包括 `fetch_assets.py`、`build_rules.py`、`build_providers.py`、`validate_rules.py`
 
 
 ## 3. 当前自动化状态
@@ -76,7 +76,9 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4
 
 当前会自动构建：
 
-- `Clash/Outputs/MergedADBan.list`
+- `Rules/Outputs/MergedADBan.list`
+- `Rules/Generated/Providers/*.yaml`
+- `Rules/Generated/Providers/Ruleset/*.yaml`
 
 当前会自动校验：
 
@@ -92,7 +94,7 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4
 主配置地址：
 
 ```text
-https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4SSR_Online_Full.ini
+https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/config/ACL4SSR_Online_Full.ini
 ```
 
 如果你的输入源本身已经是完整的 `Mihomo YAML`，那它不属于“原始节点订阅”，不应该再拿来做二次订阅转换。
@@ -104,7 +106,7 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4
 
 当前主维护的核心代理列表是：
 
-- `Clash/Core/ProxyGFWlist.list`
+- `Rules/Core/ProxyGFWlist.list`
 
 它的组成方式是：
 
@@ -118,20 +120,19 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4
 
 当前主配置默认会使用这些直连相关规则：
 
-- `Clash/Core/LocalAreaNetwork.list`
-- `Clash/Core/UnBan.list`
-- `Clash/Core/Download.list`
-- `Clash/Ingredients/China/ChinaDomain.list`
-- `Clash/Ingredients/China/ChinaCompanyIp.list`
-- `Clash/Ingredients/China/ChinaIp.list`
-- `Clash/Ingredients/China/ChinaIpV6.list`
-- `Clash/Ingredients/China/GoogleCN.list`
+- `Rules/Core/LocalAreaNetwork.list`
+- `Rules/Core/UnBan.list`
+- `Rules/Core/Download.list`
+- `Rules/Ingredients/China/ChinaDomain.list`
+- `Rules/Ingredients/China/ChinaCompanyIp.list`
+- `Rules/Ingredients/China/ChinaIp.list`
+- `Rules/Ingredients/China/ChinaIpV6.list`
+- `Rules/Ingredients/China/GoogleCN.list`
 - `GEOIP,CN`
 
 其中：
 
 - `ChinaIp.list` 和 `ChinaIpV6.list` 当前都已接入主配置
-- `ChinaIp.list` 现在已经接入主配置，属于默认启用的一部分
 
 
 ### 5.3 广告拦截
@@ -200,13 +201,13 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4
 GitHub 页面：
 
 ```text
-https://github.com/E-R-Butch/ACL4SSR-Neo/blob/master/Clash/Core/ProxyGFWlist.list
+https://github.com/E-R-Butch/ACL4SSR-Neo/blob/master/Rules/Core/ProxyGFWlist.list
 ```
 
 Raw 地址：
 
 ```text
-https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Core/ProxyGFWlist.list
+https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Core/ProxyGFWlist.list
 ```
 
 同理，仓库里其他 `.list` 文件都可以用相同方式找到对应的 Raw 地址。
@@ -220,13 +221,13 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Core/ProxyG
 [custom]
 ;不要随意改变关键字，否则会导致出错
 
-surge_ruleset=🛑 广告拦截,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Outputs/MergedADBan.list
-surge_ruleset=📲 电报消息,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ruleset/Telegram.list
-surge_ruleset=🚀 节点选择,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Core/ProxyGFWlist.list
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Core/LocalAreaNetwork.list
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ingredients/China/ChinaDomain.list
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ingredients/China/ChinaCompanyIp.list
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ingredients/China/ChinaIp.list
+surge_ruleset=🛑 广告拦截,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Outputs/MergedADBan.list
+surge_ruleset=📲 电报消息,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Ruleset/Telegram.list
+surge_ruleset=🚀 节点选择,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Core/ProxyGFWlist.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Core/LocalAreaNetwork.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Ingredients/China/ChinaDomain.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Ingredients/China/ChinaCompanyIp.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Ingredients/China/ChinaIp.list
 surge_ruleset=🎯 全球直连,[]GEOIP,CN
 surge_ruleset=🐟 漏网之鱼,[]FINAL
 

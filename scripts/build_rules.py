@@ -3,8 +3,8 @@ import sys
 import time
 
 # 配置路径
-INGREDIENTS_DIR = "Clash/Ingredients/AdBlock"
-OUTPUT_FILE = "Clash/Outputs/MergedADBan.list"
+INGREDIENTS_DIR = "Rules/Ingredients/AdBlock"
+OUTPUT_FILE = "Rules/Outputs/MergedADBan.list"
 RULE_PRIORITY = {
     "DOMAIN": 50,
     "DOMAIN-SUFFIX": 40,

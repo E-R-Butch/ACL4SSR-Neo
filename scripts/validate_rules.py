@@ -3,14 +3,14 @@ import re
 import sys
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
-CONFIG_FILE = REPO_ROOT / "Clash/config/ACL4SSR_Online_Full.ini"
+CONFIG_FILE = REPO_ROOT / "Rules/config/ACL4SSR_Online_Full.ini"
 
 LIST_DIRS = [
-    REPO_ROOT / "Clash/Core",
-    REPO_ROOT / "Clash/Ingredients/China",
-    REPO_ROOT / "Clash/Ingredients/AdBlock",
-    REPO_ROOT / "Clash/Outputs",
-    REPO_ROOT / "Clash/Ruleset",
+    REPO_ROOT / "Rules/Core",
+    REPO_ROOT / "Rules/Ingredients/China",
+    REPO_ROOT / "Rules/Ingredients/AdBlock",
+    REPO_ROOT / "Rules/Outputs",
+    REPO_ROOT / "Rules/Ruleset",
 ]
 
 ALLOWED_SPECIAL_GROUPS = {"DIRECT", "REJECT"}

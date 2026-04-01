@@ -1,8 +1,0 @@
-payload:
-  # Amazon Prime Video
-  - DOMAIN-SUFFIX,primevideo.com
-  - DOMAIN-SUFFIX,amazonvideo.com
-  - DOMAIN-SUFFIX,pv-cdn.net
-  - DOMAIN-SUFFIX,video.amazon.com
-  - DOMAIN-SUFFIX,aiv-cdn.net
-  - DOMAIN-SUFFIX,atv-ps.amazon.com

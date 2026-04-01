@@ -1,0 +1,9 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/All4.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # 内容：All4
+  # 数量：3条
+  - USER-AGENT,All4*
+  - DOMAIN-SUFFIX,c4assets.com
+  - DOMAIN-SUFFIX,channel4.com

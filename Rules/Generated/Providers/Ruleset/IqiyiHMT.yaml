@@ -1,0 +1,7 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/IqiyiHMT.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # 内容：IqiyiHMT 爱奇艺 港澳台和国外站点
+  # 数量：1条
+  - DOMAIN,cache.video.iqiyi.com

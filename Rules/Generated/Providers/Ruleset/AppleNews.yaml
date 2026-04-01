@@ -1,0 +1,9 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/AppleNews.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # 内容：AppleNews
+  # 数量：3条
+  - USER-AGENT,AppleNews*
+  - USER-AGENT,com.apple.news*
+  - DOMAIN,gspe1-ssl.ls.apple.com

@@ -1,0 +1,11 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/FoxNow.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # 内容：FoxNow
+  # 数量：5条
+  - USER-AGENT,FOX%20NOW*
+  - DOMAIN-SUFFIX,fox.com
+  - DOMAIN-SUFFIX,foxdcg.com
+  - DOMAIN-SUFFIX,theplatform.com
+  - DOMAIN-SUFFIX,uplynk.com

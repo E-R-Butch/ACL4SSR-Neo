@@ -1,0 +1,9 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/DiDi.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # 内容：DiDi
+  # 数量：3条
+  - DOMAIN-SUFFIX,didialift.com
+  - DOMAIN-SUFFIX,didiglobal.com
+  - DOMAIN-SUFFIX,udache.com

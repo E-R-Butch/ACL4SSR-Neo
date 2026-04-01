@@ -1,0 +1,7 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/58.list
+# Updated: 2026-04-01 15:54:06
+payload:
+  # 内容：58
+  # 数量：1条
+  - DOMAIN-SUFFIX,58.com
