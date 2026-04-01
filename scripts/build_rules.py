@@ -12,6 +12,13 @@ RULE_PRIORITY = {
     "IP-CIDR": 20,
     "IP-CIDR6": 20,
 }
+PROTECTED_RULES = {
+    ("DOMAIN-SUFFIX", "api.github.com"),
+    ("DOMAIN-SUFFIX", "github.com"),
+    ("DOMAIN-SUFFIX", "githubassets.com"),
+    ("DOMAIN-SUFFIX", "githubusercontent.com"),
+    ("DOMAIN-SUFFIX", "raw.githubusercontent.com"),
+}
 
 
 def log(msg):
@@ -73,6 +80,15 @@ def build():
     unique_count = len(deduped_rules)
     conflict_count = len(conflict_map)
     log(f"Ingested {raw_count} raw lines. Found {unique_count} unique rules after resolving {conflict_count} conflicts.")
+
+    protected_removed = 0
+    for protected_rule in PROTECTED_RULES:
+        if protected_rule in deduped_rules:
+            deduped_rules.remove(protected_rule)
+            protected_removed += 1
+
+    if protected_removed:
+        log(f"Removed {protected_removed} protected rules that would break core services.")
 
     # 2. 逻辑优化
     sorted_rules = sorted(list(deduped_rules), key=lambda x: (x[0], x[1]))
