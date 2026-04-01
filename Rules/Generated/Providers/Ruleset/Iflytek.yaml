@@ -1,9 +1,0 @@
-# Auto-generated provider file
-# Source: Rules/Ruleset/Iflytek.list
-# Updated: 2026-04-01 15:54:06
-payload:
-  # 内容：Iflytek 科大讯飞
-  # 数量：3条
-  - DOMAIN-SUFFIX,iflyink.com
-  - DOMAIN-SUFFIX,iflyrec.com
-  - DOMAIN-SUFFIX,iflytek.com

@@ -23,9 +23,6 @@ jobs:
       - name: Run Smart Build System
         run: python3 -u scripts/build_rules.py
 
-      - name: Build Provider Assets
-        run: python3 scripts/build_providers.py
-
       - name: Validate Config And Rule Lists
         run: python3 scripts/validate_rules.py
 
@@ -33,4 +30,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: daily auto sync & build rules"
-          file_pattern: 'Rules/Core/*.list Rules/Ingredients/China/*.list Rules/Ingredients/AdBlock/*.list Rules/Outputs/*.list Rules/Generated/Providers/*.yaml Rules/Generated/Providers/Ruleset/*.yaml'
+          file_pattern: 'Rules/Core/*.list Rules/Ingredients/China/*.list Rules/Ingredients/AdBlock/*.list Rules/Outputs/*.list'

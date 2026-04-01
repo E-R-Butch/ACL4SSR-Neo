@@ -35,16 +35,13 @@ Rules/
 ├── Core/                # 核心翻墙及直连代理规则 (CustomDirect, ProxyGFWlist 等)
 ├── Ingredients/         # 原始“食材”素材库 (AdBlock 去广告源、China 国内特色源等)
 ├── Ruleset/             # 具体应用级别细化分流规则 (AI, Streaming, Media 等 120+ 项)
-├── Outputs/             # 加工后的成品列表 (如三源深度去重合并的 MergedADBan)
-├── Generated/
-│   └── Providers/       # 从当前活跃 .list 源自动生成的 provider 资产
+└── Outputs/             # 加工后的成品列表 (如三源深度去重合并的 MergedADBan)
 ```
 
 ```text
 scripts/
 ├── fetch_assets.py      # 同步 GFWList / China IP / AdBlock 上游数据
 ├── build_rules.py       # 合并广告规则并输出 MergedADBan.list
-├── build_providers.py   # 从活跃 .list 源生成 Generated/Providers/*.yaml
 └── validate_rules.py    # 校验主配置引用和 .list 基础格式
 ```
 

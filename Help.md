@@ -45,11 +45,6 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Config/ACL4SSR_On
 - 构建产物
 - 当前核心产物是 `MergedADBan.list`
 
-`Rules/Generated/Providers`
-
-- 从当前活跃 `.list` 源自动生成的 provider 资产
-- 这层会跟随主工作流更新，过时且没有源头的 provider 会被移出
-
 `Config`
 
 - 订阅转换用的主配置和基础模板
@@ -59,7 +54,7 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Config/ACL4SSR_On
 `scripts`
 
 - 自动同步、构建、校验脚本
-- 当前主要包括 `fetch_assets.py`、`build_rules.py`、`build_providers.py`、`validate_rules.py`
+- 当前主要包括 `fetch_assets.py`、`build_rules.py`、`validate_rules.py`
 
 
 ## 3. 当前自动化状态
@@ -78,8 +73,6 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Config/ACL4SSR_On
 当前会自动构建：
 
 - `Rules/Outputs/MergedADBan.list`
-- `Rules/Generated/Providers/*.yaml`
-- `Rules/Generated/Providers/Ruleset/*.yaml`
 
 当前会自动校验：
 

@@ -1,7 +1,0 @@
-# Auto-generated provider file
-# Source: Rules/Ruleset/Qobuz.list
-# Updated: 2026-04-01 15:54:06
-payload:
-  # 内容：Qobuz
-  # 数量：1条
-  - DOMAIN-SUFFIX,qobuz.com

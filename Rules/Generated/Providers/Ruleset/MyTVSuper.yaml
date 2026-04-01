@@ -1,9 +1,0 @@
-# Auto-generated provider file
-# Source: Rules/Ruleset/MyTVSuper.list
-# Updated: 2026-04-01 15:54:06
-payload:
-  # 内容：MyTVSuper
-  # 数量：3条
-  - USER-AGENT,mytv*
-  - DOMAIN-SUFFIX,mytvsuper.com
-  - DOMAIN-SUFFIX,tvb.com

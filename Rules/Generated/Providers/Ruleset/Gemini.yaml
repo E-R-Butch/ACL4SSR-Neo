@@ -1,9 +1,0 @@
-# Auto-generated provider file
-# Source: Rules/Ruleset/Gemini.list
-# Updated: 2026-04-01 15:54:06
-payload:
-  # Google Gemini Services
-  - DOMAIN-SUFFIX,google.com/gemini
-  - DOMAIN-SUFFIX,gemini.google.com
-  - DOMAIN-SUFFIX,generativelanguage.googleapis.com
-  - DOMAIN-SUFFIX,aistudio.google.com

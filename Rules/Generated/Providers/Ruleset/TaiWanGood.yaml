@@ -1,9 +1,0 @@
-# Auto-generated provider file
-# Source: Rules/Ruleset/TaiWanGood.list
-# Updated: 2026-04-01 15:54:06
-payload:
-  # 内容：TaiWanGood
-  # 数量：3条
-  - USER-AGENT,TaiwanGood*
-  - DOMAIN,hamifans.emome.net
-  - DOMAIN-SUFFIX,skyking.com.tw
