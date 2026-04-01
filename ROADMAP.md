@@ -8,7 +8,7 @@
 
 | 阶段 | 核心目标 | 预计成果 | 状态 |
 | :--- | :--- | :--- | :--- |
-| **Phase 1** | **自动化基础设施** | 实现规则自动同步、多源广告自动合并、CI 语法校验。 | 🚧 进行中 |
+| **Phase 1** | **自动化基础设施** | 实现规则自动同步、多源广告自动合并、CI 语法校验。 | ✅ 已完成 |
 | **Phase 2** | **服务深度定制** | 补全 AI 全家桶、重构全平台游戏逻辑、精简区域路由。 | 📅 计划中 |
 | **Phase 3** | **现代内核重构** | 深度适配 Mihomo (Clash Meta) 内核，引入 `RULE-SET`。 | ⏳ 长期 |
 
@@ -18,15 +18,15 @@
 
 **目标**：降低维护负担，确保核心规则（GFWList, AdBlock）始终与上游同步。
 
-- [ ] **GitHub Actions 自动同步**：
+- [x] **GitHub Actions 自动同步**：
   - [x] 核心 GFWList 首次手动对齐同步。
   - [x] 中国 IPv4/IPv6 地址库首次手动对齐同步。
-  - [ ] 每日自动从 [gfwlist/gfwlist](https://github.com/gfwlist/gfwlist) 抓取并转换。
-  - [ ] 每日自动抓取各大 AdBlock 素材源。
-- [/] **智能构建系统 (`build.py`)**：
+  - [x] 每日自动从 [gfwlist/gfwlist](https://github.com/gfwlist/gfwlist) 抓取并转换。
+  - [x] 每日自动抓取各大 AdBlock 素材源。
+- [x] **智能构建系统 (`build.py`)**：
   - 开发 Python 构建程序，负责 `Ingredients -> Outputs` 的流水线加工。
   - 实现多源广告列表的去重、冲突检测与合并算法。
-- [ ] **代码规范与 CI 校验**：
+- [x] **代码规范与 CI 校验**：
   - 引入 Linter 对 `.list` 和 `.ini` 进行语法检查，防止 subconverter 转换失败。
 
 ---

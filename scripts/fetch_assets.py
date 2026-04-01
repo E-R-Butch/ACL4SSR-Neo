@@ -1,4 +1,5 @@
 import base64
+import ipaddress
 import os
 import re
 import sys
@@ -9,14 +10,26 @@ import urllib.request
 SOURCES = {
     "GFWLIST": "https://raw.githubusercontent.com/gfwlist/gfwlist/refs/heads/master/list.txt",
     "CHINA_IP": "https://raw.githubusercontent.com/mayaxcn/china-ip-list/refs/heads/master/chnroute.txt",
-    "CHINA_IPV6": "https://raw.githubusercontent.com/mayaxcn/china-ip-list/refs/heads/master/chnroute_v6.txt"
+    "CHINA_IPV6": "https://raw.githubusercontent.com/mayaxcn/china-ip-list/refs/heads/master/chnroute_v6.txt",
+    "EASYLIST": "https://easylist-downloads.adblockplus.org/easylist.txt",
+    "EASYLIST_CHINA": "https://easylist-downloads.adblockplus.org/easylistchina.txt",
+    "EASYPRIVACY": "https://easylist-downloads.adblockplus.org/easyprivacy.txt",
 }
 
 # 目标文件
 TARGETS = {
     "GFWLIST": "Clash/Core/ProxyGFWlist.list",
     "CHINA_IP": "Clash/Ingredients/China/ChinaIp.list",
-    "CHINA_IPV6": "Clash/Ingredients/China/ChinaIpV6.list"
+    "CHINA_IPV6": "Clash/Ingredients/China/ChinaIpV6.list",
+    "EASYLIST": "Clash/Ingredients/AdBlock/BanEasyList.list",
+    "EASYLIST_CHINA": "Clash/Ingredients/AdBlock/BanEasyListChina.list",
+    "EASYPRIVACY": "Clash/Ingredients/AdBlock/BanEasyPrivacy.list",
+}
+
+ABP_METADATA = {
+    "EASYLIST": ("EasyList", "EasyList列表，只包含ABP中的 EasyList 内容"),
+    "EASYLIST_CHINA": ("EasyListChina", "EasyListChina列表，只包含ABP中的 EasyListChina 内容"),
+    "EASYPRIVACY": ("EasyPrivacy", "EasyPrivacy列表，隐私保护，屏蔽隐私追踪"),
 }
 
 def log(msg):
@@ -71,11 +84,77 @@ def normalize_domain(value):
     value = value.split("/")[0]
     value = value.split(":")[0]
     value = value.lstrip(".")
-    if not value or "*" in value or " " in value:
+    value = value.rstrip(".")
+    if not value or "*" in value or " " in value or "%" in value or "_" in value:
         return None
     if "." not in value:
         return None
+    try:
+        ipaddress.ip_address(value)
+        return None
+    except ValueError:
+        pass
+
+    labels = value.split(".")
+    if any(not label for label in labels):
+        return None
+    for label in labels:
+        if label.startswith("-") or label.endswith("-"):
+            return None
+        if not re.fullmatch(r"[a-zA-Z0-9-]+", label):
+            return None
+
     return value.lower()
+
+def parse_abp_domain_rule(rule):
+    rule = rule.strip()
+    if not rule or rule.startswith(("!", "[", "@@", "/", "#")):
+        return None
+    if "$" in rule:
+        rule = rule.split("$", 1)[0]
+
+    if rule.startswith("||"):
+        domain = normalize_domain(rule[2:].replace("^", ""))
+        if domain:
+            return f"DOMAIN-SUFFIX,{domain}"
+        return None
+
+    if rule.startswith("|"):
+        domain = normalize_domain(rule[1:].replace("^", ""))
+        if domain:
+            return f"DOMAIN,{domain}"
+        return None
+
+    if any(token in rule for token in ("*", "^", "##", "#@#", "#?#", "#$#")):
+        return None
+
+    domain = normalize_domain(rule)
+    if domain:
+        return f"DOMAIN-SUFFIX,{domain}"
+    return None
+
+def process_abp_list(content, source_key):
+    label, description = ABP_METADATA[source_key]
+
+    rules = set()
+    for line in content.splitlines():
+        rule = parse_abp_domain_rule(line)
+        if rule:
+            rules.add(rule)
+
+    output_lines = [
+        "# 广告列表 adblock rules",
+        f"# 内容：{description}",
+        f"# 来源：{SOURCES[source_key]}",
+        f"# 更新：{time.strftime('%Y-%m-%d %H:%M:%S')}",
+        f"# 数量：{len(rules)}条",
+        "",
+        *sorted(rules),
+        "",
+    ]
+
+    log(f"Converted {label} into {len(rules)} Clash rules")
+    return "\n".join(output_lines)
 
 def convert_gfw_rule(line):
     line = line.strip()
@@ -153,7 +232,18 @@ def main():
             f.write(formatted)
         log(f"Updated GFWList with {count} synced rules")
 
-    # 2. 处理 IPV4
+    # 2. 处理 AdBlock 素材
+    for source_key in ("EASYLIST", "EASYLIST_CHINA", "EASYPRIVACY"):
+        raw_adblock = fetch(SOURCES[source_key])
+        if not raw_adblock:
+            continue
+        formatted = process_abp_list(raw_adblock, source_key)
+        ensure_parent_dir(TARGETS[source_key])
+        with open(TARGETS[source_key], "w", encoding="utf-8") as f:
+            f.write(formatted)
+        log(f"Updated {source_key}")
+
+    # 3. 处理 IPV4
     raw_ip = fetch(SOURCES["CHINA_IP"])
     if raw_ip:
         formatted = process_ip(raw_ip, is_v6=False)
@@ -162,7 +252,7 @@ def main():
             f.write(formatted)
         log("Updated China IPv4 List")
 
-    # 3. 处理 IPV6
+    # 4. 处理 IPV6
     raw_ipv6 = fetch(SOURCES["CHINA_IPV6"])
     if raw_ipv6:
         formatted = process_ip(raw_ipv6, is_v6=True)

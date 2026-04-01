@@ -23,8 +23,11 @@ jobs:
       - name: Run Smart Build System
         run: python3 -u build.py
 
+      - name: Validate Config And Rule Lists
+        run: python3 scripts/validate_rules.py
+
       - name: Git Auto Commit & Push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: daily auto sync & build rules"
-          file_pattern: 'Clash/Core/*.list Clash/Ingredients/China/*.list Clash/Outputs/*.list'
+          file_pattern: 'Clash/Core/*.list Clash/Ingredients/China/*.list Clash/Ingredients/AdBlock/*.list Clash/Outputs/*.list'
