@@ -171,7 +171,7 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Config/ACL4SSR_On
 - `DisneyPlus`
 - `HBO`
 - `Amazon`
-- `Spotify`
+- `Music`
 - `OneDrive`
 - `Apple`
 - `Steam`

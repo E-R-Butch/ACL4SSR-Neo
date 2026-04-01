@@ -1,0 +1,35 @@
+# Auto-generated provider file
+# Source: Rules/Ruleset/Music.list
+# Updated: 2026-04-01 16:09:13
+payload:
+  # 内容：Music 海外音乐服务
+  # 数量：23条
+  # Spotify
+  - USER-AGENT,Spotify*
+  - DOMAIN-KEYWORD,-spotify-com
+  - DOMAIN-KEYWORD,spotify.com
+  - DOMAIN-SUFFIX,pscdn.co
+  - DOMAIN-SUFFIX,scdn.co
+  - DOMAIN-SUFFIX,spoti.fi
+  - DOMAIN-SUFFIX,spotify.com
+  - DOMAIN-SUFFIX,spotifycdn.net
+  # JOOX
+  - USER-AGENT,JOOX*
+  - USER-AGENT,WeMusic*
+  - DOMAIN-SUFFIX,joox.com
+  # KKBOX
+  - DOMAIN-SUFFIX,kfs.io
+  - DOMAIN-SUFFIX,kkbox.com
+  - DOMAIN-SUFFIX,kkbox.com.tw
+  # Qobuz
+  - DOMAIN-SUFFIX,qobuz.com
+  # TIDAL
+  - USER-AGENT,TIDAL*
+  - DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com
+  - DOMAIN-SUFFIX,tidal.com
+  - DOMAIN-SUFFIX,tidalhifi.com
+  # YouTube Music
+  - USER-AGENT,*YouTubeMusic*
+  - USER-AGENT,*com.google.ios.youtubemusic*
+  - USER-AGENT,YouTubeMusic*
+  - USER-AGENT,com.google.ios.youtubemusic*
