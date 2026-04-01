@@ -14,7 +14,7 @@
 - 🎬 **全球媒体解锁**：对齐 `RegionRestrictionCheck` 检测颗粒度，支持主流流媒体（Netflix/Disney+/HBO/PrimeVideo）及各国地区媒体独立分流
 - 🛑 **超强去广告**：整合 ACL4SSR + ConnersHua + lhie1 三大规则源，严格去重合并，拦截效果非常好
 - 🎮 **Steam 专项优化**：针对前台社区与后台下载三级分流，强制代理与优先直连动态结合
-- 🗺️ **智能区域路由**：自动按节点名称匹配🇭🇰港 / 🇨🇳台 / 🇸🇬新 / 🇯🇵日 / 🇺🇲美 / 🇰🇷韩，自动测速选最优
+- 🗺️ **智能区域路由**：自动按节点名称匹配🇭🇰港 / 🇨🇳台 / 🇸🇬新 / 🇯🇵日 / 🇺🇸美 / 🇰🇷韩，自动测速选最优
 - ✏️ **自定义直连表**：`CustomDirect.list` 优先级最高，可随时追加你自己的直连域名
 
 ---
@@ -75,7 +75,7 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4
 | 🛑 广告拦截 | select | REJECT | 三方合并超强去广告 |
 | 🎯 全球直连 | select | DIRECT | 国内 / 自定义直连 |
 | 🐟 漏网之鱼 | select | DIRECT | 未匹配规则兜底 |
-| 🇭🇰/🇨🇳/🇸🇬/🇯🇵/🇺🇲/🇰🇷 节点 | url-test | — | 按地区名自动归类的测速组 |
+| 🇭🇰/🇨🇳/🇸🇬/🇯🇵/🇺🇸/🇰🇷 节点 | url-test | — | 按地区名自动归类的测速组 |
 
 ---
 
