@@ -27,8 +27,15 @@ Clash/
 ├── Ingredients/         # 原始“食材”素材库 (AdBlock 去广告源、China 国内特色源等)
 ├── Ruleset/             # 具体应用级别细化分流规则 (AI, Streaming, Media 等 120+ 项)
 ├── Outputs/             # 加工后的成品列表 (如三源深度去重合并的 MergedADBan)
-├── Providers/           # yaml 格式的 Rule Providers 规则库
+├── Providers/           # 为未来 RULE-SET 迁移保留的 provider 资产，当前主链路未接入自动生成
 └── config/              # 点菜单/主配置 (包含 ACL4SSR_Online_Full.ini)
+```
+
+```text
+scripts/
+├── fetch_assets.py      # 同步 GFWList / China IP / AdBlock 上游数据
+├── build_rules.py       # 合并广告规则并输出 MergedADBan.list
+└── validate_rules.py    # 校验主配置引用和 .list 基础格式
 ```
 
 ---

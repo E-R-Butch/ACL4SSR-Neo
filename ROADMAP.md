@@ -23,7 +23,7 @@
   - [x] 中国 IPv4/IPv6 地址库首次手动对齐同步。
   - [x] 每日自动从 [gfwlist/gfwlist](https://github.com/gfwlist/gfwlist) 抓取并转换。
   - [x] 每日自动抓取各大 AdBlock 素材源。
-- [x] **智能构建系统 (`build.py`)**：
+- [x] **智能构建系统 (`scripts/build_rules.py`)**：
   - 开发 Python 构建程序，负责 `Ingredients -> Outputs` 的流水线加工。
   - 实现多源广告列表的去重、冲突检测与合并算法。
 - [x] **代码规范与 CI 校验**：

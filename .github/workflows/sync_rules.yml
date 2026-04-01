@@ -21,7 +21,7 @@ jobs:
         run: python3 scripts/fetch_assets.py
 
       - name: Run Smart Build System
-        run: python3 -u build.py
+        run: python3 -u scripts/build_rules.py
 
       - name: Validate Config And Rule Lists
         run: python3 scripts/validate_rules.py

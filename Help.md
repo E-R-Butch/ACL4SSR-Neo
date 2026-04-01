@@ -45,6 +45,11 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4
 - 构建产物
 - 当前核心产物是 `MergedADBan.list`
 
+`Clash/Providers`
+
+- 为未来 `RULE-SET` 迁移保留的 provider 资产
+- 当前主工作流没有自动生成或自动校验这一层
+
 `Clash/config`
 
 - 订阅转换用的主配置
@@ -52,7 +57,8 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4
 
 `scripts`
 
-- 自动同步、校验脚本
+- 自动同步、构建、校验脚本
+- 当前主要包括 `fetch_assets.py`、`build_rules.py`、`validate_rules.py`
 
 
 ## 3. 当前自动化状态
