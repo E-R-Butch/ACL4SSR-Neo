@@ -1,7 +1,5 @@
 # 内容：中国IPv6地址段
-# 来源：https://github.com/mayaxcn/china-ip-list
-# 更新：2026-03-31 11:24:25
-# 数量：    2048条
+# 更新：2026-04-01 02:29:40
 
 IP-CIDR6,2001:250::/35,no-resolve
 IP-CIDR6,2001:250:2000::/35,no-resolve
@@ -285,7 +283,6 @@ IP-CIDR6,2400:9620::/32,no-resolve
 IP-CIDR6,2400:98c0::/32,no-resolve
 IP-CIDR6,2400:9960::/32,no-resolve
 IP-CIDR6,2400:99e0::/32,no-resolve
-
 IP-CIDR6,2400:9a00::/32,no-resolve
 IP-CIDR6,2400:9ca0::/32,no-resolve
 IP-CIDR6,2400:9e00::/32,no-resolve
@@ -587,7 +584,6 @@ IP-CIDR6,2401:b400::/32,no-resolve
 IP-CIDR6,2401:b480::/32,no-resolve
 IP-CIDR6,2401:b4c0::/32,no-resolve
 IP-CIDR6,2401:b4e0::/32,no-resolve
-
 IP-CIDR6,2401:b540::/32,no-resolve
 IP-CIDR6,2401:b580::/32,no-resolve
 IP-CIDR6,2401:b5a0::/32,no-resolve
@@ -888,7 +884,6 @@ IP-CIDR6,2402:e0c0::/32,no-resolve
 IP-CIDR6,2402:e140::/32,no-resolve
 IP-CIDR6,2402:e2c0::/32,no-resolve
 IP-CIDR6,2402:e3c0::/32,no-resolve
-
 IP-CIDR6,2402:e480::/32,no-resolve
 IP-CIDR6,2402:e540::/32,no-resolve
 IP-CIDR6,2402:e680::/32,no-resolve
@@ -1189,7 +1184,6 @@ IP-CIDR6,2403:e580::/32,no-resolve
 IP-CIDR6,2403:e640::/32,no-resolve
 IP-CIDR6,2403:e680::/32,no-resolve
 IP-CIDR6,2403:e700::/32,no-resolve
-
 IP-CIDR6,2403:e780::/32,no-resolve
 IP-CIDR6,2403:e7c0::/32,no-resolve
 IP-CIDR6,2403:e880::/32,no-resolve
@@ -1492,7 +1486,6 @@ IP-CIDR6,2405:7480::/32,no-resolve
 IP-CIDR6,2405:7580::/32,no-resolve
 IP-CIDR6,2405:7680::/32,no-resolve
 IP-CIDR6,2405:7780::/32,no-resolve
-
 IP-CIDR6,2405:7880::/32,no-resolve
 IP-CIDR6,2405:78c0::/32,no-resolve
 IP-CIDR6,2405:7980::/32,no-resolve
@@ -1794,7 +1787,6 @@ IP-CIDR6,2406:b080::/32,no-resolve
 IP-CIDR6,2406:b640::/32,no-resolve
 IP-CIDR6,2406:b880::/32,no-resolve
 IP-CIDR6,2406:b980::/32,no-resolve
-
 IP-CIDR6,2406:ba80::/32,no-resolve
 IP-CIDR6,2406:bb80::/32,no-resolve
 IP-CIDR6,2406:bc80::/32,no-resolve
@@ -2050,4 +2042,3 @@ IP-CIDR6,240e:2000::/19,no-resolve
 IP-CIDR6,240f:4000::/24,no-resolve
 IP-CIDR6,240f:8000::/24,no-resolve
 IP-CIDR6,240f:c000::/24,no-resolve
-
