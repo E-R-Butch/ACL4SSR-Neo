@@ -8,11 +8,19 @@
 ​	
 	**版权所有，所有内容全部一个个字码出来的，转载必须说明来源**
 
-​	**ACL4SSR在线Clash等规则订阅转换**：https://acl4ssr.netlify.com
+​	**在线订阅转换**：建议使用兼容 `subconverter` 的服务，或直接使用本项目提供的远程配置文件
 
 ​	**项目镜像**：https://cdn.jsdelivr.net/gh/E-R-Butch/ACL4SSR-Neo@latest/
 
 ​	**项目地址**：https://github.com/E-R-Butch/ACL4SSR-Neo
+
+​	**当前主配置**：https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4SSR_Online_Full.ini
+
+​	**当前目录结构说明**：
+
+​	`Clash/Core` 放核心代理/直连碎片，`Clash/Ingredients` 放上游原料，`Clash/Ruleset` 放服务级规则，`Clash/Outputs` 放构建产物。
+
+​	项目已完成第一阶段自动化：`GFWList`、`China IPv4/IPv6`、`EasyList / EasyListChina / EasyPrivacy` 会自动同步，广告产物会自动合并并做基础校验。
 
 
 
@@ -114,7 +122,10 @@ AdGuard ：域名屏蔽类型+网址屏蔽+页面样式
 | --------------------- | :------- | ------------------------------------------------------------ |
 | BanAD.list            | 广告联盟 | 只包含常见广告关键字、广告联盟。无副作用，放心使用           |
 | BanProgramAD.list     | 应用广告 | 常用应用的去广告，比如网站、视频等<br/>可能有轻微副作用，可放心使用。<br/>（如果网站功能和广告冲突，会删掉去广告规则） |
-| BanEasyListChina.list | 广告扩展 | AdblockPlus中的中国所有的屏蔽域名                            |
+| BanEasyList.list      | 广告扩展 | EasyList 自动同步转换后的基础广告域名列表                    |
+| BanEasyListChina.list | 广告扩展 | EasyListChina 自动同步转换后的中国广告域名列表               |
+| BanEasyPrivacy.list   | 隐私追踪 | EasyPrivacy 自动同步转换后的隐私/追踪拦截列表                |
+| MergedADBan.list      | 合并产物 | 由构建脚本自动合并并去重后的总广告拦截列表，主配置默认使用它 |
 
 
 
@@ -154,6 +165,8 @@ AdGuard ：域名屏蔽类型+网址屏蔽+页面样式
 ​	一般来说选择其中一家的足够，觉得不够的话，最多合并2家。
 
 ​	但是非常不推荐全部加上，因为重复度过高，误拦也比较严重
+
+​	对 `ACL4SSR-Neo` 当前仓库来说，日常使用优先推荐直接使用 `MergedADBan.list`，因为它已经由项目自动同步和自动构建维护。
 
 
 
@@ -223,7 +236,7 @@ AdGuard ：域名屏蔽类型+网址屏蔽+页面样式
 | LocalAreaNetwork.list | 规则碎片-直连 | 本地地址和路由器直连域名啥的                                 |
 | ChinaDomain.list      | 规则碎片-直连 | 国内常见域名、直连CDN等。（很全，常用网址都有）              |
 | ChinaCompanyIp.list   | 规则碎片-直连 | 国内BAT公司及云服务厂商的IP段。所有在该云服务上的网站都可以直连。比如你网站在阿里云香港都可以直连。 |
-| ChinaIp.list          | 规则碎片-直连 | IPIP的国内地址段，比GeoIp准确度高很多。<br/>但因为是按条排列，查找效率很低<br/>不推荐使用，电脑性能好，可以引入 |
+| ChinaIp.list          | 规则碎片-直连 | 国内 IPv4 地址段，项目当前已自动同步并在主配置中默认启用     |
 | Download.list         | 规则碎片-直连 | 一些下载用的域名                                             |
 | GoogleCN.list         | 规则碎片-直连 | 谷歌在中国能直连的网址列表                                   |
 
@@ -302,14 +315,14 @@ AdGuard ：域名屏蔽类型+网址屏蔽+页面样式
 
 **介绍：**
 
-​	如果你所在地区，DNS劫持不严重的话或者使用不频繁的话，轻量级ProxyLite列表足够
-​	如果追求列表十分全，可以使用ProxyGFWlist。
-​	ProxyGFWlist包含全部的ProxyLite列表
-​	ProxyGFWlist = GFWlist + ProxyLite	
+​	当前项目主维护的是 `ProxyGFWlist.list`。
+
+​	它由仓库自动同步 `gfwlist/gfwlist`，并保留仓库里手工维护的代理规则头部。
+
+​	如果你想直接跟随项目当前实际工作流，优先使用 `ProxyGFWlist.list` 即可。
 
 | 文件              | 类型          | 解释                                             |
 | ----------------- | ------------- | ------------------------------------------------ |
-| ProxyLite.list    | 规则碎片-代理 | 比较精简的代理列表，包含常用的，以及被污染的域名 |
 | ProxyGFWlist.list | 规则碎片-代理 | GFW的全量列表                                    |
 | Telegram.list     | 代理          | Telegram域名和IP段                               |
 
@@ -353,7 +366,7 @@ AdGuard ：域名屏蔽类型+网址屏蔽+页面样式
 
 **轻度使用：**
 
-​	方案1：ProxyLite.list（acl4ssr） + Telegram.list + 兜底代理
+​	方案1：ProxyGFWlist.list（acl4ssr-neo） + Telegram.list + 兜底代理
 
 ​	方案2：Proxy.list （lhie1）+ Telegram.list + GlobalTV.list （lhie1） + 兜底代理
 
@@ -475,8 +488,6 @@ AdGuard ：域名屏蔽类型+网址屏蔽+页面样式
 
 **3.0 一般代理域名**（一般要加）
 
-​	ProxyLite.list( acl4ssr 10分推荐)
-
 ​	ProxyGFWlist.list( acl4ssr 7分推荐)
 
 
@@ -517,11 +528,11 @@ AdGuard ：域名屏蔽类型+网址屏蔽+页面样式
 
 ​	GitHub举例：
 
-​		打开https://github.com/E-R-Butch/ACL4SSR-Neo/blob/master/Clash/ProxyLite.list
+​		打开https://github.com/E-R-Butch/ACL4SSR-Neo/blob/master/Clash/Core/ProxyGFWlist.list
 
 ​		看到规则列表右上角有几个小按钮，点击Raw，会转跳到一个新网址(raw.githubusercontent.com)。那个网址就是你真正的网址
 
-https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/ProxyLite.list
+https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Core/ProxyGFWlist.list
 
 
 
@@ -548,28 +559,28 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/ProxyLite.l
 
 ;去广告：支持
 ;自动测速：支持
-;微软分流：不支持
-;苹果分流：不支持
-;增强中国IP段：不支持
-;增强国外GFW：不支持
+;微软分流：支持
+;苹果分流：支持
+;增强中国IP段：支持
+;增强国外GFW：支持
 
-surge_ruleset=🎯 全球直连,rules/ACL4SSR/Clash/LocalAreaNetwork.list
-surge_ruleset=🛑 全球拦截,rules/ACL4SSR/Clash/BanAD.list
-surge_ruleset=🛑 全球拦截,rules/ACL4SSR/Clash/BanProgramAD.list
-surge_ruleset=🎯 全球直连,rules/ACL4SSR/Clash/GoogleCN.list
-surge_ruleset=🚀 节点选择,rules/ConnersHua/Surge/Ruleset/GlobalMedia.list
-surge_ruleset=🚀 节点选择,rules/ConnersHua/Surge/Ruleset/Telegram.list
-surge_ruleset=🚀 节点选择,rules/ACL4SSR/Clash/ProxyLite.list
-surge_ruleset=🎯 全球直连,rules/ACL4SSR/Clash/ChinaDomain.list
-surge_ruleset=🎯 全球直连,rules/ACL4SSR/Clash/ChinaCompanyIp.list
+surge_ruleset=🛑 广告拦截,rules/ACL4SSR/Clash/Outputs/MergedADBan.list
+surge_ruleset=📲 电报消息,rules/ACL4SSR/Clash/Ruleset/Telegram.list
+surge_ruleset=🎯 全球直连,rules/ACL4SSR/Clash/Core/LocalAreaNetwork.list
+surge_ruleset=🎯 全球直连,rules/ACL4SSR/Clash/Ingredients/China/GoogleCN.list
+surge_ruleset=🚀 节点选择,rules/ACL4SSR/Clash/Core/ProxyGFWlist.list
+surge_ruleset=🎯 全球直连,rules/ACL4SSR/Clash/Ingredients/China/ChinaDomain.list
+surge_ruleset=🎯 全球直连,rules/ACL4SSR/Clash/Ingredients/China/ChinaCompanyIp.list
+surge_ruleset=🎯 全球直连,rules/ACL4SSR/Clash/Ingredients/China/ChinaIp.list
 surge_ruleset=🎯 全球直连,[]GEOIP,CN
 surge_ruleset=🐟 漏网之鱼,[]FINAL
 
 custom_proxy_group=🚀 节点选择`select`[]♻️ 自动选择`[]🎯 全球直连`.*
 custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`300
 custom_proxy_group=🎯 全球直连`select`[]DIRECT
-custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT
-custom_proxy_group=🐟 漏网之鱼`select`[]🚀 节点选择`[]🎯 全球直连`[]♻️ 自动选择`.*
+custom_proxy_group=🛑 广告拦截`select`[]REJECT`[]DIRECT
+custom_proxy_group=📲 电报消息`select`[]🚀 节点选择`[]🎯 全球直连`.*
+custom_proxy_group=🐟 漏网之鱼`select`[]DIRECT`[]🚀 节点选择`[]♻️ 自动选择`.*
 
 enable_rule_generator=true
 overwrite_original_rules=true
@@ -586,33 +597,30 @@ overwrite_original_rules=true
 ;自动测速：支持
 ;微软分流：支持
 ;苹果分流：支持
-;增强中国IP段：不支持
-;增强国外GFW：不支持
+;增强中国IP段：支持
+;增强国外GFW：支持
 
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/LocalAreaNetwork.list
-surge_ruleset=🛑 全球拦截,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/BanAD.list
-surge_ruleset=🍃 应用净化,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/BanProgramAD.list
-surge_ruleset=Ⓜ️ 微软服务,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Microsoft.list
-surge_ruleset=🍎 苹果服务,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Apple.list
-surge_ruleset=🌍 国外媒体,rules/ConnersHua/Surge/Ruleset/GlobalMedia.list
-surge_ruleset=📲 电报信息,rules/ConnersHua/Surge/Ruleset/Telegram.list
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/GoogleCN.list
-surge_ruleset=🚀 节点选择,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/ProxyLite.list
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/ChinaDomain.list
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/ChinaCompanyIp.list
+surge_ruleset=🛑 广告拦截,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Outputs/MergedADBan.list
+surge_ruleset=📲 电报消息,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ruleset/Telegram.list
+surge_ruleset=Ⓜ️ 微软云盘,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ruleset/OneDrive.list
+surge_ruleset=🍎 苹果服务,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ruleset/Apple.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Core/LocalAreaNetwork.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ingredients/China/GoogleCN.list
+surge_ruleset=🚀 节点选择,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Core/ProxyGFWlist.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ingredients/China/ChinaDomain.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ingredients/China/ChinaCompanyIp.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ingredients/China/ChinaIp.list
 surge_ruleset=🎯 全球直连,[]GEOIP,CN
 surge_ruleset=🐟 漏网之鱼,[]FINAL
 
 custom_proxy_group=🚀 节点选择`select`[]♻️ 自动选择`[]🎯 全球直连`.*
 custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`300
-custom_proxy_group=🌍 国外媒体`select`[]🚀 节点选择`[]♻️ 自动选择`[]🎯 全球直连`.*
-custom_proxy_group=📲 电报信息`select`[]🚀 节点选择`[]🎯 全球直连`.*
-custom_proxy_group=Ⓜ️ 微软服务`select`[]🎯 全球直连`[]🚀 节点选择`.*
+custom_proxy_group=📲 电报消息`select`[]🚀 节点选择`[]🎯 全球直连`.*
+custom_proxy_group=Ⓜ️ 微软云盘`select`[]🎯 全球直连`[]🚀 节点选择`.*
 custom_proxy_group=🍎 苹果服务`select`[]🚀 节点选择`[]🎯 全球直连`.*
 custom_proxy_group=🎯 全球直连`select`[]DIRECT
-custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT
-custom_proxy_group=🍃 应用净化`select`[]REJECT`[]DIRECT
-custom_proxy_group=🐟 漏网之鱼`select`[]🚀 节点选择`[]🎯 全球直连`[]♻️ 自动选择`.*
+custom_proxy_group=🛑 广告拦截`select`[]REJECT`[]DIRECT
+custom_proxy_group=🐟 漏网之鱼`select`[]DIRECT`[]🚀 节点选择`[]♻️ 自动选择`.*
 
 enable_rule_generator=true
 overwrite_original_rules=true
@@ -668,7 +676,7 @@ overwrite_original_rules=true
 
 ​	一般来说不超过1万条就行。
 
-​	如果用在线转换的话，最好少点，要不文件过大，下不下来容易导致超时。
+​	如果用在线转换的话，规则过多时更依赖转换服务质量和客户端拉取能力；本项目当前完整广告合并产物已经远超 1 万条，这是正常现象。
 
 ​	避免相同种类用多份，比如有了GEOIP,CN 还要加 ChinaIp
 
