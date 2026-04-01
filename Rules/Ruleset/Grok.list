@@ -1,0 +1,8 @@
+# 内容：Grok xAI
+# 数量：5条
+
+DOMAIN,grok.com
+DOMAIN-SUFFIX,grok.com
+DOMAIN,x.ai
+DOMAIN-SUFFIX,x.ai
+DOMAIN-KEYWORD,grok

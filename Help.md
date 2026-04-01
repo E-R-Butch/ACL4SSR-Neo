@@ -165,6 +165,7 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Config/ACL4SSR_On
 - `OpenAI`
 - `Claude`
 - `Gemini`
+- `Grok`
 - `Telegram`
 - `YouTube`
 - `Netflix`

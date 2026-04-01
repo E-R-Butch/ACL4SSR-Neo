@@ -74,6 +74,7 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Config/ACL4SSR_On
 | 🤖 OpenAI | select | 自动/手动 | ChatGPT 相关服务，支持全节点自动优选 |
 | 🎭 Claude | select | 自动/手动 | Anthropic/Claude 服务，**强制禁直连**防封号 |
 | 🧠 Gemini | select | 自动/手动 | Google Gemini AI 相关服务 |
+| 🚀 Grok | select | 自动/手动 | xAI Grok 相关服务，独立分组 |
 | 🎥 奈飞视频 | select | 自动过滤 | 自动筛选解锁节点，独立分组 |
 | 🎬 迪士尼+ | select | 节点选择 | Disney+ 专用分组 |
 | 🎥 HBO Max | select | 节点选择 | HBO Max / Max |
