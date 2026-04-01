@@ -1,686 +1,270 @@
-# 1. 前言
+# ACL4SSR-Neo 使用说明
 
-​	本文主要是教你怎么定制一下自己的ACL或者clash规则。
+本文只说明 `ACL4SSR-Neo` 当前仓库的实际用法、目录结构和维护方式。
 
-​	前面稍微科普一下去广告的分类、不作为重点。
+项目地址：
+https://github.com/E-R-Butch/ACL4SSR-Neo
 
-​	本文不能顾及全网的规则，仅做一般普及，需要有点基础，非小白科普文章
-​	
-	**版权所有，所有内容全部一个个字码出来的，转载必须说明来源**
+主配置：
+https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4SSR_Online_Full.ini
 
-​	**在线订阅转换**：建议使用兼容 `subconverter` 的服务，或直接使用本项目提供的远程配置文件
 
-​	**项目镜像**：https://cdn.jsdelivr.net/gh/E-R-Butch/ACL4SSR-Neo@latest/
+## 1. 项目定位
 
-​	**项目地址**：https://github.com/E-R-Butch/ACL4SSR-Neo
+`ACL4SSR-Neo` 现在是一个面向 `Clash / Mihomo` 生态的规则仓库。
 
-​	**当前主配置**：https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4SSR_Online_Full.ini
+仓库当前重点是：
 
-​	**当前目录结构说明**：
+- 提供可直接用于订阅转换的远程配置
+- 维护核心代理、直连、服务分流规则
+- 自动同步上游基础数据
+- 自动合并广告规则并输出成品列表
 
-​	`Clash/Core` 放核心代理/直连碎片，`Clash/Ingredients` 放上游原料，`Clash/Ruleset` 放服务级规则，`Clash/Outputs` 放构建产物。
+本文不再讨论早期已经放弃的 `ACL` 兼容路线，也不再把旧项目历史作为主要使用说明。
 
-​	项目已完成第一阶段自动化：`GFWList`、`China IPv4/IPv6`、`EasyList / EasyListChina / EasyPrivacy` 会自动同步，广告产物会自动合并并做基础校验。
 
+## 2. 当前目录结构
 
+`Clash/Core`
 
-## 1.0 去广告的种类
+- 核心直连和代理碎片
+- 例如 `ProxyGFWlist.list`、`CustomDirect.list`、`LocalAreaNetwork.list`
 
-### 域名屏蔽类型
+`Clash/Ingredients`
 
-​	核心思路是让带有广告内容的域名，直接屏蔽，不让访问。
+- 上游原料和基础数据
+- 当前主要包括中国直连相关地址段、域名和广告原料
 
-​	主要有去广告hosts、去广告的DNS、SSR的ACL、PAC、Clash和Surge等方式。
+`Clash/Ruleset`
 
-​	**优点：** 效率高、速度快、对设备支持度非常广
+- 面向具体服务的分流规则
+- 例如 `OpenAI.list`、`Claude.list`、`Gemini.list`、`Telegram.list`、`Netflix.list`
 
-​	**缺点：**  屏蔽效率不高，遇见广告内容和正常内容共用一个域名的没辙
+`Clash/Outputs`
 
+- 构建产物
+- 当前核心产物是 `MergedADBan.list`
 
+`Clash/config`
 
-### 网址屏蔽类型
+- 订阅转换用的主配置
+- 当前主入口是 `ACL4SSR_Online_Full.ini`
 
-​	核心思路是解析访问网址，将是广告网址进行屏蔽。网址屏蔽一般也包含域名屏蔽。
+`scripts`
 
-​	只要有ABP、AdGuard 。
+- 自动同步、校验脚本
 
-​	**优点：** 屏蔽力度细、可以较好的区分同一域名的广告链接和正常链接，防止误屏蔽
 
-​	**缺点：** 效率一般，对HTTP请求过滤比较好，HTTPS则需要配合中间人攻击(MITM)解密流量才能进行破解
+## 3. 当前自动化状态
 
+项目第一阶段自动化已经完成。
 
+当前会自动同步：
 
-### 页面样式屏蔽
+- `GFWList`
+- `China IPv4`
+- `China IPv6`
+- `EasyList`
+- `EasyListChina`
+- `EasyPrivacy`
 
-​	核心思路是我屏蔽不了你的广告网络请求，但是我能屏蔽你，不让你露出，眼不见为净
+当前会自动构建：
 
-​	可以屏蔽页面元素、修改请求的HTML内容
+- `Clash/Outputs/MergedADBan.list`
 
-​	有ABP、浏览器去广告插件、各种修改去广告的APP
+当前会自动校验：
 
-​	**优点：** 屏蔽力度非常细、防止误屏蔽
+- 主配置里的规则组引用是否一致
+- `.list` 文件是否为空
+- `.list` 文件是否满足基础格式要求
 
-​	**缺点：** 需要软件支持，入侵比较大
 
+## 4. 当前推荐使用方式
 
+最推荐的使用方式，是把主配置地址填入支持 `subconverter` 语法的订阅转换服务，然后输入你自己的原始节点订阅。
 
-## 1.2 客户端
+主配置地址：
 
-hosts：域名屏蔽
+```text
+https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4SSR_Online_Full.ini
+```
 
-DNS：域名屏蔽
+如果你的输入源本身已经是完整的 `Mihomo YAML`，那它不属于“原始节点订阅”，不应该再拿来做二次订阅转换。
 
-SSR的ACL：域名屏蔽
 
-PAC：域名屏蔽类型
+## 5. 主要规则说明
 
-Clash规则：域名屏蔽
+### 5.1 代理
 
-Surge：域名屏蔽类型+网址屏蔽
+当前主维护的核心代理列表是：
 
-ABP：域名屏蔽类型+网址屏蔽+页面样式
+- `Clash/Core/ProxyGFWlist.list`
 
-AdGuard ：域名屏蔽类型+网址屏蔽+页面样式
+它的组成方式是：
 
+- 仓库里手工维护的头部规则
+- 自动同步的官方 `gfwlist`
 
+如果你要跟随仓库当前主工作流，优先使用 `ProxyGFWlist.list`，不再以 `ProxyLite` 作为主推荐入口。
 
-# 2. 规则分类
 
-​	定制规则，其实就将流量合理的分配一下，该代理的代理、该直连的直连、改屏蔽的屏蔽。
+### 5.2 直连
 
-​	规则追求的是精简高效。
+当前主配置默认会使用这些直连相关规则：
 
+- `Clash/Core/LocalAreaNetwork.list`
+- `Clash/Core/UnBan.list`
+- `Clash/Core/Download.list`
+- `Clash/Ingredients/China/ChinaDomain.list`
+- `Clash/Ingredients/China/ChinaCompanyIp.list`
+- `Clash/Ingredients/China/ChinaIp.list`
+- `Clash/Ingredients/China/ChinaIpV6.list`
+- `Clash/Ingredients/China/GoogleCN.list`
+- `GEOIP,CN`
 
+其中：
 
-## 2.0 市面上常见碎片集
+- `ChinaIp.list` 和 `ChinaIpV6.list` 当前都已接入主配置
+- `ChinaIp.list` 现在不是“仅供高级用户手动选用”，而是主配置默认启用的一部分
 
-**ACL4SSR**
 
-​	https://github.com/E-R-Butch/ACL4SSR-Neo/tree/master/Clash
+### 5.3 广告拦截
 
-​	subconverter\rules\ACL4SSR\Clash
+当前广告链路分成两层：
 
-**lhie1**
+原料层：
 
-​	https://github.com/lhie1/Rules/blob/master/Surge/Surge%203/Provider/
+- `BanAD.list`
+- `BanProgramAD.list`
+- `BanEasyList.list`
+- `BanEasyListChina.list`
+- `BanEasyPrivacy.list`
 
-**ConnersHua**
+产物层：
 
-​	https://github.com/ConnersHua/Profiles/tree/master/Surge/Ruleset
+- `MergedADBan.list`
 
-​	subconverter\rules\ConnersHua\Surge\Ruleset
+日常使用建议：
 
+- 优先直接使用 `MergedADBan.list`
+- 不建议在主配置里再手动叠加多份同类广告规则，否则重复度和误拦概率都会明显上升
 
 
-## 2.2 去广告
+### 5.4 服务分流
 
-### ACL4SSR去广告碎片
+当前仓库已经明确维护这些独立服务分流：
 
-**介绍：**将去广告分的比较细，每一块都有说明，定制化比较强。	
+- `OpenAI`
+- `Claude`
+- `Gemini`
+- `Telegram`
+- `YouTube`
+- `Netflix`
+- `DisneyPlus`
+- `HBO`
+- `Amazon`
+- `Spotify`
+- `OneDrive`
+- `Apple`
+- `Steam`
 
-| 文件                  | 类型     | 解释                                                         |
-| --------------------- | :------- | ------------------------------------------------------------ |
-| BanAD.list            | 广告联盟 | 只包含常见广告关键字、广告联盟。无副作用，放心使用           |
-| BanProgramAD.list     | 应用广告 | 常用应用的去广告，比如网站、视频等<br/>可能有轻微副作用，可放心使用。<br/>（如果网站功能和广告冲突，会删掉去广告规则） |
-| BanEasyList.list      | 广告扩展 | EasyList 自动同步转换后的基础广告域名列表                    |
-| BanEasyListChina.list | 广告扩展 | EasyListChina 自动同步转换后的中国广告域名列表               |
-| BanEasyPrivacy.list   | 隐私追踪 | EasyPrivacy 自动同步转换后的隐私/追踪拦截列表                |
-| MergedADBan.list      | 合并产物 | 由构建脚本自动合并并去重后的总广告拦截列表，主配置默认使用它 |
+如果某个服务已经有独立规则，建议优先放在普通代理和普通直连规则之前。
 
 
+## 6. 当前区域路由
 
-### lhie1去广告碎片
+当前主配置采用 6 组地区节点布局：
 
-**介绍：**
+- `🇭🇰 香港节点`
+- `🇨🇳 台湾节点`
+- `🇸🇬 狮城节点`
+- `🇯🇵 日本节点`
+- `🇺🇸 美国节点`
+- `🇰🇷 韩国节点`
 
-​	将各种去广告都放在一起了。
+这些地区组依赖节点名称正则匹配。
 
-​	除了视频是分块有介绍的，剩下的都合并到一个列表里了。
+如果你的节点名称里没有地区关键词，即使规则写对了，也不会自动进入对应地区组。
 
-| 文件        | 类型 | 解释                             |
-| ----------- | :--- | -------------------------------- |
-| Reject.list |      | 视频广告、网站广告、垃圾网站广告 |
 
+## 7. 如何找规则文件
 
+以 `ProxyGFWlist.list` 为例：
 
-### ConnersHua去广告碎片
+GitHub 页面：
 
-**介绍：**
+```text
+https://github.com/E-R-Butch/ACL4SSR-Neo/blob/master/Clash/Core/ProxyGFWlist.list
+```
 
-​	分门别类，注释的还是很清楚的
+Raw 地址：
 
-​	运营商劫持是亮点
-
-| 文件             | 类型 | 解释                   |
-| ---------------- | :--- | ---------------------- |
-| Advertising.list |      | 少量广告联盟、应用广告 |
-| Hijacking.list   |      | 运营商劫持、恶意网站   |
-
-
-
-### 使用建议
-
-​	3家去广告总体来说差不多，选择一家足够。日常使用区别不大
-
-​	一般来说选择其中一家的足够，觉得不够的话，最多合并2家。
-
-​	但是非常不推荐全部加上，因为重复度过高，误拦也比较严重
-
-​	对 `ACL4SSR-Neo` 当前仓库来说，日常使用优先推荐直接使用 `MergedADBan.list`，因为它已经由项目自动同步和自动构建维护。
-
-
-
-**轻度使用：**
-
-​	会有一些广告拦截不了，但是不会影响正常使用
-
-电脑上使用
-
-​	BanAD.list+BanProgramAD.list+浏览器ABP去广告扩展
-
-手机、路由
-
-​	BanAD.list+BanProgramAD.list+BanEasyListChina.list
-
-
-
-**中度使用：**
-
-​	方案1：BanAD.list+BanProgramAD.list+BanEasyListChina.list+Hijacking.list
-
-​	方案2：Reject.list + Hijacking.list
-
-​	方案3：Advertising.list + Hijacking.list
-
-
-
-**重度使用：**
-
-​	方案1：BanAD.list+BanProgramAD.list+BanEasyListChina.list+Advertising.list + Hijacking.list
-
-​	方案2：Reject.list+Advertising.list + Hijacking.list
-
-
-
-**极限玩家：**
-
-​	全都加上
-
-
-
-**去广告DNS**
-
-
-​	https://www.onedns.net/personal
-
-​	**117.50.11.11 52.80.66.66**
-
-
-
-## 2.3 直连
-
-​	主要分为这几类：本地/局域网地址、中国本地IP和域名、国外能直连的IP和域名
-
-### ACL4SSR的直连碎片
-
-说明
-
-​	分的很细，直连域名能比别家全一些，
-
-​	亮点1：ChinaCompanyIp.list。一般在BAT云服务器上的网站都会直连，比如香港的
-
-​	亮点2：GoogleCN.list。谷歌在中国能直连的域名，可以修复一些谷歌服务不正常。
-
-| 文件                  | 类型          | 解释                                                         |
-| --------------------- | ------------- | ------------------------------------------------------------ |
-| LocalAreaNetwork.list | 规则碎片-直连 | 本地地址和路由器直连域名啥的                                 |
-| ChinaDomain.list      | 规则碎片-直连 | 国内常见域名、直连CDN等。（很全，常用网址都有）              |
-| ChinaCompanyIp.list   | 规则碎片-直连 | 国内BAT公司及云服务厂商的IP段。所有在该云服务上的网站都可以直连。比如你网站在阿里云香港都可以直连。 |
-| ChinaIp.list          | 规则碎片-直连 | 国内 IPv4 地址段，项目当前已自动同步并在主配置中默认启用     |
-| Download.list         | 规则碎片-直连 | 一些下载用的域名                                             |
-| GoogleCN.list         | 规则碎片-直连 | 谷歌在中国能直连的网址列表                                   |
-
-
-
-### lhie1直连碎片
-
-**介绍：**
-
-​	比较全。
-
-​	亮点是有特殊直连域名 需要放拦截列表前面
-
-| 文件          | 类型 | 解释                                            |
-| ------------- | :--- | ----------------------------------------------- |
-| Domestic.list | 直连 | 常见直连域名                                    |
-| AsianTV.list  | 直连 | 中国几个常见的视频网址                          |
-| Special.list  | 直连 | 需要特殊放行的几个域名<br/>一般放在拦截列表前面 |
-
-
-
-### ConnersHua直连碎片
-
-**介绍：**
-
-​	分门别类，注释的还是很清楚的
-
-​	亮点是有特殊直连域名 需要放拦截列表前面
-
-| 文件         | 类型 | 解释                                            |
-| ------------ | :--- | ----------------------------------------------- |
-| China.list   | 直连 | 常见直连域名                                    |
-| Unbreak.list | 直连 | 需要特殊放行的几个域名<br/>一般放在拦截列表前面 |
-
-
-
-###  使用建议
-
-​	一定注意好排放顺序，重复度很高的类型碎片，选择一个即可。
-
-​	轻度使用的，没必要放太多，最后可以交给GEO IP 兜底即可
-
-​	本地局域网放前面-》特殊直连域名(主要防止跟拦截冲突，提前放行)-》普通直连域名-》IP段或者GEO
-
-
-
-**轻度使用：**
-
-​	LocalAreaNetwork.list + ChinaDomain.list + ChinaCompanyIp.list + GEO CN
-
-
-
-**中度使用：**
-
-​	 LocalAreaNetwork.list + GoogleCN.list + Unbreak.list +
-
-​	Special.list + ChinaDomain.list + ChinaCompanyIp.list + GEO CN
-
-
-
-**究极使用：**
-
-​	LocalAreaNetwork.list + GoogleCN.list + Unbreak.list +
-
-​	Special.list + ChinaDomain.list + ChinaCompanyIp.list + ChinaIp.list + GEO CN
-
-
-
-
-## 2.4 代理
-
-​	主要分为这几类：本地/局域网地址、中国本地IP和域名、国外能直连的IP和域名
-
-### ACL4SSR代理碎片
-
-
-**介绍：**
-
-​	当前项目主维护的是 `ProxyGFWlist.list`。
-
-​	它由仓库自动同步 `gfwlist/gfwlist`，并保留仓库里手工维护的代理规则头部。
-
-​	如果你想直接跟随项目当前实际工作流，优先使用 `ProxyGFWlist.list` 即可。
-
-| 文件              | 类型          | 解释                                             |
-| ----------------- | ------------- | ------------------------------------------------ |
-| ProxyGFWlist.list | 规则碎片-代理 | GFW的全量列表                                    |
-| Telegram.list     | 代理          | Telegram域名和IP段                               |
-
-
-
-### lhie1代理碎片
-
-**介绍：**
-
-​	代理规则比较全，另外还有国外视频、Telegram
-
-| 文件          | 类型 | 解释                                             |
-| ------------- | :--- | ------------------------------------------------ |
-| Proxy.list    | 代理 | 比较精简的代理列表，包含常用的，以及被污染的域名 |
-| GlobalTV.list | 代理 | 国外常见视频列表                                 |
-| Telegram.list | 代理 | Telegram域名和IP段                               |
-
-
-
-### ConnersHua的代理碎片
-
-**介绍：**
-
-​	代理规则比较全，另外还有国外视频、Telegram
-
-| 文件              | 类型 | 解释                                             |
-| ----------------- | :--- | ------------------------------------------------ |
-| Global.list       | 代理 | 比较精简的代理列表，包含常用的，以及被污染的域名 |
-| ForeignMedia.list | 代理 | 国外常见视频列表                                 |
-| Telegram.list     | 代理 | Telegram域名和IP段                               |
-
- 
-
-### 使用建议
-
-​	一般使用轻量级的+几个你常用的代理软件的碎片放前面就行 + 兜底代理就行。
-
-​	追求全面的可以把GEW列表加上
-
-
-
-**轻度使用：**
-
-​	方案1：ProxyGFWlist.list（acl4ssr-neo） + Telegram.list + 兜底代理
-
-​	方案2：Proxy.list （lhie1）+ Telegram.list + GlobalTV.list （lhie1） + 兜底代理
-
-​	方案3：Global.list （ConnersHua）+ Telegram.list + ForeignMedia.list（ConnersHua） + 兜底代理
-
-
-
-**重度使用：**
-
-​	方案1：ProxyGFWlist.list（acl4ssr） + Telegram.list  + 兜底代理
-
-​	方案2：ProxyGFWlist.list （acl4ssr）+ Telegram.list + GlobalTV.list （lhie1） + 兜底代理
-
-​	方案3：ProxyGFWlist.list （acl4ssr）+ Telegram.list + ForeignMedia.list（ConnersHua） + 兜底代理
-
- 
-
-## 2.5 其他规则
-
-​	除了一些代理直连啥的规则，还有一些根据个人喜好，喜欢独立出来的规则
-
-​	比如奈飞分组、Telegram分组、苹果、微软、OneDrive等分组。
-
-​	那些根据自己喜欢放在一般直连或者普通代理列表上面就行。
-
-​	怎么寻找：上上面3个规则里面，如果找到我没介绍的，但是你又很眼熟的，差不多就是你要选择的独立碎片
-
-
-
-# 3. 定制规则
-
-## 3.1 规则顺序
-
-​	一般分为规则集合和分组集合，
-
-​	规则顺序是跟网址的匹配顺序有关，放在前面的最先匹配上。
-
-​	匹配上才看规则后面跟的分组集合是谁。
-
-​	综上所述：规则顺序决定你的代理匹配直连，分组顺序无所谓看个人喜好
-
-
-
-**规则顺序**
-
-​	自上往下排列（核心思想是避免冲突，该代理的代理、该直连直连）
-
-​	同一分组内的顺序可以随便换，看你自身看中程度。
-
-​	用的着的就加，用不着的就看心情。
-
-​	下面的规则顺序，也不是绝对，
-
-​	同时看上面的**使用建议**
-
-
-
-**1.0 局域网地址（必须有，一般直连）**
-
-​	LocalAreaNetwork.list
-
-
-
-**2.0 去广告（可选，看自身使用情况）**
-
-​	BanAD.list ( acl4ssr 10分推荐)
-
-​	BanProgramAD.list  ( acl4ssr  10分推荐)
-
-​	BanEasyListChina.list  ( acl4ssr 5分推荐)
-
-​	Reject.list (lhie1)
-
-
-
-**2.1 特殊直连域名（可选，看自身使用情况）**
-
-​	GoogleCN.list （能直连的谷歌域名）
-
-​	AsianTV.list	 (lhie1)
-
-​	Special.list  (lhie1,喜欢用BT下载的推荐)
-
-​	Netease Music.list (lhie1，用网易云会员破解的加上)
-
-​	Unbreak.list（ConnersHua）
-
-​	你自己的规则碎片（放这比较好）
-
-
-
-**2.2 特殊代理域名（可选，看自身使用情况）**	
-
-​	Netflix.list ( acl4ssr )
-
-​	OneDrive.list ( acl4ssr )	
-
-​	GlobalTV.list  (lhie1)
-
-​	AppleNews.list（ConnersHua）
-
-​	HKMTMedia.list（ConnersHua）
-
-​	你自己的规则碎片（放这比较好）
-
-
-
-**2.3 即可直连也可代理的（可选，看自身使用情况）**
-
-​	Microsoft.list ( acl4ssr )
-
-​	Steam.list (lhie1)
-
-​	Apple.list（ConnersHua）
-
-​	Apple.list ( lhie1)
-
-
-
-**3.0 一般代理域名**（一般要加）
-
-​	ProxyGFWlist.list( acl4ssr 7分推荐)
-
-
-
-**4.0 一般直连域名**（一般要加）
-
-​	ChinaDomain.list ( acl4ssr 10分推荐)
-
-​	ChinaCompanyIp.list ( acl4ssr 10分推荐)
-
-​	ChinaIp.list ( acl4ssr 3分推荐)
-
-​	China.list（ConnersHua）
-
-
-
-**5.0 GEO IP定位**
-
-​	GEOIP,CN 直连（10分推荐）
-
-​	GEOIP,JP 代理（举个例子，不推荐）
-
-
-
-**6.0 兜底策略**
-
-​	FINAL 一般兜底代理 (10分推荐)
-
-​	用GFW的可以选择兜底直连 (5分推荐)
-
-
-
-## 3.2 寻找规则
-
-### 在线规则
-
-​	找到只显示规则内容的URL就行
-
-​	GitHub举例：
-
-​		打开https://github.com/E-R-Butch/ACL4SSR-Neo/blob/master/Clash/Core/ProxyGFWlist.list
-
-​		看到规则列表右上角有几个小按钮，点击Raw，会转跳到一个新网址(raw.githubusercontent.com)。那个网址就是你真正的网址
-
+```text
 https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Core/ProxyGFWlist.list
-
-
-
-### 本地规则
-
-​	以subconverter为例，自己找个文件夹，建立一个文本文件，记事本打开，编写规则即可，语法的话，可以阅读对应文档和实例。
-
-
-
-## 3.3 编写规则
-
-​	仅做实例，不提供具体教程，自己看网址clash目录/config目录下 有大量的示例
-
-​	本地地址和在线地址可以混揉在一起。
-
-
-
-**本地规则**
-
 ```
+
+同理，仓库里其他 `.list` 文件都可以用相同方式找到对应的 Raw 地址。
+
+
+## 8. 简化示例
+
+下面这个例子只演示当前仓库常见的最小组合思路，不代表完整主配置。
+
+```ini
 [custom]
 ;不要随意改变关键字，否则会导致出错
-;acl4SSR规则
-
-;去广告：支持
-;自动测速：支持
-;微软分流：支持
-;苹果分流：支持
-;增强中国IP段：支持
-;增强国外GFW：支持
-
-surge_ruleset=🛑 广告拦截,rules/ACL4SSR/Clash/Outputs/MergedADBan.list
-surge_ruleset=📲 电报消息,rules/ACL4SSR/Clash/Ruleset/Telegram.list
-surge_ruleset=🎯 全球直连,rules/ACL4SSR/Clash/Core/LocalAreaNetwork.list
-surge_ruleset=🎯 全球直连,rules/ACL4SSR/Clash/Ingredients/China/GoogleCN.list
-surge_ruleset=🚀 节点选择,rules/ACL4SSR/Clash/Core/ProxyGFWlist.list
-surge_ruleset=🎯 全球直连,rules/ACL4SSR/Clash/Ingredients/China/ChinaDomain.list
-surge_ruleset=🎯 全球直连,rules/ACL4SSR/Clash/Ingredients/China/ChinaCompanyIp.list
-surge_ruleset=🎯 全球直连,rules/ACL4SSR/Clash/Ingredients/China/ChinaIp.list
-surge_ruleset=🎯 全球直连,[]GEOIP,CN
-surge_ruleset=🐟 漏网之鱼,[]FINAL
-
-custom_proxy_group=🚀 节点选择`select`[]♻️ 自动选择`[]🎯 全球直连`.*
-custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`300
-custom_proxy_group=🎯 全球直连`select`[]DIRECT
-custom_proxy_group=🛑 广告拦截`select`[]REJECT`[]DIRECT
-custom_proxy_group=📲 电报消息`select`[]🚀 节点选择`[]🎯 全球直连`.*
-custom_proxy_group=🐟 漏网之鱼`select`[]DIRECT`[]🚀 节点选择`[]♻️ 自动选择`.*
-
-enable_rule_generator=true
-overwrite_original_rules=true
-```
-
-**在线规则**
-
-```
-[custom]
-;不要随意改变关键字，否则会导致出错
-;acl4SSR规则-在线更新版
-
-;去广告：支持
-;自动测速：支持
-;微软分流：支持
-;苹果分流：支持
-;增强中国IP段：支持
-;增强国外GFW：支持
 
 surge_ruleset=🛑 广告拦截,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Outputs/MergedADBan.list
 surge_ruleset=📲 电报消息,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ruleset/Telegram.list
-surge_ruleset=Ⓜ️ 微软云盘,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ruleset/OneDrive.list
-surge_ruleset=🍎 苹果服务,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ruleset/Apple.list
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Core/LocalAreaNetwork.list
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ingredients/China/GoogleCN.list
 surge_ruleset=🚀 节点选择,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Core/ProxyGFWlist.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Core/LocalAreaNetwork.list
 surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ingredients/China/ChinaDomain.list
 surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ingredients/China/ChinaCompanyIp.list
 surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/Ingredients/China/ChinaIp.list
 surge_ruleset=🎯 全球直连,[]GEOIP,CN
 surge_ruleset=🐟 漏网之鱼,[]FINAL
 
-custom_proxy_group=🚀 节点选择`select`[]♻️ 自动选择`[]🎯 全球直连`.*
+custom_proxy_group=🚀 节点选择`select`[]♻️ 自动选择`[]DIRECT`.*
 custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`300
-custom_proxy_group=📲 电报消息`select`[]🚀 节点选择`[]🎯 全球直连`.*
-custom_proxy_group=Ⓜ️ 微软云盘`select`[]🎯 全球直连`[]🚀 节点选择`.*
-custom_proxy_group=🍎 苹果服务`select`[]🚀 节点选择`[]🎯 全球直连`.*
-custom_proxy_group=🎯 全球直连`select`[]DIRECT
+custom_proxy_group=📲 电报消息`select`[]🚀 节点选择`[]DIRECT
 custom_proxy_group=🛑 广告拦截`select`[]REJECT`[]DIRECT
-custom_proxy_group=🐟 漏网之鱼`select`[]DIRECT`[]🚀 节点选择`[]♻️ 自动选择`.*
+custom_proxy_group=🐟 漏网之鱼`select`[]DIRECT`[]🚀 节点选择`[]♻️ 自动选择
 
 enable_rule_generator=true
 overwrite_original_rules=true
 ```
 
 
+## 9. 常见问题
 
-# 4. 问题答疑
+### 9.1 规则越多越好吗
 
+不是。
 
+规则应该以“有效、清晰、少重复”为目标，不是越多越好。
 
-**我在用啥规则？**
-
-​	ACL4SSR\Clash\config下的mini规则
-
-​	外加去广告的DNS
-
-​	浏览器用ABP去广告扩展
-
-​	手机用 第三方已经魔改过的APP
-
-​	
-
-**去广告有意义么？**
-
-​	看个人喜好，过犹不及。
-
-​	如果不影响正常使用，还能去掉广告，更好。
-
-​	别为了去掉全部广告，影响正常使用
+当前仓库的广告合并产物已经是大规则集，这属于正常设计结果，不代表你还应该继续额外叠加多份同类拦截列表。
 
 
+### 9.2 为什么分流看起来没生效
 
-**youtube广告能去吗?**
+常见原因有几种：
 
-​	类似于xxx广告能去吗？都是一个套路
+- 输入的不是原始节点订阅，而是已经生成好的完整配置
+- 节点名称没有命中地区组正则
+- 某条规则引用了不存在的策略组
+- 客户端拿到的是旧缓存
 
-​	因为类似于clash和ssr 是基于域名和ip屏蔽的。
-
-​	如果该软件的广告是用了单独域名，是能可以去掉的
-
-​	如果广告是跟正常内容的域名用的是一个的话。那么屏蔽广告的同时也会把正常内容一块屏蔽了。
-
-​	所以一般有些广告是很难通过屏蔽域名去掉的。
-
-​	如果你用的软件支持MITM的话，应该可以，但是需要独立编写规则
+项目当前已经加入基础校验脚本，用来减少“规则引用错了但不容易发现”的问题。
 
 
+### 9.3 为什么同类规则不建议叠加很多份
 
-**规则越多越好吗？**
+因为常见问题不是“完全不够拦”，而是：
 
-​	以现代化电脑来说，规则几千条和几万条，对性能来说，没啥肉眼可见的变化。
+- 重复度太高
+- 命中顺序混乱
+- 误拦概率上升
+- 转换结果更大、更慢
 
-​	一般来说不超过1万条就行。
-
-​	如果用在线转换的话，规则过多时更依赖转换服务质量和客户端拉取能力；本项目当前完整广告合并产物已经远超 1 万条，这是正常现象。
-
-​	避免相同种类用多份，比如有了GEOIP,CN 还要加 ChinaIp
-
-
-
-
-**版权所有，所有内容全部一个个字码出来的，转载必须说明来源**
+因此，代理、直连、广告三类规则都更适合按职责清晰地组合，而不是无上限叠加。
