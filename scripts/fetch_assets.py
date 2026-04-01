@@ -106,21 +106,37 @@ def normalize_domain(value):
 
     return value.lower()
 
+def extract_abp_host(rule_body):
+    candidate = rule_body.strip()
+    if not candidate:
+        return None
+
+    if "/" in candidate or "*" in candidate or "?" in candidate:
+        return None
+
+    if "^" in candidate:
+        if candidate.endswith("^"):
+            candidate = candidate[:-1]
+        else:
+            return None
+
+    return normalize_domain(candidate)
+
 def parse_abp_domain_rule(rule):
     rule = rule.strip()
     if not rule or rule.startswith(("!", "[", "@@", "/", "#")):
         return None
     if "$" in rule:
-        rule = rule.split("$", 1)[0]
+        return None
 
     if rule.startswith("||"):
-        domain = normalize_domain(rule[2:].replace("^", ""))
+        domain = extract_abp_host(rule[2:])
         if domain:
             return f"DOMAIN-SUFFIX,{domain}"
         return None
 
     if rule.startswith("|"):
-        domain = normalize_domain(rule[1:].replace("^", ""))
+        domain = extract_abp_host(rule[1:])
         if domain:
             return f"DOMAIN,{domain}"
         return None
@@ -128,7 +144,7 @@ def parse_abp_domain_rule(rule):
     if any(token in rule for token in ("*", "^", "##", "#@#", "#?#", "#$#")):
         return None
 
-    domain = normalize_domain(rule)
+    domain = extract_abp_host(rule)
     if domain:
         return f"DOMAIN-SUFFIX,{domain}"
     return None
