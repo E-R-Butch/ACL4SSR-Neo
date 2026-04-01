@@ -88,6 +88,8 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Clash/config/ACL4
 | ~~ConnersHua/Profiles~~ | 广告/劫持拦截规则 (源项目已失效) |
 | ~~lhie1/Rules~~ | 广告拦截规则 (源项目已失效) |
 | [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) | lhie1 归档的社区维护版 |
+| [easylist/easylist](https://github.com/easylist/easylist) | 广告与隐私规则上游来源（EasyList / EasyListChina / EasyPrivacy） |
+| [Adblock Plus Filter Lists](https://easylist-downloads.adblockplus.org/) | 本项目自动同步使用的官方发布地址 |
 | [lmc999/RegionRestrictionCheck](https://github.com/lmc999/RegionRestrictionCheck) | 流媒体解锁检测脚本（本项目对齐其颗粒度） |
 | [gfwlist/gfwlist](https://github.com/gfwlist/gfwlist) | 本项目核心代理列表（GFWList）的官方来源 |
 | [mayaxcn/china-ip-list](https://github.com/mayaxcn/china-ip-list) | 本项目中国 IP 列表的核心来源 |
