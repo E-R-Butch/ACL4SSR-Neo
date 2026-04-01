@@ -6,7 +6,7 @@
 https://github.com/E-R-Butch/ACL4SSR-Neo
 
 主配置：
-https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/config/ACL4SSR_Online_Full.ini
+https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Config/ACL4SSR_Online_Full.ini
 
 
 ## 1. 项目定位
@@ -50,10 +50,11 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/config/ACL4
 - 从当前活跃 `.list` 源自动生成的 provider 资产
 - 这层会跟随主工作流更新，过时且没有源头的 provider 会被移出
 
-`Rules/config`
+`Config`
 
-- 订阅转换用的主配置
+- 订阅转换用的主配置和基础模板
 - 当前主入口是 `ACL4SSR_Online_Full.ini`
+- `GeneralConfig.yml` 作为主配置的基础模板
 
 `scripts`
 
@@ -94,7 +95,7 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/config/ACL4
 主配置地址：
 
 ```text
-https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/config/ACL4SSR_Online_Full.ini
+https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Config/ACL4SSR_Online_Full.ini
 ```
 
 如果你的输入源本身已经是完整的 `Mihomo YAML`，那它不属于“原始节点订阅”，不应该再拿来做二次订阅转换。
@@ -211,6 +212,12 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Core/ProxyG
 ```
 
 同理，仓库里其他 `.list` 文件都可以用相同方式找到对应的 Raw 地址。
+
+如果你要看主配置，请直接访问：
+
+```text
+https://github.com/E-R-Butch/ACL4SSR-Neo/blob/master/Config/ACL4SSR_Online_Full.ini
+```
 
 
 ## 8. 简化示例

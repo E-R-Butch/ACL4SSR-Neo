@@ -3,7 +3,7 @@ import re
 import sys
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
-CONFIG_FILE = REPO_ROOT / "Rules/config/ACL4SSR_Online_Full.ini"
+CONFIG_FILE = REPO_ROOT / "Config/ACL4SSR_Online_Full.ini"
 
 LIST_DIRS = [
     REPO_ROOT / "Rules/Core",

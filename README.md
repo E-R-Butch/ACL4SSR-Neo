@@ -22,6 +22,15 @@
 ## 📁 项目结构 (Ingredient-First Architecture)
 
 ```text
+Config/
+├── ACL4SSR_Online_Full.ini  # 当前主配置入口
+└── GeneralConfig.yml        # 主配置使用的基础模板
+
+Legacy/
+└── subconverter_pref.ini    # 历史示例文件，仅供参考
+```
+
+```text
 Rules/
 ├── Core/                # 核心翻墙及直连代理规则 (CustomDirect, ProxyGFWlist 等)
 ├── Ingredients/         # 原始“食材”素材库 (AdBlock 去广告源、China 国内特色源等)
@@ -29,7 +38,6 @@ Rules/
 ├── Outputs/             # 加工后的成品列表 (如三源深度去重合并的 MergedADBan)
 ├── Generated/
 │   └── Providers/       # 从当前活跃 .list 源自动生成的 provider 资产
-└── config/              # 点菜单/主配置 (包含 ACL4SSR_Online_Full.ini)
 ```
 
 ```text
@@ -49,7 +57,7 @@ scripts/
 将以下地址作为「远程配置」粘贴到转换面板的配置文件栏：
 
 ```text
-https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/config/ACL4SSR_Online_Full.ini
+https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Config/ACL4SSR_Online_Full.ini
 ```
 
 然后填入你的节点订阅地址，即可生成完整 Clash 配置。
