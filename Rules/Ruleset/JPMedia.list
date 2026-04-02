@@ -1,13 +1,21 @@
 # Japan Media
 # AbemaTV
+USER-AGENT,AbemaTV*
+DOMAIN,abematv.akamaized.net
+DOMAIN,ds-linear-abematv.akamaized.net
+DOMAIN,ds-vod-abematv.akamaized.net
+DOMAIN,linear-abematv.akamaized.net
 DOMAIN-SUFFIX,abema.tv
 DOMAIN-SUFFIX,abema.io
 DOMAIN-SUFFIX,ameba.jp
 DOMAIN-SUFFIX,hayabusa.io
 # Niconico
+USER-AGENT,Niconico*
+DOMAIN-SUFFIX,dmc.nico
 DOMAIN-SUFFIX,nicovideo.jp
 DOMAIN-SUFFIX,nimg.jp
 DOMAIN-SUFFIX,live.nicovideo.jp
+DOMAIN-SUFFIX,socdm.com
 # DMM
 DOMAIN-SUFFIX,dmm.com
 DOMAIN-SUFFIX,dmm.co.jp

@@ -1,5 +1,17 @@
 # Taiwan Media
+USER-AGENT,Anime*
+USER-AGENT,KKTV*
+USER-AGENT,com.kktv.ios.kktv*
+USER-AGENT,LINE%20TV*
+USER-AGENT,LINE*
+DOMAIN,gamer-cds.cdn.hinet.net
+DOMAIN,gamer2-cds.cdn.hinet.net
+DOMAIN,kktv-theater.kk.stream
+DOMAIN,litvfreemobile-hichannel.cdn.hinet.net
+DOMAIN,d3c7rimkq79yfu.cloudfront.net
+DOMAIN-SUFFIX,bahamut.com.tw
 DOMAIN-SUFFIX,gamer.com.tw
+DOMAIN-SUFFIX,kktv.com.tw
 DOMAIN-SUFFIX,kktv.me
 DOMAIN-SUFFIX,litv.tv
 DOMAIN-SUFFIX,linetv.tw
