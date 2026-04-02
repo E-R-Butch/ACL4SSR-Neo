@@ -28,7 +28,7 @@ BUILD_TARGETS = {
         "title": "ACL4SSR-Neo Merged Privacy List",
     },
 }
-INGREDIENTS_DIR = "Rules/Ingredients/AdBlock"
+INGREDIENTS_DIR = "Rules/Ruleset/Active/AdBlock"
 
 
 def log(msg):

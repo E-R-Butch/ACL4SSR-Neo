@@ -7,17 +7,16 @@ CONFIG_FILE = REPO_ROOT / "Config/ACL4SSR_Online_Full.ini"
 
 LIST_DIRS = [
     REPO_ROOT / "Rules/Core",
-    REPO_ROOT / "Rules/Ingredients/China",
-    REPO_ROOT / "Rules/Ingredients/AdBlock",
     REPO_ROOT / "Rules/Outputs",
-    REPO_ROOT / "Rules/Ruleset",
+    REPO_ROOT / "Rules/Ruleset/Active",
+    REPO_ROOT / "Rules/Ruleset/Inactive",
 ]
 
 ALLOWED_SPECIAL_GROUPS = {"DIRECT", "REJECT"}
 RULE_TOKEN_RE = re.compile(r"^[A-Z0-9-]+$")
 GROUP_REF_RE = re.compile(r"\[\]([^`\n]+)")
 PROTECTED_RULESET_SOURCES = {
-    REPO_ROOT / "Rules/Ruleset/Github.list": {
+    REPO_ROOT / "Rules/Ruleset/Inactive/Github.list": {
         "blocked_outputs": {
             REPO_ROOT / "Rules/Outputs/MergedADBan.list",
             REPO_ROOT / "Rules/Outputs/MergedPrivacy.list",
@@ -143,7 +142,7 @@ def main():
     errors.extend(validate_ini(CONFIG_FILE))
 
     for list_dir in LIST_DIRS:
-        for path in sorted(list_dir.glob("*.list")):
+        for path in sorted(list_dir.rglob("*.list")):
             log(f"Checking list file: {path.relative_to(REPO_ROOT)}")
             errors.extend(validate_list_file(path))
 

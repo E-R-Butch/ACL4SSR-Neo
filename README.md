@@ -19,7 +19,7 @@
 
 ---
 
-## 📁 项目结构 (Ingredient-First Architecture)
+## 📁 项目结构 (Active/Inactive Architecture)
 
 ```text
 Config/
@@ -33,14 +33,17 @@ Legacy/
 ```text
 Rules/
 ├── Core/                # 核心翻墙及直连代理规则 (CustomDirect, ProxyGFWlist 等)
-├── Ingredients/         # 原始“食材”素材库 (AdBlock 去广告源、China 国内特色源等)
-├── Ruleset/             # 聚合级与专题级分流规则源 (AI, Media, Services 等)
+├── Ruleset/
+│   ├── Active/          # 当前主配置和构建链路真正使用的规则
+│   ├── Inactive/        # 保留但未接线的专题规则
+│   ├── Active/China/    # 中国直连相关基础规则
+│   └── Active/AdBlock/  # 广告与隐私原料规则
 └── Outputs/             # 加工后的成品列表 (如三源深度去重合并的 MergedADBan)
 ```
 
 ```text
 scripts/
-├── fetch_assets.py      # 同步 GFWList / China IP / AdBlock 上游数据
+├── fetch_assets.py      # 同步 GFWList / China / AdBlock 上游数据
 ├── build_rules.py       # 合并广告规则并输出 MergedADBan.list
 └── validate_rules.py    # 校验主配置引用和 .list 基础格式
 ```
@@ -83,7 +86,7 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Config/ACL4SSR_On
 | 🇯🇵 日本媒体 | select | 日本节点 | Abema, DMM, TVer 等 |
 | 🇰🇷 韩国媒体 | select | 韩国节点 | Wavve, Tving 等 |
 | 🇺🇸 北美媒体 | select | 美国节点 | Hulu, Paramount, Peacock 等 |
-| 🌊 电报消息 | select | 节点选择 | Telegram 专用分组 |
+| 📲 电报消息 | select | 节点选择 | Telegram 专用分组 |
 | 🎮 游戏代理 | select | 🚀 节点选择 | Steam 社区、商店，以及需要代理的游戏平台域名 |
 | 🎮 游戏直连 | select | DIRECT | Steam 下载、Epic、Uplay、暴雪、PlayStation 等可直连平台域名 |
 | Ⓜ️ 微软云盘 | select | DIRECT | OneDrive 专用分组 |

@@ -30,15 +30,12 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Config/ACL4SSR_On
 - 核心直连和代理碎片
 - 例如 `ProxyGFWlist.list`、`CustomDirect.list`、`LocalAreaNetwork.list`
 
-`Rules/Ingredients`
-
-- 上游原料和基础数据
-- 当前主要包括中国直连相关地址段、域名和广告原料
-
 `Rules/Ruleset`
 
-- 面向具体服务和聚合主题的分流规则源
-- 当前优先保留 AI、媒体、游戏代理/直连、厂商专题这类边界清楚的规则表
+- 当前分成 `Active` 和 `Inactive` 两层
+- `Active` 放当前主配置和构建链路真正使用的规则
+- `Inactive` 放保留但未接线的专题规则
+- 原来的中国直连和广告原料已经并入 `Rules/Ruleset/Active/China` 与 `Rules/Ruleset/Active/AdBlock`
 
 `Rules/Outputs`
 
@@ -117,11 +114,11 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Config/ACL4SSR_On
 - `Rules/Core/LocalAreaNetwork.list`
 - `Rules/Core/UnBan.list`
 - `Rules/Core/Download.list`
-- `Rules/Ingredients/China/ChinaDomain.list`
-- `Rules/Ingredients/China/ChinaCompanyIp.list`
-- `Rules/Ingredients/China/ChinaIp.list`
-- `Rules/Ingredients/China/ChinaIpV6.list`
-- `Rules/Ingredients/China/GoogleCN.list`
+- `Rules/Ruleset/Active/China/ChinaDomain.list`
+- `Rules/Ruleset/Active/China/ChinaCompanyIp.list`
+- `Rules/Ruleset/Active/China/ChinaIp.list`
+- `Rules/Ruleset/Active/China/ChinaIpV6.list`
+- `Rules/Ruleset/Active/China/GoogleCN.list`
 - `GEOIP,CN`
 
 其中：
@@ -223,12 +220,12 @@ https://github.com/E-R-Butch/ACL4SSR-Neo/blob/master/Config/ACL4SSR_Online_Full.
 ;不要随意改变关键字，否则会导致出错
 
 surge_ruleset=🛑 广告拦截,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Outputs/MergedADBan.list
-surge_ruleset=📲 电报消息,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Ruleset/Telegram.list
+surge_ruleset=📲 电报消息,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Ruleset/Active/Telegram.list
 surge_ruleset=🚀 节点选择,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Core/ProxyGFWlist.list
 surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Core/LocalAreaNetwork.list
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Ingredients/China/ChinaDomain.list
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Ingredients/China/ChinaCompanyIp.list
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Ingredients/China/ChinaIp.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Ruleset/Active/China/ChinaDomain.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Ruleset/Active/China/ChinaCompanyIp.list
+surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Rules/Ruleset/Active/China/ChinaIp.list
 surge_ruleset=🎯 全球直连,[]GEOIP,CN
 surge_ruleset=🐟 漏网之鱼,[]FINAL
 
@@ -247,7 +244,7 @@ overwrite_original_rules=true
 
 ### 9.1 规则越多越好吗
 
-不是这样。
+不建议这样理解。
 
 规则应该以“有效、清晰、少重复”为目标，数量控制在合理范围更合适。
 
