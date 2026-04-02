@@ -1,5 +1,5 @@
 # 内容：Music 海外音乐平台
-# 数量：23条
+# 数量：32条
 
 # Spotify
 USER-AGENT,Spotify*
@@ -35,3 +35,18 @@ USER-AGENT,*YouTubeMusic*
 USER-AGENT,*com.google.ios.youtubemusic*
 USER-AGENT,YouTubeMusic*
 USER-AGENT,com.google.ios.youtubemusic*
+
+# Pandora
+USER-AGENT,Pandora*
+DOMAIN-SUFFIX,pandora.com
+
+# Deezer
+USER-AGENT,Deezer*
+DOMAIN-SUFFIX,deezer.com
+DOMAIN-SUFFIX,dzcdn.net
+
+# SoundCloud
+USER-AGENT,SoundCloud*
+DOMAIN-SUFFIX,p-cdn.us
+DOMAIN-SUFFIX,sndcdn.com
+DOMAIN-SUFFIX,soundcloud.com

@@ -76,7 +76,7 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Config/ACL4SSR_On
 | 🎬 迪士尼+ | select | 节点选择 | Disney+ 专用分组 |
 | 🎥 HBO Max | select | 节点选择 | HBO Max / Max |
 | 🎬 亚马逊视频 | select | 节点选择 | Amazon Prime Video |
-| 🎼 海外音乐平台 | select | 节点选择 | Spotify, JOOX, KKBOX, Qobuz, TIDAL, YouTube Music |
+| 🎼 海外音乐平台 | select | 节点选择 | Spotify, JOOX, KKBOX, Qobuz, TIDAL, YouTube Music, Pandora, Deezer, SoundCloud |
 | 📹 油管视频 | select | 节点选择 | YouTube / YT Music |
 | 🇭🇰 香港媒体 | select | 香港节点 | ViuTV, MyTV Super 等 |
 | 🇨🇳 台湾媒体 | select | 台湾节点 | 巴哈姆特, KKTV, LiTV 等 |
