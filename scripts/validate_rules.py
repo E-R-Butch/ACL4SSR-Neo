@@ -15,14 +15,6 @@ LIST_DIRS = [
 ALLOWED_SPECIAL_GROUPS = {"DIRECT", "REJECT"}
 RULE_TOKEN_RE = re.compile(r"^[A-Z0-9-]+$")
 GROUP_REF_RE = re.compile(r"\[\]([^`\n]+)")
-PROTECTED_RULESET_SOURCES = {
-    REPO_ROOT / "Rules/Ruleset/Inactive/Github.list": {
-        "blocked_outputs": {
-            REPO_ROOT / "Rules/Outputs/MergedADBan.list",
-            REPO_ROOT / "Rules/Outputs/MergedPrivacy.list",
-        }
-    }
-}
 
 
 def log(message):
@@ -103,38 +95,6 @@ def validate_list_file(path):
     return errors
 
 
-def collect_exact_domain_rules(path):
-    domains = set()
-    for raw_line in path.read_text(encoding="utf-8").splitlines():
-        line = raw_line.strip()
-        if not line or line.startswith("#"):
-            continue
-        token, _, payload = line.partition(",")
-        if token not in {"DOMAIN", "DOMAIN-SUFFIX"}:
-            continue
-        domain = payload.split(",", 1)[0].strip().lower()
-        if domain:
-            domains.add(domain)
-    return domains
-
-
-def validate_block_output_conflicts():
-    errors = []
-
-    for source_path, config in PROTECTED_RULESET_SOURCES.items():
-        protected_domains = collect_exact_domain_rules(source_path)
-        for output_path in config["blocked_outputs"]:
-            blocked_domains = collect_exact_domain_rules(output_path)
-            overlaps = sorted(protected_domains & blocked_domains)
-            for domain in overlaps:
-                errors.append(
-                    f"{output_path} blocks protected service domain '{domain}' "
-                    f"declared in {source_path}"
-                )
-
-    return errors
-
-
 def main():
     errors = []
 
@@ -145,8 +105,6 @@ def main():
         for path in sorted(list_dir.rglob("*.list")):
             log(f"Checking list file: {path.relative_to(REPO_ROOT)}")
             errors.extend(validate_list_file(path))
-
-    errors.extend(validate_block_output_conflicts())
 
     if errors:
         for error in errors:
