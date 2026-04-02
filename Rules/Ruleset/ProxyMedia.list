@@ -17,11 +17,6 @@ DOMAIN-SUFFIX,abema.tv
 DOMAIN-SUFFIX,ameba.jp
 DOMAIN-SUFFIX,hayabusa.io
 
-# All4
-USER-AGENT,All4*
-DOMAIN-SUFFIX,c4assets.com
-DOMAIN-SUFFIX,channel4.com
-
 # Amazon
 USER-AGENT,InstantVideo.US*
 USER-AGENT,Prime%20Video*
@@ -38,21 +33,6 @@ DOMAIN-SUFFIX,amazonaws.com
 DOMAIN-SUFFIX,amazonvideo.com
 DOMAIN-SUFFIX,llnwd.net
 DOMAIN-SUFFIX,primevideo.com
-
-# BBCiPlayer
-USER-AGENT,BBCiPlayer*
-DOMAIN-KEYWORD,bbcfmt
-DOMAIN-KEYWORD,uk-live
-DOMAIN,aod-dash-uk-live.akamaized.net
-DOMAIN,aod-hls-uk-live.akamaized.net
-DOMAIN,vod-dash-uk-live.akamaized.net
-DOMAIN,vod-thumb-uk-live.akamaized.net
-DOMAIN-SUFFIX,bbc.co
-DOMAIN-SUFFIX,bbc.co.uk
-DOMAIN-SUFFIX,bbc.com
-DOMAIN-SUFFIX,bbcfmt.hs.llnwd.net
-DOMAIN-SUFFIX,bbci.co
-DOMAIN-SUFFIX,bbci.co.uk
 
 # Bahamut
 USER-AGENT,Anime*
@@ -154,12 +134,6 @@ DOMAIN-SUFFIX,hulustream.com
 DOMAIN-SUFFIX,happyon.jp
 DOMAIN-SUFFIX,hulu.jp
 
-# ITV
-USER-AGENT,ITV_Player*
-DOMAIN,itvpnpmobile-a.akamaihd.net
-DOMAIN-SUFFIX,itv.com
-DOMAIN-SUFFIX,itvstatic.com
-
 # JOOX
 USER-AGENT,JOOX*
 USER-AGENT,WeMusic*
@@ -199,12 +173,6 @@ USER-AGENT,LINE*
 DOMAIN,d3c7rimkq79yfu.cloudfront.net
 DOMAIN-SUFFIX,d3c7rimkq79yfu.cloudfront.net
 DOMAIN-SUFFIX,linetv.tw
-
-# My5
-USER-AGENT,My5*
-DOMAIN,d349g9zuie06uo.cloudfront.net
-DOMAIN-SUFFIX,channel5.com
-DOMAIN-SUFFIX,my5.tv
 
 # MyTVSuper
 USER-AGENT,mytv*
