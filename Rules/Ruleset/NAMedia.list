@@ -19,7 +19,10 @@ DOMAIN-SUFFIX,pluto.tv
 DOMAIN-SUFFIX,fubo.tv
 DOMAIN-SUFFIX,api.fubo.tv
 # Fox
+USER-AGENT,FOX%20NOW*
 DOMAIN-SUFFIX,fox.com
+DOMAIN-SUFFIX,foxdcg.com
+DOMAIN-SUFFIX,theplatform.com
 DOMAIN-SUFFIX,uplynk.com
 # MGM+ (Epix)
 DOMAIN-SUFFIX,mgmplus.com
@@ -27,6 +30,9 @@ DOMAIN-SUFFIX,api.epix.com
 # CBC Gem (CA)
 DOMAIN-SUFFIX,cbc.ca
 DOMAIN-SUFFIX,cbc.radio-canada.ca
+# PBS
+USER-AGENT,PBS*
+DOMAIN-SUFFIX,pbs.org
 # Acorn TV
 DOMAIN-SUFFIX,acorn.tv
 # Crave (CA)

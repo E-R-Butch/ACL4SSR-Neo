@@ -80,13 +80,6 @@ DOMAIN,edge.api.brightcove.com
 DOMAIN,videos-f.jwpsrv.com
 DOMAIN-SUFFIX,encoretvb.com
 
-# FoxNow
-USER-AGENT,FOX%20NOW*
-DOMAIN-SUFFIX,fox.com
-DOMAIN-SUFFIX,foxdcg.com
-DOMAIN-SUFFIX,theplatform.com
-DOMAIN-SUFFIX,uplynk.com
-
 # FoxPlus
 USER-AGENT,FOXPlus*
 DOMAIN-SUFFIX,akamaized.net
@@ -224,10 +217,6 @@ DOMAIN-SUFFIX,dmc.nico
 DOMAIN-SUFFIX,nicovideo.jp
 DOMAIN-SUFFIX,nimg.jp
 DOMAIN-SUFFIX,socdm.com
-
-# PBS
-USER-AGENT,PBS*
-DOMAIN-SUFFIX,pbs.org
 
 # Pandora
 USER-AGENT,Pandora*
