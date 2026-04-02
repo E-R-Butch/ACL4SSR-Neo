@@ -34,7 +34,7 @@ Legacy/
 Rules/
 ├── Core/                # 核心翻墙及直连代理规则 (CustomDirect, ProxyGFWlist 等)
 ├── Ingredients/         # 原始“食材”素材库 (AdBlock 去广告源、China 国内特色源等)
-├── Ruleset/             # 具体应用级别细化分流规则 (AI, Streaming, Media 等 120+ 项)
+├── Ruleset/             # 聚合级与专题级分流规则源 (AI, Media, Services 等)
 └── Outputs/             # 加工后的成品列表 (如三源深度去重合并的 MergedADBan)
 ```
 
