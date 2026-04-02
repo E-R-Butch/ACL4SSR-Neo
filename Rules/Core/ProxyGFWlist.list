@@ -103,6 +103,29 @@ IP-CIDR,173.192.231.32/27,no-resolve
 IP-CIDR,174.37.243.0/16,no-resolve
 IP-CIDR,208.43.122.128/27,no-resolve
 
+# Google
+DOMAIN-SUFFIX,app-measurement.net
+DOMAIN-SUFFIX,gstatic.cn
+DOMAIN-SUFFIX,gvt0.com
+IP-CIDR,74.125.0.0/16,no-resolve
+IP-CIDR,173.194.0.0/16,no-resolve
+
+# Porn
+DOMAIN-SUFFIX,8teenxxx.com
+DOMAIN-SUFFIX,ahcdn.com
+DOMAIN-SUFFIX,bcvcdn.com
+DOMAIN-SUFFIX,bongacams.com
+DOMAIN-SUFFIX,dditscdn.com
+DOMAIN-SUFFIX,livejasmin.com
+DOMAIN-SUFFIX,rdtcdn.com
+DOMAIN-SUFFIX,redtube.com
+DOMAIN-SUFFIX,sb-cd.com
+DOMAIN-SUFFIX,xnxx-cdn.com
+DOMAIN-SUFFIX,ypncdn.com
+
+# Instagram
+DOMAIN-SUFFIX,instagr.am
+
 # GFW list (Synced from official gfwlist/gfwlist)
 DOMAIN,0rz.tw
 DOMAIN,8-d.com
