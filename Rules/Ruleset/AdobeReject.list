@@ -1,0 +1,8 @@
+# 内容：Adobe 拦截
+# 说明：统计、营销、画像与遥测链路
+DOMAIN,adbemdigitalmediarebootprod2.112.2o7.net
+DOMAIN-SUFFIX,bam.nr-data.net
+DOMAIN-SUFFIX,demandbase.com
+DOMAIN-SUFFIX,demdex.net
+DOMAIN-SUFFIX,omniture.com
+DOMAIN-SUFFIX,omtrdc.net
