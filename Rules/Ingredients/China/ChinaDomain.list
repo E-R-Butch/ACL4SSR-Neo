@@ -129,11 +129,6 @@ DOMAIN-SUFFIX,hdslb.com
 DOMAIN-SUFFIX,im9.com
 DOMAIN-SUFFIX,smtcdns.net
 
-# Blizzard
-DOMAIN-SUFFIX,battle.net
-DOMAIN-SUFFIX,battlenet.com
-DOMAIN-SUFFIX,blizzard.com
-
 # ByteDance
 DOMAIN-SUFFIX,bytedance.com
 DOMAIN-SUFFIX,bytedance.net
@@ -180,12 +175,6 @@ DOMAIN-SUFFIX,douyu.com
 DOMAIN-SUFFIX,douyu.tv
 DOMAIN-SUFFIX,douyuscdn.com
 DOMAIN-SUFFIX,douyutv.com
-
-# Epic
-DOMAIN-SUFFIX,epicgames.com
-DOMAIN-SUFFIX,helpshift.com
-DOMAIN-SUFFIX,paragon.com
-DOMAIN-SUFFIX,unrealengine.com
 
 # HuaWei
 DOMAIN-SUFFIX,dbankcdn.com
@@ -301,13 +290,6 @@ DOMAIN-SUFFIX,sohucs.com
 DOMAIN-SUFFIX,sohuno.com
 DOMAIN-SUFFIX,sohurdc.com
 DOMAIN-SUFFIX,v-56.com
-
-# Sony
-DOMAIN-SUFFIX,playstation.com
-DOMAIN-SUFFIX,playstation.net
-DOMAIN-SUFFIX,playstationnetwork.com
-DOMAIN-SUFFIX,sony.com
-DOMAIN-SUFFIX,sonyentertainmentnetwork.com
 
 # SteamCN
 DOMAIN-SUFFIX,steamcontent.com

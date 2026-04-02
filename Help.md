@@ -38,7 +38,7 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Config/ACL4SSR_On
 `Rules/Ruleset`
 
 - 面向具体服务和聚合主题的分流规则源
-- 当前优先保留 AI、媒体、游戏平台、厂商专题这类边界清楚的规则表
+- 当前优先保留 AI、媒体、游戏代理/直连、厂商专题这类边界清楚的规则表
 
 `Rules/Outputs`
 

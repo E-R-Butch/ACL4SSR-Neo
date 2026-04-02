@@ -84,8 +84,8 @@ https://raw.githubusercontent.com/E-R-Butch/ACL4SSR-Neo/master/Config/ACL4SSR_On
 | 🇰🇷 韩国媒体 | select | 韩国节点 | Wavve, Tving 等 |
 | 🇺🇸 北美媒体 | select | 美国节点 | Hulu, Paramount, Peacock 等 |
 | 🌊 电报消息 | select | 节点选择 | Telegram 专用分组 |
-| 🎮 Steam社区 | select | 🚀 节点选择 | Steam 社区、聊天、商店等易受攻击页面 |
-| 🎮 游戏平台 | select | DIRECT | Epic、Uplay、Steam 下载及静态资源 |
+| 🎮 游戏代理 | select | 🚀 节点选择 | Steam 社区、商店，以及需要代理的游戏平台域名 |
+| 🎮 游戏直连 | select | DIRECT | Steam 下载、Epic、Uplay、暴雪、PlayStation 等可直连平台域名 |
 | Ⓜ️ 微软云盘 | select | DIRECT | OneDrive 专用分组 |
 | 🍎 苹果服务 | select | DIRECT | Apple 相关服务 |
 | 🛑 广告拦截 | select | REJECT | 三方合并超强去广告 |
