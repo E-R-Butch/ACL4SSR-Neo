@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyListChina列表，只包含ABP中的 EasyListChina 内容
 # 来源：https://easylist-downloads.adblockplus.org/easylistchina.txt
-# 更新：2026-04-01 17:13:46
-# 数量：5773条
+# 更新：2026-04-02 02:08:37
+# 数量：5784条
 
 DOMAIN-SUFFIX,003store.com
 DOMAIN-SUFFIX,00k456wyh.com
@@ -197,6 +197,7 @@ DOMAIN-SUFFIX,22eo9qlbpt.com
 DOMAIN-SUFFIX,22vie9ula.com
 DOMAIN-SUFFIX,24y0c8hek.com
 DOMAIN-SUFFIX,25662zubo23739.com
+DOMAIN-SUFFIX,25rpllbbg.com
 DOMAIN-SUFFIX,26yj3wme9q.com
 DOMAIN-SUFFIX,27ocdto914.com
 DOMAIN-SUFFIX,283.laobanfa.com
@@ -221,6 +222,7 @@ DOMAIN-SUFFIX,2pqma2nuv.com
 DOMAIN-SUFFIX,2r1jqii2c.com
 DOMAIN-SUFFIX,2r69dkb1a.com
 DOMAIN-SUFFIX,2u1h56851n.top
+DOMAIN-SUFFIX,2vcb9onxjm.com
 DOMAIN-SUFFIX,2wq9u06jq.com
 DOMAIN-SUFFIX,2xx63f0bfy.com
 DOMAIN-SUFFIX,2y2lttjs.hair
@@ -453,6 +455,7 @@ DOMAIN-SUFFIX,72qv9fhgm.com
 DOMAIN-SUFFIX,72xh073u9.com
 DOMAIN-SUFFIX,732quilulv.com
 DOMAIN-SUFFIX,73336zubo25326.com
+DOMAIN-SUFFIX,73vzmvg2bi.com
 DOMAIN-SUFFIX,75b9dfiyb.com
 DOMAIN-SUFFIX,75ossyemu.com
 DOMAIN-SUFFIX,75rakcovr.com
@@ -1659,6 +1662,7 @@ DOMAIN-SUFFIX,dms.xuexxing.com
 DOMAIN-SUFFIX,dmym.fwol.cn
 DOMAIN-SUFFIX,dn6ik9809m.com
 DOMAIN-SUFFIX,dnjxds.top
+DOMAIN-SUFFIX,dnminullwq.com
 DOMAIN-SUFFIX,dnnxq2b16.com
 DOMAIN-SUFFIX,dnokacraldho.com
 DOMAIN-SUFFIX,dogwoode09.top
@@ -2522,6 +2526,7 @@ DOMAIN-SUFFIX,hur05101kns.com
 DOMAIN-SUFFIX,hur05110kns.com
 DOMAIN-SUFFIX,hur05121kns.com
 DOMAIN-SUFFIX,hur05130kns.com
+DOMAIN-SUFFIX,huwgjgf.icu
 DOMAIN-SUFFIX,hvmdu6macy.com
 DOMAIN-SUFFIX,hvrunsqqy.com
 DOMAIN-SUFFIX,hwcnmtu.top
@@ -2940,6 +2945,7 @@ DOMAIN-SUFFIX,kls24qtvc.com
 DOMAIN-SUFFIX,kltjbnfjmnh.com
 DOMAIN-SUFFIX,klvt.cn
 DOMAIN-SUFFIX,kmcjai.icu
+DOMAIN-SUFFIX,kmdjdu5cc.com
 DOMAIN-SUFFIX,kmmgoogle.oss-ap-southeast-1.aliyuncs.com
 DOMAIN-SUFFIX,kmqaek.icu
 DOMAIN-SUFFIX,knnfkwf.com
@@ -3056,6 +3062,7 @@ DOMAIN-SUFFIX,lkthfpii.xyz
 DOMAIN-SUFFIX,lkwj.cn
 DOMAIN-SUFFIX,ll.gxsky.com
 DOMAIN-SUFFIX,llbquucai.com
+DOMAIN-SUFFIX,lllencim.com
 DOMAIN-SUFFIX,llmb.cn
 DOMAIN-SUFFIX,lls11050ko.com
 DOMAIN-SUFFIX,lls11060ko.com
@@ -3586,6 +3593,7 @@ DOMAIN-SUFFIX,o.phb123.com
 DOMAIN-SUFFIX,o03fssif8l.com
 DOMAIN-SUFFIX,o0rnzwzst5.com
 DOMAIN-SUFFIX,o1.jyjyj.cn
+DOMAIN-SUFFIX,o1fhfeu6qa.com
 DOMAIN-SUFFIX,o2x4h2txrc.com
 DOMAIN-SUFFIX,o40d17vln.com
 DOMAIN-SUFFIX,o6oxvugdl.com
@@ -3781,6 +3789,7 @@ DOMAIN-SUFFIX,pcxnrr.icu
 DOMAIN-SUFFIX,pdhwzl.icu
 DOMAIN-SUFFIX,pdrerzug.com
 DOMAIN-SUFFIX,pdrv.cn
+DOMAIN-SUFFIX,pdtffl.icu
 DOMAIN-SUFFIX,pdzzjz.icu
 DOMAIN-SUFFIX,pealefe.com
 DOMAIN-SUFFIX,pebrihmethwa.com
@@ -4122,6 +4131,7 @@ DOMAIN-SUFFIX,reluctance58.com
 DOMAIN-SUFFIX,remedyy46.com
 DOMAIN-SUFFIX,reorganizes64.com
 DOMAIN-SUFFIX,requisite57.com
+DOMAIN-SUFFIX,rescission77.top
 DOMAIN-SUFFIX,reservation35.top
 DOMAIN-SUFFIX,resource.baomihua.com
 DOMAIN-SUFFIX,retrieval-bd.duote.com
@@ -4182,6 +4192,7 @@ DOMAIN-SUFFIX,roj7ah16d.com
 DOMAIN-SUFFIX,rpdlt.cn
 DOMAIN-SUFFIX,rpox.cn
 DOMAIN-SUFFIX,rptdhu.top
+DOMAIN-SUFFIX,rpvkpz.icu
 DOMAIN-SUFFIX,rpvqhicca.com
 DOMAIN-SUFFIX,rsoz.cn
 DOMAIN-SUFFIX,rstdfyerm.icu

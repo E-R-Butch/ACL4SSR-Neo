@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 更新：2026-04-01 17:13:51
-# 数量：40414条
+# 更新：2026-04-02 02:08:39
+# 数量：40416条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -23987,6 +23987,7 @@ DOMAIN-SUFFIX,payqjd.subito.it
 DOMAIN-SUFFIX,payroll.smartsalary.com.au
 DOMAIN-SUFFIX,pb.i.sogou.com
 DOMAIN-SUFFIX,pb.siepomaga.pl
+DOMAIN-SUFFIX,pbc.barrons.com
 DOMAIN-SUFFIX,pbc.programbrokerage.com
 DOMAIN-SUFFIX,pbecrm.aquanet.ru
 DOMAIN-SUFFIX,pbjs-stream.bydata.com
@@ -33765,6 +33766,7 @@ DOMAIN-SUFFIX,tags-event.woolworths.co.nz
 DOMAIN-SUFFIX,tags.air1.com
 DOMAIN-SUFFIX,tags.aljazeera.com
 DOMAIN-SUFFIX,tags.aljazeera.net
+DOMAIN-SUFFIX,tags.barrons.com
 DOMAIN-SUFFIX,tags.catapultx.com
 DOMAIN-SUFFIX,tags.cmp.tail.digital
 DOMAIN-SUFFIX,tags.dxmdp.com
