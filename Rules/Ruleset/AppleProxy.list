@@ -1,0 +1,4 @@
+# Apple Proxy
+# 区域内容与直连不稳定链路
+DOMAIN-SUFFIX,apple.news
+DOMAIN-SUFFIX,safebrowsing.apple

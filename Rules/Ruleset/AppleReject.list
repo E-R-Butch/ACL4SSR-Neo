@@ -1,0 +1,4 @@
+# Apple Reject
+# 统计与第三方遥测链路
+DOMAIN,apple.comscoreresearch.com
+DOMAIN-SUFFIX,crashlytics.com
