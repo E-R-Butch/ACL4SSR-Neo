@@ -1226,7 +1226,6 @@ DOMAIN-SUFFIX,discoins.com
 DOMAIN-SUFFIX,disconnect.me
 DOMAIN-SUFFIX,discord.com
 DOMAIN-SUFFIX,discord.gg
-DOMAIN-SUFFIX,discord.media
 DOMAIN-SUFFIX,discordapp.com
 DOMAIN-SUFFIX,discordapp.net
 DOMAIN-SUFFIX,discuss.com.hk
@@ -1638,7 +1637,6 @@ DOMAIN-SUFFIX,git.io
 DOMAIN-SUFFIX,gitbook.io
 DOMAIN-SUFFIX,github.blog
 DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,githubapp.com
 DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,githubassets.com
 DOMAIN-SUFFIX,githubcopilot.com
@@ -3721,9 +3719,7 @@ DOMAIN-SUFFIX,twibble.de
 DOMAIN-SUFFIX,twibs.com
 DOMAIN-SUFFIX,twiffo.com
 DOMAIN-SUFFIX,twiggit.org
-DOMAIN-SUFFIX,twimg.co
 DOMAIN-SUFFIX,twimg.com
-DOMAIN-SUFFIX,twimg.org
 DOMAIN-SUFFIX,twip.me
 DOMAIN-SUFFIX,twipple.jp
 DOMAIN-SUFFIX,twishort.com

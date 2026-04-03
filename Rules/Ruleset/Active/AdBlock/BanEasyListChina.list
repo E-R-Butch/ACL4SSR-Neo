@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyListChina列表，只包含ABP中的 EasyListChina 内容
 # 来源：https://easylist-downloads.adblockplus.org/easylistchina.txt
-# 更新：2026-04-02 02:08:37
-# 数量：5784条
+# 更新：2026-04-03 02:10:16
+# 数量：5790条
 
 DOMAIN-SUFFIX,003store.com
 DOMAIN-SUFFIX,00k456wyh.com
@@ -204,6 +204,7 @@ DOMAIN-SUFFIX,283.laobanfa.com
 DOMAIN-SUFFIX,28jbkeigl.com
 DOMAIN-SUFFIX,2agmk5mh07.com
 DOMAIN-SUFFIX,2bqlkznz.xyz
+DOMAIN-SUFFIX,2cn9g1efo.com
 DOMAIN-SUFFIX,2e4xnyfeae.com
 DOMAIN-SUFFIX,2e629ntxk3.com
 DOMAIN-SUFFIX,2euqnxt25.com
@@ -791,6 +792,7 @@ DOMAIN-SUFFIX,adx.mala.cn
 DOMAIN-SUFFIX,adzp.cn
 DOMAIN-SUFFIX,aeinkailrupe.com
 DOMAIN-SUFFIX,aeisqs.icu
+DOMAIN-SUFFIX,aennovzd.com
 DOMAIN-SUFFIX,aeqfjsa.icu
 DOMAIN-SUFFIX,aeqfuyc.com
 DOMAIN-SUFFIX,aewgwu.icu
@@ -2055,6 +2057,7 @@ DOMAIN-SUFFIX,fygel9rtc.com
 DOMAIN-SUFFIX,fz55vq.site
 DOMAIN-SUFFIX,fz94px.site
 DOMAIN-SUFFIX,fzavvanz.com
+DOMAIN-SUFFIX,fzczw7.site
 DOMAIN-SUFFIX,fznidd.top
 DOMAIN-SUFFIX,fzruzulad.com
 DOMAIN-SUFFIX,g.3lian.com
@@ -4596,6 +4599,7 @@ DOMAIN-SUFFIX,ttdgbh.top
 DOMAIN-SUFFIX,tthelitnfv.com
 DOMAIN-SUFFIX,tthrirgud.com
 DOMAIN-SUFFIX,ttimhethzm.com
+DOMAIN-SUFFIX,ttkxny.com
 DOMAIN-SUFFIX,ttnjhlhys.icu
 DOMAIN-SUFFIX,tttddb.icu
 DOMAIN-SUFFIX,tttppp.oss-cn-guangzhou.aliyuncs.com
@@ -4918,6 +4922,7 @@ DOMAIN-SUFFIX,vgovvoinf.com
 DOMAIN-SUFFIX,vgragvory.com
 DOMAIN-SUFFIX,vgtmosn.com
 DOMAIN-SUFFIX,vgxj.cn
+DOMAIN-SUFFIX,vgzard.icu
 DOMAIN-SUFFIX,vhaugmotn.com
 DOMAIN-SUFFIX,vhdvjc.com
 DOMAIN-SUFFIX,vhgu5ivtew.com
@@ -5319,6 +5324,7 @@ DOMAIN-SUFFIX,ximhirsew.com
 DOMAIN-SUFFIX,xinju.cc
 DOMAIN-SUFFIX,xinxinmingml.com
 DOMAIN-SUFFIX,xitongku.cc
+DOMAIN-SUFFIX,xj63rov3m.com
 DOMAIN-SUFFIX,xj8z427gxz.com
 DOMAIN-SUFFIX,xjoiteee8.com
 DOMAIN-SUFFIX,xjvunf.top
