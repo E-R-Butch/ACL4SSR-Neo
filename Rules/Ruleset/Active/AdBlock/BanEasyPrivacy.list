@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 更新：2026-04-04 02:02:48
-# 数量：40416条
+# 更新：2026-04-05 02:24:17
+# 数量：40420条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -8160,6 +8160,7 @@ DOMAIN-SUFFIX,cdn-eu.usefathom.com
 DOMAIN-SUFFIX,cdn-rum.ngenix.net
 DOMAIN-SUFFIX,cdn.9gtb.com
 DOMAIN-SUFFIX,cdn.arcstudiopro.com
+DOMAIN-SUFFIX,cdn.eaec.fpfis.tech.ec.europa.eu
 DOMAIN-SUFFIX,cdn.net.dz.jumia.com
 DOMAIN-SUFFIX,cdn.net.elogia.net
 DOMAIN-SUFFIX,cdn.polarbyte.com
@@ -9617,6 +9618,7 @@ DOMAIN-SUFFIX,d2lxqodqbpy7c2.cloudfront.net
 DOMAIN-SUFFIX,d2lyx5ly60ksu3.cloudfront.net
 DOMAIN-SUFFIX,d2o5idwacg3gyw.cloudfront.net
 DOMAIN-SUFFIX,d2o67tzzxkqap2.cloudfront.net
+DOMAIN-SUFFIX,d2o9p5vky89u4e.cloudfront.net
 DOMAIN-SUFFIX,d2oh4tlt9mrke9.cloudfront.net
 DOMAIN-SUFFIX,d2pozfvrp52dk4.cloudfront.net
 DOMAIN-SUFFIX,d2pt12ct4kmq21.cloudfront.net
@@ -25480,6 +25482,7 @@ DOMAIN-SUFFIX,rnybul.gismeteo.md
 DOMAIN-SUFFIX,rnyhid.pepperfry.com
 DOMAIN-SUFFIX,ro-go.experian.com
 DOMAIN-SUFFIX,ro.aiwan4399.com
+DOMAIN-SUFFIX,roas-service.store-services-prod.remarkable.com
 DOMAIN-SUFFIX,robotflowermobile.com
 DOMAIN-SUFFIX,rochelle.wantsext.me
 DOMAIN-SUFFIX,roedwy.imidapeptide.com
@@ -34193,6 +34196,7 @@ DOMAIN-SUFFIX,telemetry.nav.no
 DOMAIN-SUFFIX,telemetry.navispherecarrier.com
 DOMAIN-SUFFIX,telemetry.owenscorning.com
 DOMAIN-SUFFIX,telemetry.phenixrts.com
+DOMAIN-SUFFIX,telemetry.portal.voltdeutschland.org
 DOMAIN-SUFFIX,telemetry.proton.me
 DOMAIN-SUFFIX,telemetry.reembed.com
 DOMAIN-SUFFIX,telemetry.ruthschris.com
