@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 更新：2026-04-05 02:24:17
-# 数量：40420条
+# 更新：2026-04-06 02:25:52
+# 数量：40422条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -8199,6 +8199,7 @@ DOMAIN-SUFFIX,cf.campagnes-france.com
 DOMAIN-SUFFIX,cf.overblog.com
 DOMAIN-SUFFIX,cfa.fidelity.com
 DOMAIN-SUFFIX,cfaexam.quantresear.ch
+DOMAIN-SUFFIX,cfapi.upstackdata.io
 DOMAIN-SUFFIX,cfb.8it.me
 DOMAIN-SUFFIX,cfpwood.actonservice.com
 DOMAIN-SUFFIX,cfrnyp.kars4kids.org
@@ -12244,6 +12245,7 @@ DOMAIN-SUFFIX,err.ifengcloud.ifeng.com
 DOMAIN-SUFFIX,error-analytics-production.shopifysvc.com
 DOMAIN-SUFFIX,error-analytics-sessions-production.shopifysvc.com
 DOMAIN-SUFFIX,error-collector.ted.com
+DOMAIN-SUFFIX,error-tracker.pages.dev
 DOMAIN-SUFFIX,error.videonow.ru
 DOMAIN-SUFFIX,errorreports.couponcabin.com
 DOMAIN-SUFFIX,errors.darkreader.app
