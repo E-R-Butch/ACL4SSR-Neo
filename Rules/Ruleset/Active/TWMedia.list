@@ -19,6 +19,12 @@ DOMAIN-SUFFIX,hamivideo.hinet.net
 DOMAIN-SUFFIX,myvideo.net.tw
 DOMAIN-SUFFIX,4gtv.tv
 DOMAIN-SUFFIX,catchplay.com
+# Bilibili HMT
+IP-CIDR,45.43.32.234/32,no-resolve
+IP-CIDR,128.1.62.200/32,no-resolve
+IP-CIDR,128.1.62.201/32,no-resolve
+IP-CIDR,150.116.92.250/32,no-resolve
+IP-CIDR,164.52.76.18/32,no-resolve
 DOMAIN-SUFFIX,disneyplus.jp
 DOMAIN-SUFFIX,lihkg.com
 DOMAIN-SUFFIX,lih.kg

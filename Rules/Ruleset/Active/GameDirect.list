@@ -53,3 +53,13 @@ DOMAIN-SUFFIX,cdn.mileweb.cs.steampowered.com.8686c.com
 DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
 DOMAIN,origin-a.akamaihd.net
 DOMAIN-SUFFIX,ssl-lvlt.cdn.ea.com
+
+# 日本游戏厂牌
+DOMAIN-SUFFIX,akabeesoft2.com
+DOMAIN-SUFFIX,akabeesoft3.com
+DOMAIN-SUFFIX,akatsukiworks.com
+DOMAIN-SUFFIX,alicesoft.com
+DOMAIN-SUFFIX,cosmiccute.com
+DOMAIN-SUFFIX,hibiki-site.com
+DOMAIN-SUFFIX,minori.ph
+DOMAIN-SUFFIX,tenco.cc
