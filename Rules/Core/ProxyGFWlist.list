@@ -137,6 +137,10 @@ DOMAIN-SUFFIX,slack-edge.com
 DOMAIN-SUFFIX,tumblr.co
 DOMAIN-SUFFIX,txmblr.com
 
+# MakerWorld
+DOMAIN-SUFFIX,makerworld.com
+DOMAIN,makerworld.bblmw.com
+
 # GFW list (Synced from official gfwlist/gfwlist)
 DOMAIN,0rz.tw
 DOMAIN,8-d.com
