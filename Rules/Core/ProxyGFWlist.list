@@ -126,6 +126,17 @@ DOMAIN-SUFFIX,ypncdn.com
 # Instagram
 DOMAIN-SUFFIX,instagr.am
 
+# Box / Fastmail / Tumblr / 社区协作
+DOMAIN-SUFFIX,box.com
+DOMAIN-SUFFIX,disquscdn.com
+DOMAIN-SUFFIX,fastmail.com
+DOMAIN-SUFFIX,licdn.com
+DOMAIN-SUFFIX,macrumors.com
+DOMAIN-SUFFIX,nintendo.net
+DOMAIN-SUFFIX,slack-edge.com
+DOMAIN-SUFFIX,tumblr.co
+DOMAIN-SUFFIX,txmblr.com
+
 # GFW list (Synced from official gfwlist/gfwlist)
 DOMAIN,0rz.tw
 DOMAIN,8-d.com

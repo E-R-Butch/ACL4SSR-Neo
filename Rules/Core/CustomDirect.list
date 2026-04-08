@@ -17,6 +17,9 @@ DOMAIN-SUFFIX,weatheroffer.com
 # VMware
 DOMAIN-SUFFIX,vmware.com
 
+# Spark
+DOMAIN-SUFFIX,smartmailcloud.com
+
 # uplay登陆
 #DOMAIN,public-ubiservices.ubi.com
 

@@ -1,0 +1,5 @@
+# 自定义拦截规则
+
+# Spark
+DOMAIN-SUFFIX,amplitude.com
+DOMAIN-SUFFIX,hockeyapp.net
