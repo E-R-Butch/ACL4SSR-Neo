@@ -20,6 +20,9 @@ DOMAIN-SUFFIX,vmware.com
 # Spark
 DOMAIN-SUFFIX,smartmailcloud.com
 
+# 订阅转换
+DOMAIN,api.wcc.best
+
 # uplay登陆
 #DOMAIN,public-ubiservices.ubi.com
 
