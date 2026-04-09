@@ -12,7 +12,7 @@ LIST_DIRS = [
     REPO_ROOT / "Rules/Ruleset/Inactive",
 ]
 
-ALLOWED_SPECIAL_GROUPS = {"DIRECT", "REJECT"}
+ALLOWED_SPECIAL_GROUPS = {"DIRECT", "REJECT", "REJECT-DROP"}
 RULE_TOKEN_RE = re.compile(r"^[A-Z0-9-]+$")
 GROUP_REF_RE = re.compile(r"\[\]([^`\n]+)")
 
