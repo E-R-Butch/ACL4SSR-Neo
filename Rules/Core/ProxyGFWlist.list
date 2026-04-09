@@ -139,7 +139,6 @@ DOMAIN-SUFFIX,txmblr.com
 
 # MakerWorld
 DOMAIN-SUFFIX,makerworld.com
-DOMAIN,makerworld.bblmw.com
 
 # GFW list (Synced from official gfwlist/gfwlist)
 DOMAIN,0rz.tw

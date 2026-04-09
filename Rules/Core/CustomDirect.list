@@ -23,6 +23,17 @@ DOMAIN-SUFFIX,smartmailcloud.com
 # 订阅转换
 DOMAIN,api.wcc.best
 
+# 合规与查询
+DOMAIN,consent.trustarc.com
+DOMAIN,whois.iana.org
+DOMAIN,whois.apnic.net
+
+# MakerWorld 测试
+DOMAIN,makerworld.bblmw.com
+DOMAIN,event.bblmw.com
+DOMAIN,public-cdn.bblmw.com
+DOMAIN,store.bblcdn.com
+
 # uplay登陆
 #DOMAIN,public-ubiservices.ubi.com
 
