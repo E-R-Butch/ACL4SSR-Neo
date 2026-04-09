@@ -1,6 +1,7 @@
 # 代理列表
+# 上半段为手工维护补充，下半段为官方 GFWList 同步产物
 
-# MyList && Other
+# 手工维护：通用代理站点
 DOMAIN-SUFFIX,openzlib.link
 DOMAIN-SUFFIX,servarr.com
 DOMAIN-SUFFIX,ssl-images-amazon.com
@@ -23,8 +24,7 @@ DOMAIN-SUFFIX,unsplash.com
 DOMAIN-SUFFIX,xn--i2ru8q2qg.com
 DOMAIN-SUFFIX,yunpanjingling.com
 
-
-# 国外域名关键字
+# 手工维护：通用代理关键字
 DOMAIN-KEYWORD,1e100
 DOMAIN-KEYWORD,abema
 DOMAIN-KEYWORD,appledaily
@@ -46,7 +46,7 @@ DOMAIN-KEYWORD,twitter
 DOMAIN-KEYWORD,whatsapp
 DOMAIN-KEYWORD,youtube
 
-# Facebook
+# 手工维护：Meta 系服务与网段
 DOMAIN-SUFFIX,fbcdn.com
 IP-CIDR,31.13.24.0/21,no-resolve
 IP-CIDR,31.13.64.0/18,no-resolve
@@ -63,8 +63,9 @@ IP-CIDR,179.60.192.0/22,no-resolve
 IP-CIDR,184.173.128.0/17,no-resolve
 IP-CIDR,185.60.216.0/22,no-resolve
 IP-CIDR,204.15.20.0/22,no-resolve
+IP-CIDR6,2a03:2880::/32,no-resolve
 
-# KakaoTalk
+# 手工维护：KakaoTalk
 DOMAIN-SUFFIX,kakao.co.kr
 DOMAIN-SUFFIX,kakaocdn.net
 IP-CIDR,1.201.0.0/24,no-resolve
@@ -74,7 +75,7 @@ IP-CIDR,103.246.56.0/22,no-resolve
 IP-CIDR,110.76.140.0/22,no-resolve
 IP-CIDR,113.61.104.0/22,no-resolve
 
-# Line
+# 手工维护：LINE
 DOMAIN-SUFFIX,lin.ee
 DOMAIN-SUFFIX,line-cdn.net
 DOMAIN-SUFFIX,nhncorp.jp
@@ -87,7 +88,7 @@ IP-CIDR,119.235.236.0/23,no-resolve
 IP-CIDR,147.92.128.0/17,no-resolve
 IP-CIDR,203.104.128.0/19,no-resolve
 
-# Whatsapp
+# 手工维护：WhatsApp
 IP-CIDR,18.194.0.0/15,no-resolve
 IP-CIDR,34.224.0.0/12,no-resolve
 IP-CIDR,50.22.198.204/30,no-resolve
@@ -103,14 +104,16 @@ IP-CIDR,173.192.231.32/27,no-resolve
 IP-CIDR,174.37.243.0/16,no-resolve
 IP-CIDR,208.43.122.128/27,no-resolve
 
-# Google
+# 手工维护：Google 系域名与网段
 DOMAIN-SUFFIX,app-measurement.net
 DOMAIN-SUFFIX,gstatic.cn
 DOMAIN-SUFFIX,gvt0.com
 IP-CIDR,74.125.0.0/16,no-resolve
+IP-CIDR,142.250.0.0/15,no-resolve
 IP-CIDR,173.194.0.0/16,no-resolve
+IP-CIDR6,2607:f8b0::/32,no-resolve
 
-# Porn
+# 手工维护：成人内容站点
 DOMAIN-SUFFIX,8teenxxx.com
 DOMAIN-SUFFIX,ahcdn.com
 DOMAIN-SUFFIX,bcvcdn.com
@@ -123,10 +126,10 @@ DOMAIN-SUFFIX,sb-cd.com
 DOMAIN-SUFFIX,xnxx-cdn.com
 DOMAIN-SUFFIX,ypncdn.com
 
-# Instagram
+# 手工维护：Instagram 补充
 DOMAIN-SUFFIX,instagr.am
 
-# Box / Fastmail / Tumblr / 社区协作
+# 手工维护：社区、协作与内容平台
 DOMAIN-SUFFIX,box.com
 DOMAIN-SUFFIX,disquscdn.com
 DOMAIN-SUFFIX,fastmail.com
@@ -137,10 +140,11 @@ DOMAIN-SUFFIX,slack-edge.com
 DOMAIN-SUFFIX,tumblr.co
 DOMAIN-SUFFIX,txmblr.com
 
-# MakerWorld
+# 手工维护：MakerWorld 国际站
 DOMAIN-SUFFIX,makerworld.com
 
-# GFW list (Synced from official gfwlist/gfwlist)
+# 官方同步：GFWList 产物
+# 这一段由脚本生成，尽量不要手工改动
 DOMAIN,0rz.tw
 DOMAIN,8-d.com
 DOMAIN,85cc.us
