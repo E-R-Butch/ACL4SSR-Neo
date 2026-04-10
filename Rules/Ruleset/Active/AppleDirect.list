@@ -2,6 +2,7 @@
 # 核心 Apple 服务、内容分发与账号基础设施
 DOMAIN-SUFFIX,aaplimg.com
 DOMAIN,api.apple-cloudkit.com
+DOMAIN,ohttp-relay1.fastly-edge.com
 DOMAIN-SUFFIX,apple.co
 DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,appstore.com

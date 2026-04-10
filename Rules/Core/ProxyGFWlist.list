@@ -140,6 +140,10 @@ DOMAIN-SUFFIX,slack-edge.com
 DOMAIN-SUFFIX,tumblr.co
 DOMAIN-SUFFIX,txmblr.com
 
+# 手工维护：GitHub 与 Dropbox 裸 IP
+IP-CIDR,20.205.243.166/32,no-resolve
+IP-CIDR,108.160.165.9/32,no-resolve
+
 # 手工维护：MakerWorld 国际站
 DOMAIN-SUFFIX,makerworld.com
 
