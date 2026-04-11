@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyListChina列表，只包含ABP中的 EasyListChina 内容
 # 来源：https://easylist-downloads.adblockplus.org/easylistchina.txt
-# 更新：2026-04-10 02:27:13
-# 数量：5889条
+# 更新：2026-04-11 02:06:50
+# 数量：5900条
 
 DOMAIN-SUFFIX,003store.com
 DOMAIN-SUFFIX,00k456wyh.com
@@ -21,6 +21,7 @@ DOMAIN-SUFFIX,07pv7k61z.com
 DOMAIN-SUFFIX,086123.xyz
 DOMAIN-SUFFIX,0941.org
 DOMAIN-SUFFIX,0a0atz2sh.top
+DOMAIN-SUFFIX,0a66kw9r8.com
 DOMAIN-SUFFIX,0b4qu3nxa.com
 DOMAIN-SUFFIX,0b6rvr210q.com
 DOMAIN-SUFFIX,0bb8jytek.com
@@ -432,6 +433,7 @@ DOMAIN-SUFFIX,6ggstcmglf.com
 DOMAIN-SUFFIX,6gvg5saail.com
 DOMAIN-SUFFIX,6h6pdph56.com
 DOMAIN-SUFFIX,6iiz8ni96v.com
+DOMAIN-SUFFIX,6iyq4atled.com
 DOMAIN-SUFFIX,6jei0t6xp.com
 DOMAIN-SUFFIX,6jtqdplfz7.com
 DOMAIN-SUFFIX,6jyi7mzae.com
@@ -442,6 +444,7 @@ DOMAIN-SUFFIX,6lpm5zq6t3.com
 DOMAIN-SUFFIX,6m8tk53pw.com
 DOMAIN-SUFFIX,6mdf9teiz.com
 DOMAIN-SUFFIX,6n528aywi9.com
+DOMAIN-SUFFIX,6o04ylee62.com
 DOMAIN-SUFFIX,6o2k80jf8w.com
 DOMAIN-SUFFIX,6o719vq4x.com
 DOMAIN-SUFFIX,6p2g1kk03.com
@@ -704,6 +707,7 @@ DOMAIN-SUFFIX,a2put.chinaz.com
 DOMAIN-SUFFIX,a3.jandan.net
 DOMAIN-SUFFIX,a4bbltm3u2.com
 DOMAIN-SUFFIX,a4xvv2g18l.com
+DOMAIN-SUFFIX,a65vocvbfe.com
 DOMAIN-SUFFIX,a6cfvavw1.xyz
 DOMAIN-SUFFIX,a6o69f9ky0.com
 DOMAIN-SUFFIX,a7wiuh3she.com
@@ -2114,6 +2118,7 @@ DOMAIN-SUFFIX,ganjituiguang.ganji.com
 DOMAIN-SUFFIX,gardenian8.top
 DOMAIN-SUFFIX,gavm.cn
 DOMAIN-SUFFIX,gawnaze.com
+DOMAIN-SUFFIX,gb0143odqh.com
 DOMAIN-SUFFIX,gb3scpejq.com
 DOMAIN-SUFFIX,gbiathrilzik.com
 DOMAIN-SUFFIX,gbiltuj8w.com
@@ -3578,6 +3583,7 @@ DOMAIN-SUFFIX,novikanidf.com
 DOMAIN-SUFFIX,npgjij.cn
 DOMAIN-SUFFIX,nplvdodbja.com
 DOMAIN-SUFFIX,npvcfn.icu
+DOMAIN-SUFFIX,npzc1yzag7.com
 DOMAIN-SUFFIX,nq49x3m8g.com
 DOMAIN-SUFFIX,nqlzlr.icu
 DOMAIN-SUFFIX,nqwgvk.cn
@@ -3965,6 +3971,7 @@ DOMAIN-SUFFIX,ptju.cn
 DOMAIN-SUFFIX,pttzjo.top
 DOMAIN-SUFFIX,ptxcfn.icu
 DOMAIN-SUFFIX,ptzxed507.com
+DOMAIN-SUFFIX,pu3xxlqjr.com
 DOMAIN-SUFFIX,pub.funshion.com
 DOMAIN-SUFFIX,pudtyek.com
 DOMAIN-SUFFIX,pudyrxxaq.com
@@ -4453,6 +4460,7 @@ DOMAIN-SUFFIX,ssp.moeli.net
 DOMAIN-SUFFIX,ssp.zf313.com
 DOMAIN-SUFFIX,ssqxuy.icu
 DOMAIN-SUFFIX,sssvd.china.com
+DOMAIN-SUFFIX,staircase59.com
 DOMAIN-SUFFIX,staitcfile.org
 DOMAIN-SUFFIX,stamenbs4.com
 DOMAIN-SUFFIX,stamina4.top
@@ -5097,6 +5105,7 @@ DOMAIN-SUFFIX,vrosqutsgh.com
 DOMAIN-SUFFIX,vrovadwd.com
 DOMAIN-SUFFIX,vrow.cn
 DOMAIN-SUFFIX,vrrm.cn
+DOMAIN-SUFFIX,vrtafd.icu
 DOMAIN-SUFFIX,vruzexzl.com
 DOMAIN-SUFFIX,vrzuhj.icu
 DOMAIN-SUFFIX,vsct.cn
@@ -5366,7 +5375,9 @@ DOMAIN-SUFFIX,xc.mydrivers.com
 DOMAIN-SUFFIX,xcf-bd-js.chuimg.com
 DOMAIN-SUFFIX,xcnfzp.icu
 DOMAIN-SUFFIX,xdea.cn
+DOMAIN-SUFFIX,xdlipr.icu
 DOMAIN-SUFFIX,xdoriq.cn
+DOMAIN-SUFFIX,xdxqw9nnr.com
 DOMAIN-SUFFIX,xdyjt.com
 DOMAIN-SUFFIX,xdyn03010jy.com
 DOMAIN-SUFFIX,xdyn03011jy.com
