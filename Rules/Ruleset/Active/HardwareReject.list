@@ -1,0 +1,3 @@
+# Hardware Reject
+# GPU / CPU vendors: telemetry and reporting endpoints
+DOMAIN,prod.otel.kaizen.nvidia.com

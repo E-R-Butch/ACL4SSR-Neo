@@ -21,7 +21,9 @@ DOMAIN-SUFFIX,steamstat.us
 
 # 游戏平台
 DOMAIN-SUFFIX,epicgames.com
+DOMAIN-SUFFIX,epicgames.dev
 DOMAIN-SUFFIX,ol.epicgames.com
+DOMAIN-SUFFIX,gamepass.com
 DOMAIN-SUFFIX,helpshift.com
 DOMAIN-SUFFIX,paragon.com
 DOMAIN-SUFFIX,unrealengine.com
@@ -31,6 +33,7 @@ DOMAIN-SUFFIX,blizzard.com
 DOMAIN-SUFFIX,playstation.com
 DOMAIN-SUFFIX,playstation.net
 DOMAIN-SUFFIX,playstationnetwork.com
+DOMAIN-SUFFIX,xboxservices.com
 DOMAIN,static3.cdn.ubi.com
 DOMAIN,ubisoft-uplay-savegames.s3.amazonaws.com
 DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com

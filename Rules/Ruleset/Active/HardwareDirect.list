@@ -1,0 +1,5 @@
+# Hardware Direct
+# GPU / CPU vendors: updater and device service endpoints
+DOMAIN,download.amd.com
+DOMAIN,ftpm.amd.com
+DOMAIN,dsadata.intel.com

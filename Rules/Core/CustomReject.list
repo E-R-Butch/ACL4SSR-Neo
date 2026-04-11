@@ -3,3 +3,7 @@
 # Spark
 DOMAIN-SUFFIX,amplitude.com
 DOMAIN-SUFFIX,hockeyapp.net
+
+# Shared telemetry
+DOMAIN,sentry.io
+DOMAIN-SUFFIX,ingest.us.sentry.io
