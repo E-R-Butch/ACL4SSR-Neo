@@ -24,4 +24,5 @@ IP-CIDR,198.183.17.0/24,no-resolve
 IP-CIDR,205.180.175.0/24,no-resolve
 IP-CIDR6,2403:300:a0a:1000::/64,no-resolve
 IP-CIDR6,2403:300:a0a:2000::/64,no-resolve
+IP-CIDR6,2403:300:a16:2000::/64,no-resolve
 IP-CIDR6,2403:300:a30:2000::/64,no-resolve
