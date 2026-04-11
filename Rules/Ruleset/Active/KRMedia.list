@@ -18,7 +18,8 @@ DOMAIN-SUFFIX,afreecatv.com
 # SPOTV NOW
 DOMAIN-SUFFIX,spotvnow.co.kr
 DOMAIN-SUFFIX,api.brightcove.com
-# Daum / Kakao
+# Daum / Kakao CDN
 DOMAIN-SUFFIX,daumcdn.net
+# PotPlayer related
 DOMAIN-SUFFIX,potplayer.tv
 DOMAIN-SUFFIX,potplayer.info
