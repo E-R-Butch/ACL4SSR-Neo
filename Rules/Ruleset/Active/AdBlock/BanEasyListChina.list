@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyListChina列表，只包含ABP中的 EasyListChina 内容
 # 来源：https://easylist-downloads.adblockplus.org/easylistchina.txt
-# 更新：2026-04-12 02:28:54
-# 数量：5915条
+# 更新：2026-04-13 02:33:51
+# 数量：5923条
 
 DOMAIN-SUFFIX,003store.com
 DOMAIN-SUFFIX,00k456wyh.com
@@ -197,6 +197,7 @@ DOMAIN-SUFFIX,21.zhaozongjie.com
 DOMAIN-SUFFIX,21cfhm0s1.top
 DOMAIN-SUFFIX,21ojgpuwg6.com
 DOMAIN-SUFFIX,222aa333bb.com
+DOMAIN-SUFFIX,223qu6jnqv.com
 DOMAIN-SUFFIX,224oztn8dq.com
 DOMAIN-SUFFIX,22eo9qlbpt.com
 DOMAIN-SUFFIX,22vie9ula.com
@@ -347,6 +348,7 @@ DOMAIN-SUFFIX,51dh.xin
 DOMAIN-SUFFIX,51dxs.com
 DOMAIN-SUFFIX,51gxqm.com
 DOMAIN-SUFFIX,51tongji.trafficmanager.net
+DOMAIN-SUFFIX,51ympuu7y.com
 DOMAIN-SUFFIX,53h7rxip9.com
 DOMAIN-SUFFIX,54ads.com
 DOMAIN-SUFFIX,55726zubo56686.com
@@ -396,6 +398,7 @@ DOMAIN-SUFFIX,5u8mjz9tx0.com
 DOMAIN-SUFFIX,5uazcu2o1.com
 DOMAIN-SUFFIX,5vszw5ab2.com
 DOMAIN-SUFFIX,5w31xv1a2.com
+DOMAIN-SUFFIX,5wv0y42ub.com
 DOMAIN-SUFFIX,5wzew9jht.com
 DOMAIN-SUFFIX,5x17591y3b.com
 DOMAIN-SUFFIX,5xvtbbvb6.com
@@ -618,6 +621,7 @@ DOMAIN-SUFFIX,9ma1sr1tb1.com
 DOMAIN-SUFFIX,9o29nhxgp.com
 DOMAIN-SUFFIX,9oru1vh0w.com
 DOMAIN-SUFFIX,9oxhstb2m2.com
+DOMAIN-SUFFIX,9p81m19kr.com
 DOMAIN-SUFFIX,9pzoz6taf.com
 DOMAIN-SUFFIX,9r0v0go0el.com
 DOMAIN-SUFFIX,9soefyenw.com
@@ -1841,6 +1845,7 @@ DOMAIN-SUFFIX,embofjpks.com
 DOMAIN-SUFFIX,emdcadvertise.eastmoney.com
 DOMAIN-SUFFIX,emjs.mkzhan.com
 DOMAIN-SUFFIX,emphidaho.com
+DOMAIN-SUFFIX,ems59cq77u.com
 DOMAIN-SUFFIX,emslgm.icu
 DOMAIN-SUFFIX,emsq.cn
 DOMAIN-SUFFIX,enbg.cn
@@ -3969,6 +3974,7 @@ DOMAIN-SUFFIX,progress12.com
 DOMAIN-SUFFIX,prologue23.com
 DOMAIN-SUFFIX,promontory32.com
 DOMAIN-SUFFIX,propagate44.top
+DOMAIN-SUFFIX,property58.top
 DOMAIN-SUFFIX,psa1xoeve.com
 DOMAIN-SUFFIX,psrfbr.icu
 DOMAIN-SUFFIX,pswzggx.icu
@@ -4629,6 +4635,7 @@ DOMAIN-SUFFIX,tkll12170nb.com
 DOMAIN-SUFFIX,tkll12171nb.com
 DOMAIN-SUFFIX,tkll12181nb.com
 DOMAIN-SUFFIX,tl9q49ffi.com
+DOMAIN-SUFFIX,tlgivardfp.com
 DOMAIN-SUFFIX,tljrvn.icu
 DOMAIN-SUFFIX,tljsxt.icu
 DOMAIN-SUFFIX,tlq8ufqddj.com
@@ -4811,6 +4818,7 @@ DOMAIN-SUFFIX,udd1i5.zhihu.com
 DOMAIN-SUFFIX,udghekzitv.com
 DOMAIN-SUFFIX,udiab1.jianshu.com
 DOMAIN-SUFFIX,udsf.cn
+DOMAIN-SUFFIX,udtnjdhtdb.com
 DOMAIN-SUFFIX,udwlki.icu
 DOMAIN-SUFFIX,udxi.cn
 DOMAIN-SUFFIX,udyi.cn
