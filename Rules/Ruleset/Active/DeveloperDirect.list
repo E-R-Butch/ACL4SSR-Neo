@@ -1,6 +1,5 @@
 # 开发直连
 
-DOMAIN,formulae.brew.sh
 DOMAIN-SUFFIX,apache.org
 DOMAIN-SUFFIX,elastic.co
 DOMAIN-SUFFIX,elastic.com

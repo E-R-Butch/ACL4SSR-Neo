@@ -1,0 +1,10 @@
+# 开发代理
+
+# Homebrew
+DOMAIN,formulae.brew.sh
+
+# Antigravity
+DOMAIN,antigravity-auto-updater-974169037036.us-central1.run.app
+
+# Network diagnostics
+DOMAIN,ip.api.skk.moe
