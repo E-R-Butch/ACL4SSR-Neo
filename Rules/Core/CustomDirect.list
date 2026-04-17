@@ -35,8 +35,8 @@ DOMAIN,event.bblmw.com
 DOMAIN,public-cdn.bblmw.com
 DOMAIN,store.bblcdn.com
 
-# uplay登录
+# uplay登陆
 #DOMAIN,public-ubiservices.ubi.com
 
-# steam登录
+# steam登陆
 #DOMAIN-SUFFIX,steampowered.com
