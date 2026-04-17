@@ -5,6 +5,9 @@ DOMAIN,formulae.brew.sh
 
 # Antigravity
 DOMAIN,antigravity-auto-updater-974169037036.us-central1.run.app
+DOMAIN,antigravity-unleash.goog
 
 # Network diagnostics
 DOMAIN,ip.api.skk.moe
+DOMAIN,ipapi.co
+DOMAIN,api.ip.sb
