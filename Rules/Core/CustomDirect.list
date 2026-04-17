@@ -22,6 +22,7 @@ DOMAIN-SUFFIX,smartmailcloud.com
 
 # 订阅转换
 DOMAIN,api.wcc.best
+DOMAIN,api.dler.io
 
 # 合规与查询
 DOMAIN,consent.trustarc.com
@@ -34,8 +35,8 @@ DOMAIN,event.bblmw.com
 DOMAIN,public-cdn.bblmw.com
 DOMAIN,store.bblcdn.com
 
-# uplay登陆
+# uplay登录
 #DOMAIN,public-ubiservices.ubi.com
 
-# steam登陆
+# steam登录
 #DOMAIN-SUFFIX,steampowered.com
