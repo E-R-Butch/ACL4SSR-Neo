@@ -14,3 +14,9 @@ DOMAIN,api.ip.sb
 
 # Akile
 DOMAIN-SUFFIX,akile.ai
+
+# GitKraken
+DOMAIN,configs.gitkraken.dev
+
+# OpenSCAD
+DOMAIN,files.openscad.org
