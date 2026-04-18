@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyListChina列表，只包含ABP中的 EasyListChina 内容
 # 来源：https://easylist-downloads.adblockplus.org/easylistchina.txt
-# 更新：2026-04-17 02:28:58
-# 数量：5977条
+# 更新：2026-04-18 02:11:42
+# 数量：5989条
 
 DOMAIN-SUFFIX,003store.com
 DOMAIN-SUFFIX,00k456wyh.com
@@ -335,6 +335,7 @@ DOMAIN-SUFFIX,4u3222y7.xyz
 DOMAIN-SUFFIX,4ufutzmihl.com
 DOMAIN-SUFFIX,4v6a7i3dkz.com
 DOMAIN-SUFFIX,4w3ol467n.com
+DOMAIN-SUFFIX,4w54d7rjg.com
 DOMAIN-SUFFIX,4wbvq8yl2.com
 DOMAIN-SUFFIX,4wg67b9vb.com
 DOMAIN-SUFFIX,4wmiuiyd70.com
@@ -416,6 +417,7 @@ DOMAIN-SUFFIX,600g3yf2p.com
 DOMAIN-SUFFIX,609999.xyz
 DOMAIN-SUFFIX,6109.org
 DOMAIN-SUFFIX,614514.com
+DOMAIN-SUFFIX,61fjluqray.com
 DOMAIN-SUFFIX,629jpgi3i.com
 DOMAIN-SUFFIX,644446.com
 DOMAIN-SUFFIX,64lv69ncb9.com
@@ -1381,6 +1383,7 @@ DOMAIN-SUFFIX,cehb1d1lsm.com
 DOMAIN-SUFFIX,cekdew.icu
 DOMAIN-SUFFIX,ceremony79.com
 DOMAIN-SUFFIX,cfoxpgfzxl.com
+DOMAIN-SUFFIX,cfssi03yg3.com
 DOMAIN-SUFFIX,cgcg01010ht.com
 DOMAIN-SUFFIX,cgcg01011ht.com
 DOMAIN-SUFFIX,cgcg01020ht.com
@@ -1408,6 +1411,7 @@ DOMAIN-SUFFIX,cherrya04.top
 DOMAIN-SUFFIX,chicorty2.com
 DOMAIN-SUFFIX,chidir.com
 DOMAIN-SUFFIX,chienzul.com
+DOMAIN-SUFFIX,childbirth44.top
 DOMAIN-SUFFIX,chitshuqh.com
 DOMAIN-SUFFIX,cholurd.com
 DOMAIN-SUFFIX,chong-wu.net
@@ -2634,6 +2638,7 @@ DOMAIN-SUFFIX,i7bqmgn87.com
 DOMAIN-SUFFIX,i7mfm1hl44.com
 DOMAIN-SUFFIX,i7xkqmhjw.com
 DOMAIN-SUFFIX,i90ptshd.top
+DOMAIN-SUFFIX,i96wgz4nmy.com
 DOMAIN-SUFFIX,i97wqa881u.com
 DOMAIN-SUFFIX,i9i3ko2o70.com
 DOMAIN-SUFFIX,iads.xinmin.cn
@@ -3364,6 +3369,7 @@ DOMAIN-SUFFIX,mjufus.icu
 DOMAIN-SUFFIX,mjursnb.com
 DOMAIN-SUFFIX,mk10ow7zoi.com
 DOMAIN-SUFFIX,mkff.cn
+DOMAIN-SUFFIX,mkfjbitxzlhijfcenxej.top
 DOMAIN-SUFFIX,mkue.cn
 DOMAIN-SUFFIX,ml4xbwg73.top
 DOMAIN-SUFFIX,mlougq.icu
@@ -3847,6 +3853,7 @@ DOMAIN-SUFFIX,oyil.cn
 DOMAIN-SUFFIX,oylblokar.com
 DOMAIN-SUFFIX,oyz61nhz8.com
 DOMAIN-SUFFIX,oz6q1drif.com
+DOMAIN-SUFFIX,ozsvnlo.com
 DOMAIN-SUFFIX,oztg6i0ass.com
 DOMAIN-SUFFIX,p.7060.la
 DOMAIN-SUFFIX,p.junshi881.com
@@ -4901,6 +4908,7 @@ DOMAIN-SUFFIX,uj2h8xm8w.com
 DOMAIN-SUFFIX,ujfyzxfc01.com
 DOMAIN-SUFFIX,ujhu.cn
 DOMAIN-SUFFIX,ujof.cn
+DOMAIN-SUFFIX,uk3eymh64c.com
 DOMAIN-SUFFIX,ukew6uo7u1.com
 DOMAIN-SUFFIX,ukfp.cn
 DOMAIN-SUFFIX,ukx6umuvu.com
@@ -5047,6 +5055,7 @@ DOMAIN-SUFFIX,vdnh.cn
 DOMAIN-SUFFIX,vdxu.cn
 DOMAIN-SUFFIX,vedhalmin.com
 DOMAIN-SUFFIX,vegetation67.com
+DOMAIN-SUFFIX,vegmiedd.com
 DOMAIN-SUFFIX,vehohx.icu
 DOMAIN-SUFFIX,veirkaey.com
 DOMAIN-SUFFIX,vejrp6iq25.com
@@ -5406,6 +5415,7 @@ DOMAIN-SUFFIX,wx6hczwhh.com
 DOMAIN-SUFFIX,wxfdmri.xyz
 DOMAIN-SUFFIX,wxikfd89f.com
 DOMAIN-SUFFIX,wxx776sxqk.com
+DOMAIN-SUFFIX,wxy9b202h.com
 DOMAIN-SUFFIX,wxynyij.icu
 DOMAIN-SUFFIX,wxztfkiga.com
 DOMAIN-SUFFIX,wy12cewh4.com
@@ -5873,6 +5883,7 @@ DOMAIN-SUFFIX,zgm1.com
 DOMAIN-SUFFIX,zgo8rgvuaf.com
 DOMAIN-SUFFIX,zgqsc3shr.com
 DOMAIN-SUFFIX,zgzxm.weathercn.com
+DOMAIN-SUFFIX,zh4qnnf63.com
 DOMAIN-SUFFIX,zhbhivvoid.com
 DOMAIN-SUFFIX,zhihu.xmcimg.com
 DOMAIN-SUFFIX,zhjqtd.icu
@@ -5905,6 +5916,7 @@ DOMAIN-SUFFIX,zlclgzs.cn
 DOMAIN-SUFFIX,zlgame.top
 DOMAIN-SUFFIX,zlgenuyiu.com
 DOMAIN-SUFFIX,zlnitethia.com
+DOMAIN-SUFFIX,zltqrh.icu
 DOMAIN-SUFFIX,zmdttx.icu
 DOMAIN-SUFFIX,zmg15qfvi.com
 DOMAIN-SUFFIX,zmk852tp7.com

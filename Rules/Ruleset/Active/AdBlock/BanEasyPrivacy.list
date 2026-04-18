@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 更新：2026-04-17 02:29:01
-# 数量：40422条
+# 更新：2026-04-18 02:11:44
+# 数量：40443条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -4532,6 +4532,7 @@ DOMAIN-SUFFIX,adlog.com.com
 DOMAIN-SUFFIX,adm.adminstrumentengineering.com.au
 DOMAIN-SUFFIX,admaxium.com
 DOMAIN-SUFFIX,admeasure.hh-online.jp
+DOMAIN-SUFFIX,admediasales.com
 DOMAIN-SUFFIX,admetrics.events
 DOMAIN-SUFFIX,admin.academyforconsciousleadership.net
 DOMAIN-SUFFIX,admin.net.fidorbank.uk
@@ -4701,6 +4702,7 @@ DOMAIN-SUFFIX,advantage.digitalsunray.com
 DOMAIN-SUFFIX,advantageauburn.actonservice.com
 DOMAIN-SUFFIX,advantageind.actonservice.com
 DOMAIN-SUFFIX,advantages.americanexpress.com
+DOMAIN-SUFFIX,advertease.store
 DOMAIN-SUFFIX,advise.gallup.com
 DOMAIN-SUFFIX,advisers.kingstonsmith.co.uk
 DOMAIN-SUFFIX,advisor.americanexpress.ca
@@ -6900,6 +6902,7 @@ DOMAIN-SUFFIX,aud.banque-france.fr
 DOMAIN-SUFFIX,audience-mostread.r7.com
 DOMAIN-SUFFIX,audience.newscgp.com
 DOMAIN-SUFFIX,audience.standardchartered.com.tw
+DOMAIN-SUFFIX,audiencetrk.com
 DOMAIN-SUFFIX,audiencies.3cat.cat
 DOMAIN-SUFFIX,audiencies.ccma.cat
 DOMAIN-SUFFIX,audiofly.actonservice.com
@@ -8124,6 +8127,7 @@ DOMAIN-SUFFIX,cbdatatracker.com
 DOMAIN-SUFFIX,cbl6.destinia.gt
 DOMAIN-SUFFIX,cbnzop.c-c-j.com
 DOMAIN-SUFFIX,cbpgpg.bombshellsportswear.com
+DOMAIN-SUFFIX,cbso.uk.net
 DOMAIN-SUFFIX,cbudbs.tirendo.de
 DOMAIN-SUFFIX,cbuvhv.desertcart.ae
 DOMAIN-SUFFIX,cc.conforama.es
@@ -9103,6 +9107,7 @@ DOMAIN-SUFFIX,cookies.wpcarey.com
 DOMAIN-SUFFIX,cookietracking.eatonpowersource.com
 DOMAIN-SUFFIX,cookiex.ngd.yahoo.com
 DOMAIN-SUFFIX,cooking-app.lkk.com
+DOMAIN-SUFFIX,coolretargeting.com
 DOMAIN-SUFFIX,coop.vmware.com
 DOMAIN-SUFFIX,cooyxg.tennis-point.de
 DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com
@@ -10965,6 +10970,7 @@ DOMAIN-SUFFIX,doppler-client-events.cbsivideo.com
 DOMAIN-SUFFIX,doppler-config.cbsivideo.com
 DOMAIN-SUFFIX,doppler-reporting.cbsivideo.com
 DOMAIN-SUFFIX,dotvox.actonservice.com
+DOMAIN-SUFFIX,doubleclick.uk.net
 DOMAIN-SUFFIX,doublestat.info
 DOMAIN-SUFFIX,downeconomywp.advancedtech.com
 DOMAIN-SUFFIX,download-staging.planify.io
@@ -11115,6 +11121,7 @@ DOMAIN-SUFFIX,dzszbb.homes.co.jp
 DOMAIN-SUFFIX,dztatn.soulberry.jp
 DOMAIN-SUFFIX,dzuthv.fahrrad-xxl.de
 DOMAIN-SUFFIX,dzwqfq.alpitour.it
+DOMAIN-SUFFIX,e-ads.com
 DOMAIN-SUFFIX,e-img.hover.to
 DOMAIN-SUFFIX,e-learning.brainshark.com
 DOMAIN-SUFFIX,e.beckmancoulter.com
@@ -14376,6 +14383,7 @@ DOMAIN-SUFFIX,healthroundprince.com
 DOMAIN-SUFFIX,heap-api.com
 DOMAIN-SUFFIX,heap.drop.com
 DOMAIN-SUFFIX,hearob.klix.ba
+DOMAIN-SUFFIX,heartbeat-pearl.vercel.app
 DOMAIN-SUFFIX,heartbeat.pmd.444.hu
 DOMAIN-SUFFIX,heartflow.actonservice.com
 DOMAIN-SUFFIX,heatmaps.lcisoft.it
@@ -18452,6 +18460,7 @@ DOMAIN-SUFFIX,logsdk.kwai-pro.com
 DOMAIN-SUFFIX,logservice.hicloud.com
 DOMAIN-SUFFIX,logservice1.hicloud.com
 DOMAIN-SUFFIX,logstash-3.radio-canada.ca
+DOMAIN-SUFFIX,logstracker.com
 DOMAIN-SUFFIX,logtail.com
 DOMAIN-SUFFIX,logtake.weidian.com
 DOMAIN-SUFFIX,logx-experimentation.iherb.com
@@ -20420,6 +20429,7 @@ DOMAIN-SUFFIX,mastertag.q-sis.de
 DOMAIN-SUFFIX,mat.lgdisplay.com
 DOMAIN-SUFFIX,mat.socy.es
 DOMAIN-SUFFIX,mat.ukraine-nachrichten.de
+DOMAIN-SUFFIX,match2one.net
 DOMAIN-SUFFIX,math.meistercody.com
 DOMAIN-SUFFIX,matheranalytics.com
 DOMAIN-SUFFIX,mathilde-ads.com
@@ -22524,6 +22534,7 @@ DOMAIN-SUFFIX,mpglie.apartmentguide.com
 DOMAIN-SUFFIX,mpgtft.zoobeauval.com
 DOMAIN-SUFFIX,mpjtif.viabovag.nl
 DOMAIN-SUFFIX,mprkxf.teebooks.com
+DOMAIN-SUFFIX,mpstech.space
 DOMAIN-SUFFIX,mqesfg.bpm-power.com
 DOMAIN-SUFFIX,mqhaxf.keds.com
 DOMAIN-SUFFIX,mqhuzk.soffadirekt.se
@@ -22557,6 +22568,7 @@ DOMAIN-SUFFIX,msafoy.eyebuydirect.com
 DOMAIN-SUFFIX,msbainfo.fbe.hku.hk
 DOMAIN-SUFFIX,msboul.gruenwelt.de
 DOMAIN-SUFFIX,mseeru.faz.net
+DOMAIN-SUFFIX,msfunction.online
 DOMAIN-SUFFIX,msfvwi.sieuthiyte.com.vn
 DOMAIN-SUFFIX,msg.71.am
 DOMAIN-SUFFIX,msg.qy.net
@@ -24722,6 +24734,7 @@ DOMAIN-SUFFIX,pulse.munsonhealthcare.org
 DOMAIN-SUFFIX,pulse.shopflo.com
 DOMAIN-SUFFIX,pumlmb.netcologne.de
 DOMAIN-SUFFIX,pumpkin.abine.com
+DOMAIN-SUFFIX,purcartz.com
 DOMAIN-SUFFIX,purple-hit.com
 DOMAIN-SUFFIX,purple.mongodb.com
 DOMAIN-SUFFIX,purpletalk.actonservice.com
@@ -24770,6 +24783,7 @@ DOMAIN-SUFFIX,pxgpnp.angara.com
 DOMAIN-SUFFIX,pxjkbj.bostonproper.com
 DOMAIN-SUFFIX,pxl.indeed.com
 DOMAIN-SUFFIX,pxlgnpgecom-a.akamaihd.net
+DOMAIN-SUFFIX,pxlnow.in
 DOMAIN-SUFFIX,pxlstat.com
 DOMAIN-SUFFIX,pxmzlk.redfin.com
 DOMAIN-SUFFIX,pxsg.pandora.com
@@ -25503,6 +25517,7 @@ DOMAIN-SUFFIX,routes.navibration.com
 DOMAIN-SUFFIX,rowsrm.atasunoptik.com.tr
 DOMAIN-SUFFIX,roxtec.actonservice.com
 DOMAIN-SUFFIX,royzgi.giftishow.com
+DOMAIN-SUFFIX,rp.mustreadnew.com
 DOMAIN-SUFFIX,rpfkgf.rp-online.de
 DOMAIN-SUFFIX,rpfkgf.saarbruecker-zeitung.de
 DOMAIN-SUFFIX,rpfkgf.volksfreund.de
@@ -25547,6 +25562,7 @@ DOMAIN-SUFFIX,rsv.pairorder.jp
 DOMAIN-SUFFIX,rsvp.heatexperience.com
 DOMAIN-SUFFIX,rsvp.markettraders.com
 DOMAIN-SUFFIX,rsx.afterpay.com
+DOMAIN-SUFFIX,rt-pixel.com
 DOMAIN-SUFFIX,rt.bunte.de
 DOMAIN-SUFFIX,rt.cdnmedia.tv
 DOMAIN-SUFFIX,rt.flix360.com
@@ -25584,6 +25600,7 @@ DOMAIN-SUFFIX,rum-ingress-coralogix.com
 DOMAIN-SUFFIX,rum.api.intuit.com
 DOMAIN-SUFFIX,rum.azion.com
 DOMAIN-SUFFIX,rum.azioncdn.net
+DOMAIN-SUFFIX,rum.battle.net
 DOMAIN-SUFFIX,rum.cdnpure.com
 DOMAIN-SUFFIX,rum.condenastdigital.com
 DOMAIN-SUFFIX,rum.corewebvitals.io
@@ -27364,6 +27381,7 @@ DOMAIN-SUFFIX,shgcdn3.com
 DOMAIN-SUFFIX,shhoix0fuonj0hz6.net.fidor.de
 DOMAIN-SUFFIX,shipsmarter.idrivelogistics.com
 DOMAIN-SUFFIX,shjwhv.falsepeti.com
+DOMAIN-SUFFIX,shop-cart.app
 DOMAIN-SUFFIX,shop.anu-cosme.com
 DOMAIN-SUFFIX,shop.iwantclips.com
 DOMAIN-SUFFIX,shop.lids.ca
@@ -31739,6 +31757,7 @@ DOMAIN-SUFFIX,staging.narrateapp.com
 DOMAIN-SUFFIX,staging.refer.wagr.us
 DOMAIN-SUFFIX,stahhx.inversapub.com
 DOMAIN-SUFFIX,stahl.actonservice.com
+DOMAIN-SUFFIX,stalkoda.com
 DOMAIN-SUFFIX,stan.xing.com
 DOMAIN-SUFFIX,stanburns.actonservice.com
 DOMAIN-SUFFIX,stape.brascast.com
@@ -36209,6 +36228,7 @@ DOMAIN-SUFFIX,trackerapi.truste.com
 DOMAIN-SUFFIX,trackersimulator.org
 DOMAIN-SUFFIX,trackhorizon.nnmtools.com
 DOMAIN-SUFFIX,trackid.globoid.globo.com
+DOMAIN-SUFFIX,trackier.com
 DOMAIN-SUFFIX,tracking-api-4lasu2nlcq-ew.a.run.app
 DOMAIN-SUFFIX,tracking-api.bookzone.ro
 DOMAIN-SUFFIX,tracking-api.hotmart.com
@@ -38840,6 +38860,7 @@ DOMAIN-SUFFIX,webapp.e-post.smn.no
 DOMAIN-SUFFIX,webcasts.de.ni.com
 DOMAIN-SUFFIX,webcasts.partnermcafee.com
 DOMAIN-SUFFIX,webcounter.goweb.de
+DOMAIN-SUFFIX,webevents.kayzen.io
 DOMAIN-SUFFIX,webinar.dnv.com
 DOMAIN-SUFFIX,webinar.intel.com
 DOMAIN-SUFFIX,webinar.ndtco.com
