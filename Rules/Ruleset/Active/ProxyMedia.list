@@ -110,8 +110,6 @@ DOMAIN,hboasia4-i.akamaihd.net
 DOMAIN,hboasia5-i.akamaihd.net
 DOMAIN,players.brightcove.net
 DOMAIN,s3-ap-southeast-1.amazonaws.com
-DOMAIN-SUFFIX,hbogoasia.com
-DOMAIN-SUFFIX,hbogoasia.hk
 
 # HWTV
 USER-AGENT,HWTVMobile*
