@@ -3,6 +3,9 @@ DOMAIN-SUFFIX,steamcommunity.com
 DOMAIN-SUFFIX,steam-chat.com
 DOMAIN-SUFFIX,s.team
 DOMAIN-SUFFIX,steam.tv
+# Steam 主站走代理（api 走直连，见 GameDirect.list）
+DOMAIN,steampowered.com
+DOMAIN,www.steampowered.com
 DOMAIN,store.steampowered.com
 DOMAIN,help.steampowered.com
 DOMAIN-SUFFIX,sonyentertainmentnetwork.com
