@@ -11,6 +11,10 @@ LIST_DIRS = [
     REPO_ROOT / "Rules/Ruleset/Inactive",
 ]
 
+BLOCKED_RULES = {
+    "DOMAIN,disabled.invalid,REJECT",
+}
+
 
 def log(message):
     print(f"[*] {message}", flush=True)
@@ -36,6 +40,9 @@ def dedupe_lines(lines):
     for line in lines:
         key = line.strip()
         if is_effective_rule(line):
+            if key in BLOCKED_RULES:
+                removed += 1
+                continue
             if key in seen_rules:
                 removed += 1
                 continue

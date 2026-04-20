@@ -15,6 +15,9 @@ LIST_DIRS = [
 ALLOWED_SPECIAL_GROUPS = {"DIRECT", "REJECT", "REJECT-DROP"}
 RULE_TOKEN_RE = re.compile(r"^[A-Z0-9-]+$")
 GROUP_REF_RE = re.compile(r"\[\]([^`\n]+)")
+BLOCKED_RULES = {
+    "DOMAIN,disabled.invalid,REJECT",
+}
 
 
 def log(message):
@@ -79,6 +82,9 @@ def validate_list_file(path):
             continue
 
         non_comment_rules += 1
+        if line in BLOCKED_RULES:
+            errors.append(f"{path}:{lineno} blocked placeholder rule '{line}'")
+
         if "," not in line:
             errors.append(f"{path}:{lineno} missing comma-separated rule format")
             continue
