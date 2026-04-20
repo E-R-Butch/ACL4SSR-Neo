@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 更新：2026-04-19 02:33:46
-# 数量：40444条
+# 更新：2026-04-20 02:34:07
+# 数量：40445条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -9835,6 +9835,7 @@ DOMAIN-SUFFIX,data.cx.palladiumhotelgroup.com
 DOMAIN-SUFFIX,data.cx.theushuaiaexperience.com
 DOMAIN-SUFFIX,data.cxbevents.caixabank.com
 DOMAIN-SUFFIX,data.dats24.be
+DOMAIN-SUFFIX,data.debugbear.com
 DOMAIN-SUFFIX,data.decathlon.co.uk
 DOMAIN-SUFFIX,data.decathlon.de
 DOMAIN-SUFFIX,data.decathlon.es
