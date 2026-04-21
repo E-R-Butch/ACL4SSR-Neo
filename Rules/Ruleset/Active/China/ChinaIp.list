@@ -1,5 +1,5 @@
 # 内容：中国IPv4地址段
-# 更新：2026-04-20 02:34:07
+# 更新：2026-04-21 02:29:48
 
 IP-CIDR,1.0.1.0/24,no-resolve
 IP-CIDR,1.0.2.0/23,no-resolve
@@ -3940,7 +3940,6 @@ IP-CIDR,103.152.152.0/23,no-resolve
 IP-CIDR,103.152.168.0/23,no-resolve
 IP-CIDR,103.152.170.0/23,no-resolve
 IP-CIDR,103.152.186.0/23,no-resolve
-IP-CIDR,103.152.190.0/23,no-resolve
 IP-CIDR,103.152.192.0/23,no-resolve
 IP-CIDR,103.152.200.0/23,no-resolve
 IP-CIDR,103.152.208.0/23,no-resolve
@@ -6404,6 +6403,7 @@ IP-CIDR,163.125.0.0/16,no-resolve
 IP-CIDR,163.128.30.0/23,no-resolve
 IP-CIDR,163.128.152.0/23,no-resolve
 IP-CIDR,163.128.236.0/23,no-resolve
+IP-CIDR,163.128.254.0/23,no-resolve
 IP-CIDR,163.142.0.0/16,no-resolve
 IP-CIDR,163.177.0.0/16,no-resolve
 IP-CIDR,163.179.0.0/16,no-resolve
