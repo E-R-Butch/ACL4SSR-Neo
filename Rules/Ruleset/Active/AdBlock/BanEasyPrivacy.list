@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 更新：2026-04-24 02:32:05
-# 数量：40448条
+# 更新：2026-04-25 02:13:47
+# 数量：40449条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -22611,6 +22611,7 @@ DOMAIN-SUFFIX,mtoxtg.tezenis.com
 DOMAIN-SUFFIX,mtr.fluor.com
 DOMAIN-SUFFIX,mtrace.qq.com
 DOMAIN-SUFFIX,mtracking.mhequipment.com
+DOMAIN-SUFFIX,mtrics.cdc.gov
 DOMAIN-SUFFIX,mtrs.cooecfluor.com
 DOMAIN-SUFFIX,mtrs.fluor.com
 DOMAIN-SUFFIX,mtrs.fluorconstructors.com
