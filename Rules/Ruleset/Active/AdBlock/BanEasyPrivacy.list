@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 更新：2026-04-25 02:13:47
-# 数量：40449条
+# 更新：2026-04-26 02:36:35
+# 数量：40456条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -4819,6 +4819,7 @@ DOMAIN-SUFFIX,aiieer.mangnut2.com
 DOMAIN-SUFFIX,aikhra.londonclub.sk
 DOMAIN-SUFFIX,aikrir.lcwaikiki.com
 DOMAIN-SUFFIX,ailla.abphotos.link
+DOMAIN-SUFFIX,aim-tag.hcn.health
 DOMAIN-SUFFIX,aimvaa.gulet.at
 DOMAIN-SUFFIX,aincrd.champstudy.com
 DOMAIN-SUFFIX,ainu.intel.cn
@@ -5648,6 +5649,7 @@ DOMAIN-SUFFIX,analyticsresults.dev.datev.de
 DOMAIN-SUFFIX,analyticsresults.trialog-magazin.de
 DOMAIN-SUFFIX,analyticssec.overwolf.com
 DOMAIN-SUFFIX,analyticsssl.forcepoint.com
+DOMAIN-SUFFIX,analyze-82dfgsi2.m-w.com
 DOMAIN-SUFFIX,analyzer.fc2.com
 DOMAIN-SUFFIX,analyzer2.fc2.com
 DOMAIN-SUFFIX,anapp.adobe.com
@@ -24582,8 +24584,10 @@ DOMAIN-SUFFIX,prism.raumgleiter.com
 DOMAIN-SUFFIX,prism.singapouring.com
 DOMAIN-SUFFIX,prism.tramclockmunich.com
 DOMAIN-SUFFIX,prismtest.epoise.com
+DOMAIN-SUFFIX,privacy-analytics-proxy.cookiebot.com
 DOMAIN-SUFFIX,privacy-api.9gag.com
 DOMAIN-SUFFIX,privacy.outdoorsg.com
+DOMAIN-SUFFIX,privacy.reverso.net
 DOMAIN-SUFFIX,privacyfriendly.netlify.app
 DOMAIN-SUFFIX,private.cervicalcancer-risk.com
 DOMAIN-SUFFIX,private.roche.com
@@ -28818,6 +28822,7 @@ DOMAIN-SUFFIX,smetrics.informa.com
 DOMAIN-SUFFIX,smetrics.ingdirect.it
 DOMAIN-SUFFIX,smetrics.inkcartridges.com
 DOMAIN-SUFFIX,smetrics.inlyta.com
+DOMAIN-SUFFIX,smetrics.inova.org
 DOMAIN-SUFFIX,smetrics.insider.hagerty.com
 DOMAIN-SUFFIX,smetrics.insight.com
 DOMAIN-SUFFIX,smetrics.inspectionpanel.org
@@ -33780,6 +33785,7 @@ DOMAIN-SUFFIX,tag.unifyintent.com
 DOMAIN-SUFFIX,tag.weezmo.com
 DOMAIN-SUFFIX,tagcommander.laredoute.be
 DOMAIN-SUFFIX,tagcommander.laredoute.ch
+DOMAIN-SUFFIX,tagdelivery.mayoclinic.org
 DOMAIN-SUFFIX,tagged-events.outbound-links.js
 DOMAIN-SUFFIX,tagged-events.revenue.js
 DOMAIN-SUFFIX,tagger.ope.scmp.com
@@ -38577,6 +38583,7 @@ DOMAIN-SUFFIX,wa.pjplace.com
 DOMAIN-SUFFIX,wa.planet-wissen.de
 DOMAIN-SUFFIX,wa.postnl.nl
 DOMAIN-SUFFIX,wa.quarks.de
+DOMAIN-SUFFIX,wa.slideshare.net
 DOMAIN-SUFFIX,wa.spring-gds.com
 DOMAIN-SUFFIX,wa.st.com
 DOMAIN-SUFFIX,wa.stubhub.com
