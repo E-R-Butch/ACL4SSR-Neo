@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyListChina列表，只包含ABP中的 EasyListChina 内容
 # 来源：https://easylist-downloads.adblockplus.org/easylistchina.txt
-# 更新：2026-04-26 02:36:32
-# 数量：5858条
+# 更新：2026-04-27 02:38:49
+# 数量：5867条
 
 DOMAIN-SUFFIX,003store.com
 DOMAIN-SUFFIX,00k456wyh.com
@@ -227,6 +227,7 @@ DOMAIN-SUFFIX,2euqnxt25.com
 DOMAIN-SUFFIX,2f4a93wskk.com
 DOMAIN-SUFFIX,2fjxw3dyip.com
 DOMAIN-SUFFIX,2g1lbrr0qv.com
+DOMAIN-SUFFIX,2g8lomzrb.com
 DOMAIN-SUFFIX,2i0lliongn.com
 DOMAIN-SUFFIX,2juyabihe.com
 DOMAIN-SUFFIX,2kbmdtlgme.com
@@ -319,6 +320,7 @@ DOMAIN-SUFFIX,46q8oxohlt.com
 DOMAIN-SUFFIX,46y7erj0mw.com
 DOMAIN-SUFFIX,47c7zhqak.com
 DOMAIN-SUFFIX,48dswtxkw.com
+DOMAIN-SUFFIX,49dlt9myv.com
 DOMAIN-SUFFIX,49ioqq6kt.com
 DOMAIN-SUFFIX,49o4m4a5eo.com
 DOMAIN-SUFFIX,4aqoxkesav.com
@@ -344,6 +346,7 @@ DOMAIN-SUFFIX,4p04u96158.com
 DOMAIN-SUFFIX,4pcp5e2w7i.com
 DOMAIN-SUFFIX,4rcajmf0m.com
 DOMAIN-SUFFIX,4rfns9bmp1.com
+DOMAIN-SUFFIX,4ro76m7k2n.com
 DOMAIN-SUFFIX,4totls9uh.com
 DOMAIN-SUFFIX,4u079hpvl.com
 DOMAIN-SUFFIX,4u3222y7.xyz
@@ -612,6 +615,7 @@ DOMAIN-SUFFIX,8x14khzwmi.com
 DOMAIN-SUFFIX,8x3wolchw.com
 DOMAIN-SUFFIX,8x5vviy4r2.com
 DOMAIN-SUFFIX,8yd2rtikkz.com
+DOMAIN-SUFFIX,8yo772d29.com
 DOMAIN-SUFFIX,8yuwd5lpj.com
 DOMAIN-SUFFIX,8z1eg6o2j.com
 DOMAIN-SUFFIX,90q0tq3bwo.com
@@ -2079,10 +2083,12 @@ DOMAIN-SUFFIX,fpbone.ihowguide.com
 DOMAIN-SUFFIX,fpgxyjv3h.com
 DOMAIN-SUFFIX,fqanoreirlpa.com
 DOMAIN-SUFFIX,fqhakaihvu.com
+DOMAIN-SUFFIX,fqk6e78c80.com
 DOMAIN-SUFFIX,fqoybwos7f.com
 DOMAIN-SUFFIX,fqthetotf.com
 DOMAIN-SUFFIX,fqtyucit.com
 DOMAIN-SUFFIX,fr701hx5vi.com
+DOMAIN-SUFFIX,fracture46.com
 DOMAIN-SUFFIX,frchavvati.com
 DOMAIN-SUFFIX,free-cdn.oss-cn-shanghai.aliyuncs.com
 DOMAIN-SUFFIX,freshet40.top
@@ -4031,6 +4037,7 @@ DOMAIN-SUFFIX,qenb2pxx.xyz
 DOMAIN-SUFFIX,qezkdby1jj.com
 DOMAIN-SUFFIX,qfirgakpv.com
 DOMAIN-SUFFIX,qfwhko.icu
+DOMAIN-SUFFIX,qgckb3ov46.com
 DOMAIN-SUFFIX,qgreedreau.com
 DOMAIN-SUFFIX,qhaazaduez.com
 DOMAIN-SUFFIX,qhaelqata.com
@@ -4062,6 +4069,7 @@ DOMAIN-SUFFIX,qj9m4nou8t.com
 DOMAIN-SUFFIX,qjiz.cn
 DOMAIN-SUFFIX,qjlo.cn
 DOMAIN-SUFFIX,qjqdkli0ag.com
+DOMAIN-SUFFIX,qkdrsi4et.com
 DOMAIN-SUFFIX,qkg7yplpfo.com
 DOMAIN-SUFFIX,qkixeld.xyz
 DOMAIN-SUFFIX,qkr4uac6tx.com
@@ -5655,6 +5663,7 @@ DOMAIN-SUFFIX,yy19xdgtud.com
 DOMAIN-SUFFIX,yy1veaxhf.com
 DOMAIN-SUFFIX,yyauzedlqv.com
 DOMAIN-SUFFIX,yyax.cn
+DOMAIN-SUFFIX,yyhbt.cn
 DOMAIN-SUFFIX,yylady.cn
 DOMAIN-SUFFIX,yyqozaldwa.com
 DOMAIN-SUFFIX,yyutfzv.com
