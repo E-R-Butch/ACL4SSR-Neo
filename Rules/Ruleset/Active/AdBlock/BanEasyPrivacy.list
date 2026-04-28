@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 更新：2026-04-27 02:38:52
-# 数量：40456条
+# 更新：2026-04-28 02:46:16
+# 数量：40460条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -4992,6 +4992,7 @@ DOMAIN-SUFFIX,anal.doubledouble.top
 DOMAIN-SUFFIX,anal.sataniskwijt.be
 DOMAIN-SUFFIX,analitica.webrpp.com
 DOMAIN-SUFFIX,analitik.bik.gov.tr
+DOMAIN-SUFFIX,analitika.derp.si
 DOMAIN-SUFFIX,analys.live
 DOMAIN-SUFFIX,analyse.bcovery.com
 DOMAIN-SUFFIX,analyse.hinemos.info
@@ -17280,6 +17281,7 @@ DOMAIN-SUFFIX,leadmanagement.leads360.com
 DOMAIN-SUFFIX,leadmanagement.velocify.com
 DOMAIN-SUFFIX,leads.commercial.keurig.com
 DOMAIN-SUFFIX,leads.whatboxdigital.com
+DOMAIN-SUFFIX,leadsandmore.go2cloud.org
 DOMAIN-SUFFIX,leadsy.ai
 DOMAIN-SUFFIX,leadtracking.plumvoice.com
 DOMAIN-SUFFIX,leak.welnes.online
@@ -20671,6 +20673,7 @@ DOMAIN-SUFFIX,med.viibryd.com
 DOMAIN-SUFFIX,med.viibrydhcp.com
 DOMAIN-SUFFIX,med.vraylar.com
 DOMAIN-SUFFIX,medhyg.actonservice.com
+DOMAIN-SUFFIX,media-analytic.com
 DOMAIN-SUFFIX,media-atl3-1.cdn.whatsapp.net.iberostar.com
 DOMAIN-SUFFIX,media-cdg4-1.cdn.whatsapp.net.iberostar.com
 DOMAIN-SUFFIX,media.claritylabsolutions.com
@@ -23564,6 +23567,7 @@ DOMAIN-SUFFIX,onlineshop.ricoh.pl
 DOMAIN-SUFFIX,onlinevacationcenter.actonservice.com
 DOMAIN-SUFFIX,onmlkjiion.carte-gr.total.fr
 DOMAIN-SUFFIX,onoztg.ultimate-guitar.com
+DOMAIN-SUFFIX,onsitestats.bluecore.com
 DOMAIN-SUFFIX,ontxgr.hofer-reisen.at
 DOMAIN-SUFFIX,oo.ooshop.com
 DOMAIN-SUFFIX,oocrzh.byojet.com
