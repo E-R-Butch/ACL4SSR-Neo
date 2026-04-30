@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyListChina列表，只包含ABP中的 EasyListChina 内容
 # 来源：https://easylist-downloads.adblockplus.org/easylistchina.txt
-# 更新：2026-04-29 02:46:03
-# 数量：5899条
+# 更新：2026-04-30 02:47:21
+# 数量：5907条
 
 DOMAIN-SUFFIX,003store.com
 DOMAIN-SUFFIX,00k456wyh.com
@@ -17,6 +17,7 @@ DOMAIN-SUFFIX,0592.mobi
 DOMAIN-SUFFIX,06789.xyz
 DOMAIN-SUFFIX,06cp8ypn8j.com
 DOMAIN-SUFFIX,06evyxnibl.com
+DOMAIN-SUFFIX,06hkgn0jl3.com
 DOMAIN-SUFFIX,07pv7k61z.com
 DOMAIN-SUFFIX,086123.xyz
 DOMAIN-SUFFIX,0941.org
@@ -866,6 +867,7 @@ DOMAIN-SUFFIX,aexoao7lg6.com
 DOMAIN-SUFFIX,af1tsjdta.com
 DOMAIN-SUFFIX,afce.cn
 DOMAIN-SUFFIX,afcgcq.icu
+DOMAIN-SUFFIX,affection28.top
 DOMAIN-SUFFIX,afgodscarpe.com
 DOMAIN-SUFFIX,afno.cn
 DOMAIN-SUFFIX,afp.chinanews.com
@@ -2055,6 +2057,7 @@ DOMAIN-SUFFIX,fiu07101kl.com
 DOMAIN-SUFFIX,fiwf54qahl.com
 DOMAIN-SUFFIX,fjalsr83a6.com
 DOMAIN-SUFFIX,fjcs5ly6l.com
+DOMAIN-SUFFIX,fjpopxgyfrlxvc.com
 DOMAIN-SUFFIX,fk3nf1xeh.top
 DOMAIN-SUFFIX,fkesfg.com
 DOMAIN-SUFFIX,fkfovt.icu
@@ -2113,6 +2116,8 @@ DOMAIN-SUFFIX,ftrfnx.icu
 DOMAIN-SUFFIX,fttzfw.top
 DOMAIN-SUFFIX,fufemnirr.com
 DOMAIN-SUFFIX,fukzsbkp8.com
+DOMAIN-SUFFIX,fuma8ligq.com
+DOMAIN-SUFFIX,fummd03je4.com
 DOMAIN-SUFFIX,funqraedp.com
 DOMAIN-SUFFIX,fup5qxstgi.com
 DOMAIN-SUFFIX,fuq3sve1gj.com
@@ -3248,6 +3253,7 @@ DOMAIN-SUFFIX,m1.kuanff.com
 DOMAIN-SUFFIX,m1.nn670.com
 DOMAIN-SUFFIX,m1.vodjk.com
 DOMAIN-SUFFIX,m1.we556.com
+DOMAIN-SUFFIX,m11bkuusyb.com
 DOMAIN-SUFFIX,m17d1e83q.com
 DOMAIN-SUFFIX,m1jm3nzf2.com
 DOMAIN-SUFFIX,m1vvvv1k2.com
@@ -5209,6 +5215,7 @@ DOMAIN-SUFFIX,wbmbr16tt.com
 DOMAIN-SUFFIX,wbqhehokmy.com
 DOMAIN-SUFFIX,wde0a1qrm.com
 DOMAIN-SUFFIX,wdrn97z1o.com
+DOMAIN-SUFFIX,wdtuc.cn
 DOMAIN-SUFFIX,wdtw.cn
 DOMAIN-SUFFIX,web.900.la
 DOMAIN-SUFFIX,weewci.icu
@@ -5881,6 +5888,7 @@ DOMAIN-SUFFIX,zumnervl.com
 DOMAIN-SUFFIX,zuowen.hydcd.com
 DOMAIN-SUFFIX,zvciaoan1k.com
 DOMAIN-SUFFIX,zvgvenibe.com
+DOMAIN-SUFFIX,zvhtzl.icu
 DOMAIN-SUFFIX,zvou.cn
 DOMAIN-SUFFIX,zvptrf.icu
 DOMAIN-SUFFIX,zvrl.cn

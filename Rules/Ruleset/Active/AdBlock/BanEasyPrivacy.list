@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 更新：2026-04-29 02:46:05
-# 数量：40461条
+# 更新：2026-04-30 02:47:23
+# 数量：40464条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -5038,6 +5038,7 @@ DOMAIN-SUFFIX,analytics-collect.karakuri.ai
 DOMAIN-SUFFIX,analytics-consent-manager-v2-prod.azureedge.net
 DOMAIN-SUFFIX,analytics-dataplane.invideo.io
 DOMAIN-SUFFIX,analytics-fe.digital-cloud-prem.medallia.com
+DOMAIN-SUFFIX,analytics-fe.digital-cloud.medallia.ca
 DOMAIN-SUFFIX,analytics-fe.digital-cloud.medallia.com
 DOMAIN-SUFFIX,analytics-gw.games.wanmei.com
 DOMAIN-SUFFIX,analytics-hub.3plearning.com
@@ -6943,6 +6944,7 @@ DOMAIN-SUFFIX,autovistaintelligence.autovistagroup.com
 DOMAIN-SUFFIX,autozone.actonservice.com
 DOMAIN-SUFFIX,autspe.notino.hr
 DOMAIN-SUFFIX,auwdff.dyfashion.ro
+DOMAIN-SUFFIX,aux-log.bidmatic.io
 DOMAIN-SUFFIX,aux.lansator.ro
 DOMAIN-SUFFIX,av6fm8zw2cvz.furucombo.app
 DOMAIN-SUFFIX,avads.net
@@ -7929,6 +7931,8 @@ DOMAIN-SUFFIX,bzcuta.titleboxing.com
 DOMAIN-SUFFIX,bzlold.machi.to
 DOMAIN-SUFFIX,bznxqj.fiat.it
 DOMAIN-SUFFIX,bzqxze.remixshop.com
+DOMAIN-SUFFIX,bzr.openai.com
+DOMAIN-SUFFIX,bzrcdn.openai.com
 DOMAIN-SUFFIX,bzuaqh.roan.nl
 DOMAIN-SUFFIX,c-c-l.actonservice.com
 DOMAIN-SUFFIX,c-t.topya.com
@@ -32641,7 +32645,6 @@ DOMAIN-SUFFIX,stats.sebastiandombrowski.de
 DOMAIN-SUFFIX,stats.sebastiangale.ca
 DOMAIN-SUFFIX,stats.sec.telefonica.com
 DOMAIN-SUFFIX,stats.selectam.io
-DOMAIN-SUFFIX,stats.sender.net
 DOMAIN-SUFFIX,stats.sendngnt.com
 DOMAIN-SUFFIX,stats.senty.com.au
 DOMAIN-SUFFIX,stats.servicedesignjobs.com
