@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyListChina列表，只包含ABP中的 EasyListChina 内容
 # 来源：https://easylist-downloads.adblockplus.org/easylistchina.txt
-# 更新：2026-04-30 02:47:21
-# 数量：5907条
+# 更新：2026-05-01 02:53:55
+# 数量：5914条
 
 DOMAIN-SUFFIX,003store.com
 DOMAIN-SUFFIX,00k456wyh.com
@@ -281,6 +281,7 @@ DOMAIN-SUFFIX,3ge064tt79.com
 DOMAIN-SUFFIX,3hads4i5hm.com
 DOMAIN-SUFFIX,3hfmrv8d45.com
 DOMAIN-SUFFIX,3hg6yh6h0.com
+DOMAIN-SUFFIX,3hx1ui2vt.com
 DOMAIN-SUFFIX,3i3w8hl6do.com
 DOMAIN-SUFFIX,3ikcnjvsx.com
 DOMAIN-SUFFIX,3j1fiw14n9.com
@@ -1835,7 +1836,6 @@ DOMAIN-SUFFIX,ecma.bdimg.com
 DOMAIN-SUFFIX,ecmb.bdimg.com
 DOMAIN-SUFFIX,ecriqadg.com
 DOMAIN-SUFFIX,edethrelhf.com
-DOMAIN-SUFFIX,edgelib.net
 DOMAIN-SUFFIX,edmfizohztab.com
 DOMAIN-SUFFIX,edrakiber.com
 DOMAIN-SUFFIX,edu.jiukang.org
@@ -1911,6 +1911,7 @@ DOMAIN-SUFFIX,enzf.cn
 DOMAIN-SUFFIX,ephothuwi.com
 DOMAIN-SUFFIX,epmumb34x.top
 DOMAIN-SUFFIX,eqieg6yn5.com
+DOMAIN-SUFFIX,eqlhb8m42q.com
 DOMAIN-SUFFIX,eqqp.cn
 DOMAIN-SUFFIX,equwxrqjyl.com
 DOMAIN-SUFFIX,er.5ykj.cn
@@ -3270,6 +3271,7 @@ DOMAIN-SUFFIX,m6d3h9vc3z.com
 DOMAIN-SUFFIX,m78vxjm35d.com
 DOMAIN-SUFFIX,m7xssfiit.com
 DOMAIN-SUFFIX,m81mfege2.com
+DOMAIN-SUFFIX,m8h5qjmlb3.com
 DOMAIN-SUFFIX,m8ryjf38a.com
 DOMAIN-SUFFIX,m8zgls6zt.com
 DOMAIN-SUFFIX,m9s3h265lq.com
@@ -3398,6 +3400,7 @@ DOMAIN-SUFFIX,mountain.zhidao.baidu.com
 DOMAIN-SUFFIX,mountain48.top
 DOMAIN-SUFFIX,mountainrood.com
 DOMAIN-SUFFIX,mouthop3.com
+DOMAIN-SUFFIX,mp1sy1nri8.com
 DOMAIN-SUFFIX,mp65va7y1.com
 DOMAIN-SUFFIX,mp7sblfkx.com
 DOMAIN-SUFFIX,mp83fkx.cn
@@ -3516,6 +3519,7 @@ DOMAIN-SUFFIX,needle058.top
 DOMAIN-SUFFIX,nenlnl.icu
 DOMAIN-SUFFIX,nenodhezm.com
 DOMAIN-SUFFIX,neraenyqq.com
+DOMAIN-SUFFIX,neurologist19.com
 DOMAIN-SUFFIX,nevercoll.com
 DOMAIN-SUFFIX,nevfbf.icu
 DOMAIN-SUFFIX,nevtrelathgd.com
@@ -4707,6 +4711,7 @@ DOMAIN-SUFFIX,tux76afo5.com
 DOMAIN-SUFFIX,tvce.cn
 DOMAIN-SUFFIX,tvcnmti.top
 DOMAIN-SUFFIX,tvfvxr.icu
+DOMAIN-SUFFIX,tvj8lylgv.com
 DOMAIN-SUFFIX,tvlmzx.icu
 DOMAIN-SUFFIX,tvqagropu.com
 DOMAIN-SUFFIX,tvxvhx.icu
@@ -5410,6 +5415,7 @@ DOMAIN-SUFFIX,xh33g.net
 DOMAIN-SUFFIX,xhe87zexdk.com
 DOMAIN-SUFFIX,xhgwho0fx.com
 DOMAIN-SUFFIX,xhr7cqlob.com
+DOMAIN-SUFFIX,xhtkm35sw.com
 DOMAIN-SUFFIX,xianliao.voto
 DOMAIN-SUFFIX,xiaopinwo.com
 DOMAIN-SUFFIX,xiaoshuoyun.cn
@@ -5732,6 +5738,7 @@ DOMAIN-SUFFIX,z93grqmdaq.com
 DOMAIN-SUFFIX,z9dy1kq9wv.com
 DOMAIN-SUFFIX,z9sab7vr0b.com
 DOMAIN-SUFFIX,zai1648.xyz
+DOMAIN-SUFFIX,zalwlz.icu
 DOMAIN-SUFFIX,zamiasfinable.com
 DOMAIN-SUFFIX,zangraikri.com
 DOMAIN-SUFFIX,zantainet.com
