@@ -1,8 +1,8 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 更新：2026-05-01 02:53:57
-# 数量：40464条
+# 更新：2026-05-02 02:35:18
+# 数量：40465条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -23123,6 +23123,7 @@ DOMAIN-SUFFIX,nuyibu.pieper.de
 DOMAIN-SUFFIX,nuyujp.barstoolsports.com
 DOMAIN-SUFFIX,nv.inhaabit.com
 DOMAIN-SUFFIX,nvpdaa.brightcellars.com
+DOMAIN-SUFFIX,nvrmd.novaramedia.com
 DOMAIN-SUFFIX,nvumcv.standoil.kr
 DOMAIN-SUFFIX,nvxlag.liligo.fr
 DOMAIN-SUFFIX,nwajdf.zakzak.co.jp
