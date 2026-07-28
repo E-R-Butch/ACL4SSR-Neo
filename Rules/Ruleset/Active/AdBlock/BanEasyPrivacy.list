@@ -1,7 +1,7 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 数量：40527条
+# 数量：40533条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -4327,6 +4327,7 @@ DOMAIN-SUFFIX,acv.mc-doctor.net
 DOMAIN-SUFFIX,acv.mc-nurse.net
 DOMAIN-SUFFIX,acv.mc-pharma.net
 DOMAIN-SUFFIX,acv.me-hikari.net
+DOMAIN-SUFFIX,acv.mira-dsp.com
 DOMAIN-SUFFIX,acv.next-air-wifi.com
 DOMAIN-SUFFIX,acv.next-internet.info
 DOMAIN-SUFFIX,acv.nft-hikari.net
@@ -4898,6 +4899,7 @@ DOMAIN-SUFFIX,allergy.thermofisher.com
 DOMAIN-SUFFIX,alliantdata.actonservice.com
 DOMAIN-SUFFIX,alliedfundingcorp.actonservice.com
 DOMAIN-SUFFIX,allinsurance.allinsure.ca
+DOMAIN-SUFFIX,alloy-rap.reclameaqui.com.br
 DOMAIN-SUFFIX,alloy-web.zvuk.com
 DOMAIN-SUFFIX,allreach.actonservice.com
 DOMAIN-SUFFIX,allrisks.actonservice.com
@@ -23236,6 +23238,7 @@ DOMAIN-SUFFIX,obrqts.hudforeclosed.com
 DOMAIN-SUFFIX,obs.branderblender.com
 DOMAIN-SUFFIX,obs.du89buildings.com
 DOMAIN-SUFFIX,obs.esnlocco.com
+DOMAIN-SUFFIX,obs.greencolumnblog.com
 DOMAIN-SUFFIX,obs.jollyoutdoorjogger.com
 DOMAIN-SUFFIX,obs.system1onesource.com
 DOMAIN-SUFFIX,observe-nexus.pointandplace.com
@@ -24517,6 +24520,7 @@ DOMAIN-SUFFIX,pntbrs.reflectwindow.com
 DOMAIN-SUFFIX,pnvnpy.scullyandscully.com
 DOMAIN-SUFFIX,pny.net.penny.de
 DOMAIN-SUFFIX,po.ponant.com
+DOMAIN-SUFFIX,pocustrack.com
 DOMAIN-SUFFIX,poczta.carte-gr.total.fr
 DOMAIN-SUFFIX,poczta.happ.social
 DOMAIN-SUFFIX,pod.spoti.fi
@@ -32577,6 +32581,7 @@ DOMAIN-SUFFIX,stats.oyster.com
 DOMAIN-SUFFIX,stats.ozwebsites.biz
 DOMAIN-SUFFIX,stats.p42.ai
 DOMAIN-SUFFIX,stats.pacificdentalservices.com
+DOMAIN-SUFFIX,stats.panet.com
 DOMAIN-SUFFIX,stats.parqet.com
 DOMAIN-SUFFIX,stats.parrot.dev
 DOMAIN-SUFFIX,stats.passwordyeti.com
@@ -36308,6 +36313,7 @@ DOMAIN-SUFFIX,tracking-api-4lasu2nlcq-ew.a.run.app
 DOMAIN-SUFFIX,tracking-api.bookzone.ro
 DOMAIN-SUFFIX,tracking-api.hotmart.com
 DOMAIN-SUFFIX,tracking-api.mangopulse.net
+DOMAIN-SUFFIX,tracking-api.razor.media
 DOMAIN-SUFFIX,tracking-explore-uat.agilent.com
 DOMAIN-SUFFIX,tracking-explore.agilent.com
 DOMAIN-SUFFIX,tracking-live.kr3m.com
