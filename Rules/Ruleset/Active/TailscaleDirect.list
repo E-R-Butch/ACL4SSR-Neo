@@ -1,8 +1,8 @@
-# Tailscale log service
-DOMAIN,log.tailscale.com
+# Tailscale daemon underlay (dynamic DERP, STUN, and peer endpoints)
+PROCESS-NAME,tailscaled
 
-# Tailscale DERP Dallas (derp9d.tailscale.com)
-IP-CIDR,209.177.156.94/32,no-resolve
+# Tailscale-operated domains (control plane, login, logs, and DERP hostnames)
+DOMAIN-SUFFIX,tailscale.com
 
 # ZeroTier default peer/relay port
 DST-PORT,9993
