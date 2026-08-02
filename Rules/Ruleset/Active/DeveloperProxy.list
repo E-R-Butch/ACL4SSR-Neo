@@ -21,6 +21,10 @@ DOMAIN,configs.gitkraken.dev
 # Browser extensions
 DOMAIN-SUFFIX,tampermonkey.net
 
+# Developer CDN compatibility bridge
+# Keep this fallback for converters still using the pre-DeveloperCDN config.
+DOMAIN-SUFFIX,unpkg.com
+
 # PyPI (too slow from China)
 DOMAIN-SUFFIX,pypi.org
 DOMAIN-SUFFIX,pythonhosted.org
