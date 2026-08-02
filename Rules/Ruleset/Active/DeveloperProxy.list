@@ -25,5 +25,8 @@ DOMAIN-SUFFIX,tampermonkey.net
 DOMAIN-SUFFIX,pypi.org
 DOMAIN-SUFFIX,pythonhosted.org
 
+# JavaScript package CDNs
+DOMAIN-SUFFIX,unpkg.com
+
 # OpenSCAD
 DOMAIN,files.openscad.org
