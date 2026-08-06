@@ -1,7 +1,7 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 数量：40547条
+# 数量：40549条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -12524,6 +12524,7 @@ DOMAIN-SUFFIX,events.il.fi
 DOMAIN-SUFFIX,events.ingatlan.com
 DOMAIN-SUFFIX,events.interface.com
 DOMAIN-SUFFIX,events.jotform.com
+DOMAIN-SUFFIX,events.julephosting.de
 DOMAIN-SUFFIX,events.kangan.edu.au
 DOMAIN-SUFFIX,events.limango.com
 DOMAIN-SUFFIX,events.mapbox.com
@@ -23908,6 +23909,7 @@ DOMAIN-SUFFIX,p7cloud.net
 DOMAIN-SUFFIX,p7h1silo3f.app.cainthus.com
 DOMAIN-SUFFIX,pa-stats.encore.dev
 DOMAIN-SUFFIX,pa.opqr.co
+DOMAIN-SUFFIX,pa.pinpoll.com
 DOMAIN-SUFFIX,pa.travelwhiz.app
 DOMAIN-SUFFIX,pabgey.siepomaga.pl
 DOMAIN-SUFFIX,pac.thescottishsun.co.uk
