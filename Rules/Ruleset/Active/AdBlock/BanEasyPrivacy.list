@@ -1,7 +1,7 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 数量：40551条
+# 数量：40553条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -11477,6 +11477,7 @@ DOMAIN-SUFFIX,edge.treehousetv.com
 DOMAIN-SUFFIX,edge.truist.com
 DOMAIN-SUFFIX,edge.truistmomentum.com
 DOMAIN-SUFFIX,edge.truistsecurities.com
+DOMAIN-SUFFIX,edge.venatusmedia.com
 DOMAIN-SUFFIX,edge.wnetwork.com
 DOMAIN-SUFFIX,edgedc.falabella.com
 DOMAIN-SUFFIX,ediemidnightzombies.com
@@ -24610,6 +24611,7 @@ DOMAIN-SUFFIX,prd-collector-anon.ex.co
 DOMAIN-SUFFIX,prd-collector-platform.ex.co
 DOMAIN-SUFFIX,pre-employmentservices.adp.com
 DOMAIN-SUFFIX,prealpha.go.levelbank.com
+DOMAIN-SUFFIX,prebid.loopmertb.com
 DOMAIN-SUFFIX,preference.motorolasolutions.com
 DOMAIN-SUFFIX,preference.nuance.com
 DOMAIN-SUFFIX,preferencecenter.fticonsulting.com
