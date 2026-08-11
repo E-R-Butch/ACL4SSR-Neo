@@ -1,7 +1,7 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 数量：40553条
+# 数量：40558条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -313,6 +313,7 @@ DOMAIN-SUFFIX,a.topya.com
 DOMAIN-SUFFIX,a.transportgruppen.se
 DOMAIN-SUFFIX,a.trivita.com
 DOMAIN-SUFFIX,a.vturb.net
+DOMAIN-SUFFIX,a.wb.ru
 DOMAIN-SUFFIX,a.weareknitters.co.uk
 DOMAIN-SUFFIX,a.weareknitters.com
 DOMAIN-SUFFIX,a.weareknitters.de
@@ -4240,6 +4241,7 @@ DOMAIN-SUFFIX,acendas.actonservice.com
 DOMAIN-SUFFIX,acesse.tc.com.br
 DOMAIN-SUFFIX,aciysf.destockage-fitness.com
 DOMAIN-SUFFIX,aclordi.actonservice.com
+DOMAIN-SUFFIX,acollector.wb.ru
 DOMAIN-SUFFIX,acq-au.americanexpress.com
 DOMAIN-SUFFIX,acq-hk.americanexpress.com
 DOMAIN-SUFFIX,acq-jp.americanexpress.com
@@ -5703,6 +5705,7 @@ DOMAIN-SUFFIX,answers.teradata.pl
 DOMAIN-SUFFIX,answers.teradata.ru
 DOMAIN-SUFFIX,answers.teradata.se
 DOMAIN-SUFFIX,antblz.mediaworld.it
+DOMAIN-SUFFIX,antibot.wildberries.ru
 DOMAIN-SUFFIX,antico.openapp.link
 DOMAIN-SUFFIX,antitracking.owncast.online
 DOMAIN-SUFFIX,antonsystems.actonservice.com
@@ -14264,6 +14267,7 @@ DOMAIN-SUFFIX,groupevents.sixflags.com
 DOMAIN-SUFFIX,groups.heatexperience.com
 DOMAIN-SUFFIX,grow.business.xerox.com
 DOMAIN-SUFFIX,grow.national.biz
+DOMAIN-SUFFIX,grow.urbandictionary.network
 DOMAIN-SUFFIX,growth-channel.net
 DOMAIN-SUFFIX,growthmodemarketing.actonservice.com
 DOMAIN-SUFFIX,grxokm.kirstein.de
@@ -14831,6 +14835,7 @@ DOMAIN-SUFFIX,idndlc.kango-oshigoto.jp
 DOMAIN-SUFFIX,idqwqm.kkday.com
 DOMAIN-SUFFIX,idrivelogistics.actonservice.com
 DOMAIN-SUFFIX,ids.actonservice.com
+DOMAIN-SUFFIX,idsequoia.ai
 DOMAIN-SUFFIX,idstatus.sky.com
 DOMAIN-SUFFIX,iduk.barcodesgroup.com
 DOMAIN-SUFFIX,idx.lat
