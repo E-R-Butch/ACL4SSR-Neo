@@ -1,7 +1,7 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 数量：40561条
+# 数量：40563条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -10017,6 +10017,7 @@ DOMAIN-SUFFIX,data.gosquared.com
 DOMAIN-SUFFIX,data.grandpalladium.palladiumhotelgroup.com
 DOMAIN-SUFFIX,data.guest.princess.com
 DOMAIN-SUFFIX,data.guide.photobucket.com
+DOMAIN-SUFFIX,data.hailuo.ai
 DOMAIN-SUFFIX,data.hardrock.palladiumhotelgroup.com
 DOMAIN-SUFFIX,data.hello.consumercellular.com
 DOMAIN-SUFFIX,data.hk-email.princess.com
@@ -25686,6 +25687,7 @@ DOMAIN-SUFFIX,rugttt.robinson.com
 DOMAIN-SUFFIX,ruhpbn.zhigaojixie.com
 DOMAIN-SUFFIX,rum-collector.leaderint.workers.dev
 DOMAIN-SUFFIX,rum-ingress-coralogix.com
+DOMAIN-SUFFIX,rum-openway.guance.com
 DOMAIN-SUFFIX,rum.aliyuncs.com
 DOMAIN-SUFFIX,rum.api.intuit.com
 DOMAIN-SUFFIX,rum.azion.com
