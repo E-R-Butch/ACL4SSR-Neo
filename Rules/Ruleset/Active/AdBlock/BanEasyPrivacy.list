@@ -1,7 +1,7 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 数量：40563条
+# 数量：40567条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -7327,6 +7327,7 @@ DOMAIN-SUFFIX,beacon.coofis.com
 DOMAIN-SUFFIX,beacon.dropbox.com
 DOMAIN-SUFFIX,beacon.errorception.com
 DOMAIN-SUFFIX,beacon.flow.io
+DOMAIN-SUFFIX,beacon.joinlede.com
 DOMAIN-SUFFIX,beacon.klm.com
 DOMAIN-SUFFIX,beacon.min.js
 DOMAIN-SUFFIX,beacon.peakhour.io
@@ -8264,6 +8265,7 @@ DOMAIN-SUFFIX,charms.pugster.com
 DOMAIN-SUFFIX,chartec.actonservice.com
 DOMAIN-SUFFIX,chat.forddirectdealers.com
 DOMAIN-SUFFIX,check.frbservices.org
+DOMAIN-SUFFIX,check2.lloydsbank.co.uk
 DOMAIN-SUFFIX,check3.tiaa.org
 DOMAIN-SUFFIX,checkpointcharlie.heizung.de
 DOMAIN-SUFFIX,cheese.guac.live
@@ -16292,6 +16294,7 @@ DOMAIN-SUFFIX,infospot.roanokegroup.com
 DOMAIN-SUFFIX,infotc.readingpartners.org
 DOMAIN-SUFFIX,infotul.readingpartners.org
 DOMAIN-SUFFIX,ingest.coincodex.com
+DOMAIN-SUFFIX,ingest.in.signoz.cloud
 DOMAIN-SUFFIX,ingest.make.rvapps.io
 DOMAIN-SUFFIX,ingest.make.rvohealth.com
 DOMAIN-SUFFIX,ingesteer.services-prod.nsvcs.net
@@ -33547,6 +33550,7 @@ DOMAIN-SUFFIX,t.cozone.com
 DOMAIN-SUFFIX,t.cpurls.net
 DOMAIN-SUFFIX,t.csurams.com
 DOMAIN-SUFFIX,t.cubuffs.com
+DOMAIN-SUFFIX,t.dailydot.com
 DOMAIN-SUFFIX,t.dailymail.co.uk
 DOMAIN-SUFFIX,t.dawsoncreekeventscentre.com
 DOMAIN-SUFFIX,t.db-gruppen.de
