@@ -1,7 +1,7 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 数量：40531条
+# 数量：40535条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -4238,6 +4238,7 @@ DOMAIN-SUFFIX,acemetrix.actonservice.com
 DOMAIN-SUFFIX,acendas.actonservice.com
 DOMAIN-SUFFIX,acesse.tc.com.br
 DOMAIN-SUFFIX,aciysf.destockage-fitness.com
+DOMAIN-SUFFIX,acjs.aliyun.com
 DOMAIN-SUFFIX,aclordi.actonservice.com
 DOMAIN-SUFFIX,acollector.wb.ru
 DOMAIN-SUFFIX,acq-au.americanexpress.com
@@ -5323,6 +5324,7 @@ DOMAIN-SUFFIX,analytics.makro.be
 DOMAIN-SUFFIX,analytics.makro.pt
 DOMAIN-SUFFIX,analytics.mambaui.com
 DOMAIN-SUFFIX,analytics.martinandosa.com
+DOMAIN-SUFFIX,analytics.maskyoo.net
 DOMAIN-SUFFIX,analytics.massivwerthaus.at
 DOMAIN-SUFFIX,analytics.matchbin.com
 DOMAIN-SUFFIX,analytics.maxroll.gg
@@ -16278,6 +16280,7 @@ DOMAIN-SUFFIX,ingest.coincodex.com
 DOMAIN-SUFFIX,ingest.in.signoz.cloud
 DOMAIN-SUFFIX,ingest.make.rvapps.io
 DOMAIN-SUFFIX,ingest.make.rvohealth.com
+DOMAIN-SUFFIX,ingest.promptwatch.com
 DOMAIN-SUFFIX,ingesteer.services-prod.nsvcs.net
 DOMAIN-SUFFIX,ingredients.firmenich.com
 DOMAIN-SUFFIX,ingress.linktr.ee
@@ -25118,6 +25121,7 @@ DOMAIN-SUFFIX,rabbit.donald.cat
 DOMAIN-SUFFIX,rac.ruutu.fi
 DOMAIN-SUFFIX,racemanager-app.sapsailing.com
 DOMAIN-SUFFIX,radar.imgsmail.ru
+DOMAIN-SUFFIX,radar.wizzo.media
 DOMAIN-SUFFIX,radio.moodybible.org
 DOMAIN-SUFFIX,radiometer.actonservice.com
 DOMAIN-SUFFIX,raf.postnl.be
