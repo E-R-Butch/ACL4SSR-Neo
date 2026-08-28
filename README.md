@@ -1,4 +1,4 @@
-# ACL4SSR-Neo 🚀
+# ACL4SSR-Redux 🚀
 
 > 基于 [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR) 规则深度定制的订阅转换规则仓库，面向 Clash / Mihomo 等常见代理生态，整合了多家优质去广告规则源。
 >
