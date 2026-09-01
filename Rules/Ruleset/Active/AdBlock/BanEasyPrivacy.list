@@ -1,7 +1,7 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 数量：40548条
+# 数量：40549条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -12868,6 +12868,7 @@ DOMAIN-SUFFIX,fipsta.urbanara.at
 DOMAIN-SUFFIX,fipsta.urbanara.co.uk
 DOMAIN-SUFFIX,fipsta.worldfitness.de
 DOMAIN-SUFFIX,fire.solutions.jci.com
+DOMAIN-SUFFIX,fireanalytics.firestream.to
 DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com
 DOMAIN-SUFFIX,firebaselogging.googleapis.com
 DOMAIN-SUFFIX,firstpac.actonservice.com
