@@ -1,7 +1,7 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
 # 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
-# 数量：40553条
+# 数量：40555条
 
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
@@ -6324,7 +6324,6 @@ DOMAIN-SUFFIX,app.pally.live
 DOMAIN-SUFFIX,app.pandasuite.io
 DOMAIN-SUFFIX,app.panomoments.com
 DOMAIN-SUFFIX,app.partner.fisglobal.com
-DOMAIN-SUFFIX,app.partnerboost.com
 DOMAIN-SUFFIX,app.pawsket.com
 DOMAIN-SUFFIX,app.payments-response.americanexpress.co.uk
 DOMAIN-SUFFIX,app.payments.53.com
@@ -11091,6 +11090,7 @@ DOMAIN-SUFFIX,dsj4qf77pyncykf2dki6isfcuy0orwhc.lambda-url.eu-west-1.on.aws
 DOMAIN-SUFFIX,dsoxjxin5jji.controlconceptsusa.com
 DOMAIN-SUFFIX,dsp-track-global.zmaticoo.com
 DOMAIN-SUFFIX,dspx.tv
+DOMAIN-SUFFIX,dsspn.com
 DOMAIN-SUFFIX,dst05lp2.net.mydays.de
 DOMAIN-SUFFIX,dsvmgu.snipes.it
 DOMAIN-SUFFIX,dt-tracker.mamikos.com
@@ -13277,6 +13277,7 @@ DOMAIN-SUFFIX,g2insights-cdn.azureedge.net
 DOMAIN-SUFFIX,g4p.redtram.com
 DOMAIN-SUFFIX,g594253006.co
 DOMAIN-SUFFIX,g792337340.co
+DOMAIN-SUFFIX,g792337341.co
 DOMAIN-SUFFIX,g792337342.co
 DOMAIN-SUFFIX,g792337343.co
 DOMAIN-SUFFIX,g8715710740.co
@@ -32310,6 +32311,7 @@ DOMAIN-SUFFIX,stats.equium.io
 DOMAIN-SUFFIX,stats.erikinthekitchen.com
 DOMAIN-SUFFIX,stats.erlef.org
 DOMAIN-SUFFIX,stats.esecured.net
+DOMAIN-SUFFIX,stats.estrema.it
 DOMAIN-SUFFIX,stats.evenchilada.com
 DOMAIN-SUFFIX,stats.executebig.org
 DOMAIN-SUFFIX,stats.exploratv.ca
